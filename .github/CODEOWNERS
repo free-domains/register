@@ -1,0 +1,4 @@
+* @free-domains/owners
+
+# Domains
+/domains/* @free-domains/maintainers

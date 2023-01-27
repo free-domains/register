@@ -82,18 +82,18 @@ for (var idx in domains) {
         );
     }
 
-    if (domainData.record.MX) {
-        for (var mx in domainData.record.MX) {
+    if (domainData.records.MX) {
+        for (var mx in domainData.records.MX) {
             commit[domainData.domain].push(
-                MX(domainData.subdomain, 10, domainData.record.MX[mx]) // https://stackexchange.github.io/dnscontrol/js#CNAME
+                MX(domainData.subdomain, 10, domainData.records.MX[mx]) // https://stackexchange.github.io/dnscontrol/js#CNAME
             );
         }
     }
 
-    if (domainData.record.NS) {
-        for (var ns in domainData.record.NS) {
+    if (domainData.records.NS) {
+        for (var ns in domainData.records.NS) {
             commit[domainData.domain].push(
-                NS(domainData.subdomain, domainData.record.NS[ns]) // https://stackexchange.github.io/dnscontrol/js#NS
+                NS(domainData.subdomain, domainData.records.NS[ns]) // https://stackexchange.github.io/dnscontrol/js#NS
             );
         }
     }

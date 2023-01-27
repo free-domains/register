@@ -1,0 +1,12 @@
+{
+    "$schema": "../../schemas/reserved-domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "_github-challenge-free-domains-org",
+
+    "records": {
+        "TXT": ["d9d7d3b3cd"]
+    },
+
+    "proxied": false
+}

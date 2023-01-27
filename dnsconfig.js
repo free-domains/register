@@ -17,7 +17,7 @@ var proxy = {
  *    domain: string,
  *    subdomain: string,
  *    owner?: {email?: string},
- *    record: {TXT?: string[], A?: string[], AAAA?: string[], CNAME?: string},
+ *    records: {A?: string[], AAAA?: string[], CNAME?: string, TXT?: string[]},
  *    proxied: boolean
  *  }}[]}
  */
@@ -46,46 +46,46 @@ var commit = {};
 
 for (var idx in domains) {
     var domainData = domains[idx].data;
-    var proxyState = proxy.on; // enabled by default
+    var proxyState = proxy.off; // Disabled by default
 
     if (!commit[domainData.domain]) {
         commit[domainData.domain] = [];
     }
 
-    if (domainData.proxy === false) {
-        proxyState = proxy.off;
+    if (domainData.proxied === true) {
+        proxyState = proxy.on;
     }
 
-    if (domainData.record.A) {
-        for (var a in domainData.record.A) {
+    if (domainData.records.A) {
+        for (var a in domainData.records.A) {
             commit[domainData.domain].push(
-                A(domainData.subdomain, IP(domainData.record.A[a]), proxyState) // https://stackexchange.github.io/dnscontrol/js#A
+                A(domainData.subdomain, IP(domainData.records.A[a]), proxyState) // https://stackexchange.github.io/dnscontrol/js#A
             );
         }
     }
 
-    if (domainData.record.AAAA) {
-        for (var aaaa in domainData.record.AAAA) {
+    if (domainData.records.AAAA) {
+        for (var aaaa in domainData.records.AAAA) {
             commit[domainData.domain].push(
                 AAAA(
                     domainData.subdomain,
-                    domainData.record.AAAA[aaaa],
+                    domainData.records.AAAA[aaaa],
                     proxyState
                 ) // https://stackexchange.github.io/dnscontrol/js#AAAA
             );
         }
     }
 
-    if (domainData.record.CNAME) {
+    if (domainData.records.CNAME) {
         commit[domainData.domain].push(
-            CNAME(domainData.subdomain, domainData.record.CNAME, proxyState) // https://stackexchange.github.io/dnscontrol/js#CNAME
+            CNAME(domainData.subdomain, domainData.records.CNAME, proxyState) // https://stackexchange.github.io/dnscontrol/js#CNAME
         );
     }
 
-    if (domainData.record.TXT) {
-        for (var txt in domainData.record.TXT) {
+    if (domainData.records.TXT) {
+        for (var txt in domainData.records.TXT) {
             commit[domainData.domain].push(
-                TXT(domainData.subdomain, domainData.record.TXT[txt]) // https://stackexchange.github.io/dnscontrol/js#TXT
+                TXT(domainData.subdomain, domainData.records.TXT[txt]) // https://stackexchange.github.io/dnscontrol/js#TXT
             );
         }
     }

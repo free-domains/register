@@ -3,8 +3,8 @@ var providerCf = DnsProvider(NewDnsProvider("cloudflare"));
 
 var proxy = {
     // https://stackexchange.github.io/dnscontrol/providers/cloudflare
-    off: { cloudflare_proxy: "off" },
-    on: { cloudflare_proxy: "on" }
+    on: { cloudflare_proxy: "on" },
+    off: { cloudflare_proxy: "off" }
 };
 
 /**
@@ -16,8 +16,8 @@ var proxy = {
  *  data: {
  *    domain: string,
  *    subdomain: string,
- *    owner?: { email?: string },
- *    record: { A?: string[], AAAA?: string[], CNAME?: string, TXT?: string[] },
+ *    owner?: {email?: string},
+ *    record: {TXT?: string[], A?: string[], AAAA?: string[], CNAME?: string},
  *    proxied: boolean
  *  }}[]}
  */
@@ -46,14 +46,14 @@ var commit = {};
 
 for (var idx in domains) {
     var domainData = domains[idx].data;
-    var proxyState = proxy.off; // Disabled by default
+    var proxyState = proxy.on; // enabled by default
 
     if (!commit[domainData.domain]) {
         commit[domainData.domain] = [];
     }
 
-    if (domainData.proxy === true) {
-        proxyState = proxy.on;
+    if (domainData.proxy === false) {
+        proxyState = proxy.off;
     }
 
     if (domainData.record.A) {

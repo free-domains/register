@@ -3,8 +3,8 @@ var providerCf = DnsProvider(NewDnsProvider("cloudflare"));
 
 var proxy = {
     // https://stackexchange.github.io/dnscontrol/providers/cloudflare
-    on: { cloudflare_proxy: "on" },
-    off: { cloudflare_proxy: "off" }
+    off: { cloudflare_proxy: "off" },
+    on: { cloudflare_proxy: "on" }
 };
 
 /**
@@ -17,7 +17,7 @@ var proxy = {
  *    domain: string,
  *    subdomain: string,
  *    owner?: {email?: string},
- *    records: {A?: string[], AAAA?: string[], CNAME?: string, TXT?: string[]},
+ *    records: {A?: string[], AAAA?: string[], CNAME?: string, NS?: string[], TXT?: string[]},
  *    proxied: boolean
  *  }}[]}
  */
@@ -80,6 +80,22 @@ for (var idx in domains) {
         commit[domainData.domain].push(
             CNAME(domainData.subdomain, domainData.records.CNAME, proxyState) // https://stackexchange.github.io/dnscontrol/js#CNAME
         );
+    }
+
+    if (domainData.record.MX) {
+        for (var mx in domainData.record.MX) {
+            commit[domainData.domain].push(
+                MX(domainData.subdomain, 10, domainData.record.MX[mx]) // https://stackexchange.github.io/dnscontrol/js#CNAME
+            );
+        }
+    }
+
+    if (domainData.record.NS) {
+        for (var ns in domainData.record.NS) {
+            commit[domainData.domain].push(
+                NS(domainData.subdomain, domainData.record.NS[ns]) // https://stackexchange.github.io/dnscontrol/js#NS
+            );
+        }
     }
 
     if (domainData.records.TXT) {

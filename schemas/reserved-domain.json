@@ -38,6 +38,19 @@
                     "minLength": 1,
                     "pattern": "^[a-z0-9_./-]*\\.$"
                 },
+                "MX": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },  
+                "NS": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9._-]{3,}$"
+                    }
+                },
                 "TXT": {
                     "type": "array",
                     "items": {
@@ -56,6 +69,9 @@
                 },
                 {
                     "required": ["CNAME"]
+                },
+                {
+                    "required": ["NS"]
                 },
                 {
                     "required": ["TXT"]

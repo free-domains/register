@@ -1,0 +1,12 @@
+{
+    "$schema": "../../schemas/reserved-domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "register",
+
+    "records": {
+        "CNAME": "free-domains-register.pages.dev."
+    },
+
+    "proxied": true
+}

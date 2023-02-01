@@ -43,7 +43,7 @@
                     "items": {
                         "type": "string"
                     }
-                },  
+                },
                 "NS": {
                     "type": "array",
                     "items": {

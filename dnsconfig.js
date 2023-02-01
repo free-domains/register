@@ -16,8 +16,8 @@ var proxy = {
  *  data: {
  *    domain: string,
  *    subdomain: string,
- *    owner?: {email?: string},
- *    records: {A?: string[], AAAA?: string[], CNAME?: string, MX?: string[], NS?: string[], TXT?: string[]},
+ *    owner?: { email?: string },
+ *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], NS?: string[], TXT?: string[] },
  *    proxied: boolean
  *  }}[]}
  */
@@ -54,7 +54,7 @@ for (var idx in domains) {
     if (domainData.records.A) {
         for (var a in domainData.records.A) {
             commit[domainData.domain].push(
-                A(domainData.subdomain, IP(domainData.records.A[a]), proxyState) // https://stackexchange.github.io/dnscontrol/js#A
+                A(domainData.subdomain, IP(domainData.records.A[a]), proxyState)
             );
         }
     }
@@ -66,21 +66,23 @@ for (var idx in domains) {
                     domainData.subdomain,
                     domainData.records.AAAA[aaaa],
                     proxyState
-                ) // https://stackexchange.github.io/dnscontrol/js#AAAA
+                )
             );
         }
     }
 
     if (domainData.records.CNAME) {
         commit[domainData.domain].push(
-            CNAME(domainData.subdomain, domainData.records.CNAME, proxyState) // https://stackexchange.github.io/dnscontrol/js#CNAME
+            CNAME(domainData.subdomain, domainData.records.CNAME, proxyState)
         );
     }
+
+    console.log(domainData.records.MX);
 
     if (domainData.records.MX) {
         for (var mx in domainData.records.MX) {
             commit[domainData.domain].push(
-                MX(domainData.subdomain, 10, domainData.records.MX[mx]) // https://stackexchange.github.io/dnscontrol/js#CNAME
+                MX(domainData.subdomain, domainData.records.MX[mx].priority, domainData.records.MX[mx].value)
             );
         }
     }
@@ -88,7 +90,7 @@ for (var idx in domains) {
     if (domainData.records.NS) {
         for (var ns in domainData.records.NS) {
             commit[domainData.domain].push(
-                NS(domainData.subdomain, domainData.records.NS[ns]) // https://stackexchange.github.io/dnscontrol/js#NS
+                NS(domainData.subdomain, domainData.records.NS[ns])
             );
         }
     }
@@ -96,7 +98,7 @@ for (var idx in domains) {
     if (domainData.records.TXT) {
         for (var txt in domainData.records.TXT) {
             commit[domainData.domain].push(
-                TXT(domainData.subdomain, domainData.records.TXT[txt]) // https://stackexchange.github.io/dnscontrol/js#TXT
+                TXT(domainData.subdomain, domainData.records.TXT[txt])
             );
         }
     }

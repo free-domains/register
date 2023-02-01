@@ -41,7 +41,10 @@
                 "MX": {
                     "type": "array",
                     "items": {
-                        "type": "string"
+                        "type": "object",
+                        "minLength": 3,
+                        "pattern": "^[a-z0-9._-]{3,}$",
+                        "maxProperties": 2
                     }
                 },
                 "NS": {

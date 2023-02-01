@@ -95,6 +95,11 @@ for (var idx in domains) {
 
     if (domainData.records.TXT) {
         for (var txt in domainData.records.TXT) {
+            if(domainData.records.TXT[txt].name === "@") {
+                commit[domainData.domain].push(TXT(domainData.subdomain, domainData.records.TXT[txt].value));
+                return;
+            }
+
             commit[domainData.domain].push(
                 TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value)
             );

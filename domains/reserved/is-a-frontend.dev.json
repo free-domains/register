@@ -40,6 +40,16 @@
             {
                 "name": "@",
                 "value": "v=spf1 include:_spf.mx.cloudflare.net ~all"
+            },
+
+            {
+                "name": "_github-challenge-free-domains-org",
+                "value": "b5822037c3"
+            },
+
+            {
+                "name": "_github-pages-challenge-free-domains",
+                "value": "48ff7988789c1fb49dd4be28c0fe70"
             }
         ]
     },

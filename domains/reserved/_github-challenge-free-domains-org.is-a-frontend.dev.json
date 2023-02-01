@@ -5,7 +5,12 @@
     "subdomain": "_github-challenge-free-domains-org",
 
     "records": {
-        "TXT": ["b5822037c3"]
+        "TXT": [
+            {
+                "name": "@",
+                "value": "b5822037c3"
+            }
+        ]
     },
 
     "proxied": false

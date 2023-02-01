@@ -44,6 +44,7 @@
                         "type": "object",
                         "minLength": 3,
                         "pattern": "^[a-z0-9._-]{3,}$",
+                        "minProperties": 2,
                         "maxProperties": 2
                     }
                 },
@@ -58,9 +59,9 @@
                 "TXT": {
                     "type": "array",
                     "items": {
-                        "type": "string",
-                        "minLength": 1,
-                        "maxLength": 255
+                        "type": "object",
+                        "minProperties": 2,
+                        "maxProperties": 2
                     }
                 }
             },

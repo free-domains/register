@@ -17,7 +17,7 @@ var proxy = {
  *    domain: string,
  *    subdomain: string,
  *    owner?: { email?: string },
- *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], NS?: string[], TXT?: string[] },
+ *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], NS?: string[], TXT?: object[] },
  *    proxied: boolean
  *  }}[]}
  */
@@ -96,7 +96,7 @@ for (var idx in domains) {
     if (domainData.records.TXT) {
         for (var txt in domainData.records.TXT) {
             commit[domainData.domain].push(
-                TXT(domainData.subdomain, domainData.records.TXT[txt])
+                TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value)
             );
         }
     }

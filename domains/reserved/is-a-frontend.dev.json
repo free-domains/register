@@ -36,7 +36,12 @@
             }
         ],
 
-        "TXT": ["v=spf1 include:_spf.mx.cloudflare.net ~all"]
+        "TXT": [
+            {
+                "name": "@",
+                "value": "v=spf1 include:_spf.mx.cloudflare.net ~all"
+            }
+        ]
     },
 
     "proxied": false

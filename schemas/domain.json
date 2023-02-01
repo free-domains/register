@@ -51,9 +51,9 @@
                 "TXT": {
                     "type": "array",
                     "items": {
-                        "type": "string",
-                        "minLength": 1,
-                        "maxLength": 255
+                        "type": "object",
+                        "minProperties": 2,
+                        "maxProperties": 2
                     }
                 }
             },

@@ -5,7 +5,12 @@
     "subdomain": "_github-pages-challenge-free-domains",
 
     "records": {
-        "TXT": ["2b1d1bccb97af4e747c6f48dd903ff"]
+        "TXT": [
+            {
+                "name": "@",
+                "value": "2b1d1bccb97af4e747c6f48dd903ff"
+            }
+        ]
     },
 
     "proxied": false

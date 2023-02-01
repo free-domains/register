@@ -77,8 +77,6 @@ for (var idx in domains) {
         );
     }
 
-    console.log(domainData.records.MX);
-
     if (domainData.records.MX) {
         for (var mx in domainData.records.MX) {
             commit[domainData.domain].push(

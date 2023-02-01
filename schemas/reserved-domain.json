@@ -35,7 +35,7 @@
                 },
                 "CNAME": {
                     "type": "string",
-                    "minLength": 1,
+                    "minLength": 3,
                     "pattern": "^[a-z0-9_./-]*\\.$"
                 },
                 "MX": {
@@ -48,6 +48,7 @@
                     "type": "array",
                     "items": {
                         "type": "string",
+                        "minLength": 3,
                         "pattern": "^[a-z0-9._-]{3,}$"
                     }
                 },
@@ -61,21 +62,12 @@
                 }
             },
             "anyOf": [
-                {
-                    "required": ["A"]
-                },
-                {
-                    "required": ["AAAA"]
-                },
-                {
-                    "required": ["CNAME"]
-                },
-                {
-                    "required": ["NS"]
-                },
-                {
-                    "required": ["TXT"]
-                }
+                { "required": ["A"] },
+                { "required": ["AAAA"] },
+                { "required": ["CNAME"] },
+                { "required": ["MX"] },
+                { "required": ["NS"] },
+                { "required": ["TXT"] }
             ]
         },
         "proxied": {

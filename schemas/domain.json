@@ -58,18 +58,10 @@
                 }
             },
             "anyOf": [
-                {
-                    "required": ["A"]
-                },
-                {
-                    "required": ["AAAA"]
-                },
-                {
-                    "required": ["CNAME"]
-                },
-                {
-                    "required": ["TXT"]
-                }
+                { "required": ["A"] },
+                { "required": ["AAAA"] },
+                { "required": ["CNAME"] },
+                { "required": ["TXT"] }
             ]
         },
         "proxied": {

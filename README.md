@@ -1,4 +1,7 @@
-<p align="center"><img src="https://raw.githubusercontent.com/free-domains/register/main/media/cover.png"></p>
+<p align="center">
+  <img src="https://media.freesubdomains.org/cover.png">
+</p>
+
 <h1 align="center">Free Domains</h1>
 
 <p align="center">

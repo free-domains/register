@@ -1,0 +1,15 @@
+
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "william"
+
+    "owner": {
+        "email": "87287585+WilliamDavidHarrison@users.noreply.github.com"
+    },
+
+    "records": {
+        "cname": "wdhdns.com"
+    }
+}

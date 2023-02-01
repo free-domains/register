@@ -72,7 +72,10 @@
         "A": ["1.1.1.1", "1.0.0.1"],
         "AAAA": ["::1", "::2"],
         "CNAME": "example.com.",
-        "TXT": ["example_verification=1234567890"]
+        "TXT": [
+            "name": "@",
+            "value": "example_verification=1234567890"
+        ]
     },
 
     "proxied": false

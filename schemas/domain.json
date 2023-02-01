@@ -45,7 +45,7 @@
                 },
                 "CNAME": {
                     "type": "string",
-                    "minLength": 1,
+                    "minLength": 3,
                     "pattern": "^[a-z0-9_./-]*\\.$"
                 },
                 "TXT": {

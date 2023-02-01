@@ -10,7 +10,7 @@ var proxy = {
 /**
  * Note: glob() is only an internal undocumented helper function (maybe risky).
  *
- * @param {String} filesPath
+ * @param { String } filesPath
  * @returns {{
  *  name: string,
  *  data: {
@@ -97,6 +97,10 @@ for (var idx in domains) {
         for (var txt in domainData.records.TXT) {
             if(domainData.records.TXT[txt].name === "@") {
                 commit[domainData.domain].push(TXT(domainData.subdomain, domainData.records.TXT[txt].value));
+            } else if (domainData.subdomain === "@") {
+                commit[domainData.domain].push(
+                    TXT(domainData.records.TXT[txt].name, domainData.records.TXT[txt].value)
+                );
             } else {
                 commit[domainData.domain].push(
                     TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value)

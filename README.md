@@ -16,11 +16,6 @@
 | [`is-a-backend.dev`](https://is-a-backend.dev) |
 | [`is-a-frontend.dev`](https://is-a-frontend.dev) |
 
-#### Unsupported Services
-
-- Netlify
-- Vercel
-
 ### Settings
 
 > All domains use the same settings.

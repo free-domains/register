@@ -20,9 +20,20 @@
         ],
 
         "MX": [
-            "route1.mx.cloudflare.net.",
-            "route2.mx.cloudflare.net.",
-            "route3.mx.cloudflare.net."
+            {
+                "priority": 37,
+                "value": "route1.mx.cloudflare.net."
+            },
+
+            {
+                "priority": 87,
+                "value": "route2.mx.cloudflare.net."
+            },
+
+            {
+                "priority": 52,
+                "value": "route3.mx.cloudflare.net."
+            }
         ],
 
         "TXT": ["v=spf1 include:_spf.mx.cloudflare.net ~all"]

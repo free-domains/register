@@ -97,12 +97,11 @@ for (var idx in domains) {
         for (var txt in domainData.records.TXT) {
             if(domainData.records.TXT[txt].name === "@") {
                 commit[domainData.domain].push(TXT(domainData.subdomain, domainData.records.TXT[txt].value));
-                return;
+            } else {
+                commit[domainData.domain].push(
+                    TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value)
+                );
             }
-
-            commit[domainData.domain].push(
-                TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value)
-            );
         }
     }
 }

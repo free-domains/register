@@ -13,7 +13,7 @@
         },
         "subdomain": {
             "type": "string",
-            "pattern": "^([a-z0-9_*.-]{1,}|@)$"
+            "pattern": "^([a-z0-9_*.-]{1,63}|@)$"
         },
         "owner": {
             "type": "object",

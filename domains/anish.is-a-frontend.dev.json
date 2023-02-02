@@ -1,0 +1,23 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-frontend.dev",
+    "subdomain": "anish",
+
+    "owner": {
+        "email": "anishn0509@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "anishnarayan1.github.io.",
+
+        "TXT": [
+            {
+                "name": "_github-pages-challenge-AnishNarayan1",
+                "value": "48401d78e76c51bfa3b976e72c2b3b"
+            }
+        ]
+    },
+
+    "proxied": false
+}

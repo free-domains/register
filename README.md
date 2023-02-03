@@ -48,7 +48,39 @@
 [grpc]:https://support.cloudflare.com/hc/en-us/articles/360050483011
 [pseudo-ipv4]:https://support.cloudflare.com/hc/en-us/articles/229666767
 
-## Register a Domain
+# Register a Domain
+
+## Command Line Registration
+
+To register a subdomain, you can use our [CLI](https://cli.freesubdomains.org)
+
+> The CLI has 2 prefixes, `domains` and `free-domains`.
+
+1. Install the CLI
+
+You can install the CLI by running the following command:
+
+```bash
+npm install @free-domains/cli -g
+```
+
+2. Login to the CLI
+
+Run the following command to login to the CLI and follow the steps.
+
+```bash
+domains login
+```
+
+3. Register a domain
+
+Run the following command and follow the steps to register a subdomain.
+
+```bash
+domains register
+```
+
+## Manual Registration
 
 1. **Star** and **[Fork](https://github.com/free-domains/register/fork)** this repository
 2. Add a new file called `example.domain.com.json` in the `/domains` folder to register the `example` subdomain on the `domain.com`.

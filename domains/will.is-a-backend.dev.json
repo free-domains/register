@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "will",
+
+    "owner": {
+        "email": "william@williamdavidharrison.com.au"
+    },
+
+    "records": {
+        "CNAME": "wdhdns.com."
+    },
+
+    "proxied": false
+}

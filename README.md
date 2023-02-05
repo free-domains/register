@@ -12,6 +12,86 @@
 
 <p align="center">Free subdomains for personal sites, open-source projects, and more.</p>
 
+# Register
+
+> Domains used for illegal purposes or being abused will be removed and permanently banned without notice.
+
+<details>
+  <summary>CLI</summary>
+  <br>
+
+  > The CLI has 2 prefixes, `domains` and `free-domains`.
+
+  1. Install the CLI
+
+  You can install the CLI by running the following command:
+
+  ```bash
+  npm install @free-domains/cli -g
+  ```
+
+  2. Login to the CLI
+
+  Run the following command to login to the CLI and follow the steps.
+
+  ```bash
+  domains login
+  ```
+
+  3. Register a domain
+
+  Run the following command and follow the steps to register a subdomain.
+
+  ```bash
+  domains register
+  ```
+
+</details>
+
+<details>
+  <summary>Manual</summary>
+  <br>
+
+  1. **Star** and **[Fork](https://github.com/free-domains/register/fork)** this repository
+  2. Add a new file called `example.domain.com.json` in the `/domains` folder to register the `example` subdomain on the `domain.com`.
+    - An list of available domains can be found [here](#domains).
+  3. Edit it to meet your needs.
+    - The file listed below is just an **example**, provide a **valid** JSON file with your needs.
+    - Make sure to remove any records that aren't needed.
+
+  ```json
+  {
+      "$schema": "../schemas/domain.json",
+
+      "domain": "is-a-frontend.dev",
+      "subdomain": "example",
+
+      "owner": {
+          "email": "hello@example.com"
+      },
+
+      "records": {
+          "A": ["1.1.1.1", "1.0.0.1"],
+          "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
+          "CNAME": "example.com.",
+          "TXT": [
+              "name": "@",
+              "value": "example_verification=1234567890"
+          ]
+      },
+
+      "proxied": false
+  }
+  ```
+
+  4. Your pull request will be reviewed and merged.
+    - **Do not** ignore the pull request checklist, this is _required_.
+    - Make sure to keep an eye on your pull request in case we need you to make any changes!
+  5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(in most cases it takes up to 5 minutes)_
+  6. Enjoy your new domain!
+
+</details>
+
 ## Domains
 
 | Domains |
@@ -36,7 +116,7 @@
 | Browser Integrity Check*                            | ✅                    |
 | [Caching Level][caching-levels], Browser Cache TTL* | Standard, 4 hours     |
 
-###### \*Only available when your domain has `proxied` mode set to `true`.
+\*Only available when your domain has `proxied` mode set to `true`.
 
 [dnssec]:https://developers.cloudflare.com/dns/additional-options/dnssec
 [ssl-full]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full/
@@ -47,83 +127,3 @@
 [0rtt]:https://developers.cloudflare.com/fundamentals/network/0-rtt-connection-resumption/
 [grpc]:https://support.cloudflare.com/hc/en-us/articles/360050483011
 [pseudo-ipv4]:https://support.cloudflare.com/hc/en-us/articles/229666767
-
-# Register a Domain
-
-## Command Line Registration
-
-To register a subdomain, you can use our [CLI](https://cli.freesubdomains.org)
-
-> The CLI has 2 prefixes, `domains` and `free-domains`.
-
-1. Install the CLI
-
-You can install the CLI by running the following command:
-
-```bash
-npm install @free-domains/cli -g
-```
-
-2. Login to the CLI
-
-Run the following command to login to the CLI and follow the steps.
-
-```bash
-domains login
-```
-
-3. Register a domain
-
-Run the following command and follow the steps to register a subdomain.
-
-```bash
-domains register
-```
-
-## Manual Registration
-
-1. **Star** and **[Fork](https://github.com/free-domains/register/fork)** this repository
-2. Add a new file called `example.domain.com.json` in the `/domains` folder to register the `example` subdomain on the `domain.com`.
-  - An list of available domains can be found [here](#domains).
-3. Edit it to meet your needs.
-  - The file listed below is just an **example**, provide a **valid** JSON file with your needs.
-  - Make sure to remove any records that aren't needed.
-
-```json
-{
-    "$schema": "../schemas/domain.json",
-
-    "domain": "is-a-frontend.dev",
-    "subdomain": "example",
-
-    "owner": {
-        "email": "hello@example.com"
-    },
-
-    "records": {
-        "A": ["1.1.1.1", "1.0.0.1"],
-        "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
-        "CNAME": "example.com.",
-        "TXT": [
-            "name": "@",
-            "value": "example_verification=1234567890"
-        ]
-    },
-
-    "proxied": false
-}
-```
-
-4. Your pull request will be reviewed and merged.
-  - **Do not** ignore the pull request checklist, this is _required_.
-  - Make sure to keep an eye on your pull request in case we need you to make any changes!
-5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(in most cases it takes up to 5 minutes)_
-6. Enjoy your new domain!
-
-> Domains used for illegal purposes or being abused will be removed and permanently banned without notice.
-
-> NSFW content is not allowed.
-
-### License
-
-This project is under a [MIT License](https://github.com/free-domains/register/blob/main/LICENSE).

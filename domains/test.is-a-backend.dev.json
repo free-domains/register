@@ -1,0 +1,21 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "test",
+
+    "owner": {
+        "email": "william@williamdavidharrison.com.au"
+    },
+
+    "records": {
+        "TXT": [
+            {
+                "name": "@",
+                "value": "test"
+            }
+        ]
+    },
+
+    "proxied": false
+}

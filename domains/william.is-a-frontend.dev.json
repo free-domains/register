@@ -5,11 +5,11 @@
     "subdomain": "william",
 
     "owner": {
-        "email": "william@freesubdomains.org"
+        "email": "william@williamdavidharrison.com.au"
     },
 
     "records": {
-        "CNAME": "wdhdns.com."
+        "A": ["1.1.1.1","1.0.0.1"]
     },
 
     "proxied": false

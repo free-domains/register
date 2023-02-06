@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "simpleserver",
+
+    "owner": {
+        "email": "enriquemondejar15@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "."
+    },
+
+    "proxied": false
+}

@@ -47,6 +47,8 @@ var commit = {};
 for (var idx in domains) {
     var domainData = domains[idx].data;
 
+    console.log(domainData.records);
+
     if (!commit[domainData.domain]) commit[domainData.domain] = [];
 
     if (domainData.records.A) {

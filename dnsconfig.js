@@ -17,7 +17,7 @@ var proxy = {
  *    domain: string,
  *    subdomain: string,
  *    owner?: { email?: string },
- *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], NS?: string[], TXT?: object[] },
+ *    records: { A?: object[], AAAA?: object[], CNAME?: object, MX?: object[], NS?: string[], TXT?: object[] },
  *    proxied: boolean
  *  }}[]}
  */
@@ -46,15 +46,13 @@ var commit = {};
 
 for (var idx in domains) {
     var domainData = domains[idx].data;
-    var proxyState = proxy.off; // Disabled by default
 
     if (!commit[domainData.domain]) commit[domainData.domain] = [];
-    if (domainData.proxied === true) proxyState = proxy.on;
 
     if (domainData.records.A) {
         for (var a in domainData.records.A) {
             commit[domainData.domain].push(
-                A(domainData.subdomain, IP(domainData.records.A[a]), proxyState)
+                A(domainData.subdomain, IP(domainData.records.A[a].value), domainData.records.A[a].proxied)
             );
         }
     }
@@ -64,8 +62,8 @@ for (var idx in domains) {
             commit[domainData.domain].push(
                 AAAA(
                     domainData.subdomain,
-                    domainData.records.AAAA[aaaa],
-                    proxyState
+                    domainData.records.AAAA[aaaa].value,
+                    domainData.records.AAAA[aaaa].proxied
                 )
             );
         }
@@ -73,7 +71,7 @@ for (var idx in domains) {
 
     if (domainData.records.CNAME) {
         commit[domainData.domain].push(
-            CNAME(domainData.subdomain, domainData.records.CNAME, proxyState)
+            CNAME(domainData.subdomain, domainData.records.CNAME.value, domainData.records.CNAME.proxied)
         );
     }
 

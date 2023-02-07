@@ -9,8 +9,9 @@
     },
 
     "records": {
-        "CNAME": "wdhdns.com."
-    },
-
-    "proxied": false
+        "CNAME": {
+            "value": "wdhdns.com.",
+            "proxied": false
+        }
+    }
 }

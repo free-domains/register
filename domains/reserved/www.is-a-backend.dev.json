@@ -5,8 +5,9 @@
     "subdomain": "www",
 
     "records": {
-        "CNAME": "is-a-backend.dev."
-    },
-
-    "proxied": false
+        "CNAME": {
+            "value": "is-a-backend.dev.",
+            "proxied": false
+        }
+    }
 }

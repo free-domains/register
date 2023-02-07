@@ -9,8 +9,9 @@
     },
 
     "records": {
-        "CNAME": "addison.is-a.dev."
-    },
-
-    "proxied": false
+        "CNAME": {
+            "value": "addison.is-a.dev.",
+            "proxied": false
+        }
+    }
 }

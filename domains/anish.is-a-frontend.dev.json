@@ -9,7 +9,10 @@
     },
 
     "records": {
-        "CNAME": "anishnarayan1.github.io.",
+        "CNAME": {
+            "value": "anishnarayan1.github.io.",
+            "proxied": false
+        },
 
         "TXT": [
             {
@@ -17,7 +20,5 @@
                 "value": "48401d78e76c51bfa3b976e72c2b3b"
             }
         ]
-    },
-
-    "proxied": false
+    }
 }

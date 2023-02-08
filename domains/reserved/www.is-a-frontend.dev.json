@@ -5,7 +5,7 @@
     "subdomain": "www",
 
     "records": {
-        "CNAME": "is-a-frontend.dev."
+        "CNAME": "is-a-frontend.dev"
     },
 
     "proxied": false

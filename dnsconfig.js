@@ -72,6 +72,7 @@ for (var idx in domains) {
     }
 
     if (domainData.records.CNAME) {
+        console.log(domainData.records.CNAME);
         commit[domainData.domain].push(
             CNAME(domainData.subdomain, domainData.records.CNAME.value + ".", domainData.records.CNAME.proxied)
         );

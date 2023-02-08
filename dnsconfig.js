@@ -80,7 +80,7 @@ for (var idx in domains) {
     if (domainData.records.MX) {
         for (var mx in domainData.records.MX) {
             commit[domainData.domain].push(
-                MX(domainData.subdomain, domainData.records.MX[mx].priority, domainData.records.MX[mx].value = ".")
+                MX(domainData.subdomain, domainData.records.MX[mx].priority, domainData.records.MX[mx].value + ".")
             );
         }
     }

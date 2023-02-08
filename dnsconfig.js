@@ -51,8 +51,8 @@ for (var idx in domains) {
 
     if (domainData.records.A) {
         for (var a in domainData.records.A) {
+            console.log(domainData.records.A[a]);
             commit[domainData.domain].push(
-                console.log(domainData.records.A[a]);
                 A(domainData.subdomain, IP(domainData.records.A[a].value), domainData.records.A[a].proxied)
             );
         }

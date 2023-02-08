@@ -22,17 +22,17 @@
         "MX": [
             {
                 "priority": 37,
-                "value": "route1.mx.cloudflare.net."
+                "value": "route1.mx.cloudflare.net"
             },
 
             {
                 "priority": 87,
-                "value": "route2.mx.cloudflare.net."
+                "value": "route2.mx.cloudflare.net"
             },
 
             {
                 "priority": 52,
-                "value": "route3.mx.cloudflare.net."
+                "value": "route3.mx.cloudflare.net"
             }
         ],
 

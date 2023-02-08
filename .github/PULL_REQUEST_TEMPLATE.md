@@ -3,7 +3,6 @@
 ## Requirements
 - [ ] You have completed your website.
 - [ ] The website is reachable.
-- [ ] You have put a full stop (`.`) at the end of the `CNAME` record. <!--  This is not required if you are not using a CNAME record. -->
 - [ ] The `CNAME` record doesn't contain `https://` or `/`.  <!-- This is not required if you are not using a CNAME record. -->
 - [ ] There is sufficient information at the `owner` field.
 

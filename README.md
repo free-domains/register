@@ -75,8 +75,10 @@
           "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
           "CNAME": "example.com",
           "TXT": [
-              "name": "@",
-              "value": "example_verification=1234567890"
+              {
+                  "name": "@",
+                  "value": "example_verification=1234567890"
+              }
           ]
       },
 

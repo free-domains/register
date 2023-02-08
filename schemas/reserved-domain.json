@@ -44,8 +44,6 @@
                     "type": "array",
                     "items": {
                         "type": "object",
-                        "minLength": 3,
-                        "pattern": "^[a-z0-9._-]{3,}$",
                         "minProperties": 2,
                         "maxProperties": 2
                     }

@@ -20,7 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with: { fetch-depth: 0 }
-
       - uses: gacts/gitleaks@v1
 
   check:
@@ -28,7 +27,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - uses: gacts/install-dnscontrol@v1
-
       - run: dnscontrol check

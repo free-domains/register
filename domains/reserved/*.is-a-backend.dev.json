@@ -5,7 +5,10 @@
     "subdomain": "*",
 
     "records": {
-        "CNAME": "wdhdns.com."
+        "CNAME": {
+            "value": "wdhdns.com",
+            "proxied": false
+        }
     },
 
     "proxied": false

@@ -5,7 +5,10 @@
     "subdomain": "www",
 
     "records": {
-        "CNAME": "is-a-backend.dev."
+        "CNAME": {
+            "value": "is-a-backend.dev",
+            "proxied": false
+        }
     },
 
     "proxied": false

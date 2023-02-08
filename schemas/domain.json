@@ -44,9 +44,9 @@
                     }
                 },
                 "CNAME": {
-                    "type": "string",
-                    "minLength": 3,
-                    "pattern": "^[a-z0-9_./-]*\\.$"
+                    "type": "object",
+                    "minProperties": 2,
+                    "maxProperties": 2
                 },
                 "TXT": {
                     "type": "array",

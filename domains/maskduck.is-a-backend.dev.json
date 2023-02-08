@@ -9,7 +9,10 @@
     },
 
     "records": {
-        "CNAME": "maskduck.pages.dev."
+        "CNAME": {
+            "value": "maskduck.pages.dev",
+            "proxied": false
+        }
     },
 
     "proxied": false

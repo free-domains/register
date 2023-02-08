@@ -52,7 +52,11 @@ for (var idx in domains) {
 
     if (domainData.records.A) {
         for (var a in domainData.records.A) {
-            if(domainData.records.A[a].proxied === true) proxyState = proxy.on;
+            if(domainData.records.A[a].proxied === true) {
+                proxyState = proxy.on;
+            } else {
+                proxyState = proxy.off;
+            }
 
             commit[domainData.domain].push(
                 A(domainData.subdomain, IP(domainData.records.A[a].value), proxyState)
@@ -62,7 +66,11 @@ for (var idx in domains) {
 
     if (domainData.records.AAAA) {
         for (var aaaa in domainData.records.AAAA) {
-            if(domainData.records.AAAA[aaaa].proxied === true) proxyState = proxy.on;
+            if(domainData.records.AAAA[aaaa].proxied === true) {
+                proxyState = proxy.on;
+            } else {
+                proxyState = proxy.off;
+            }
 
             commit[domainData.domain].push(
                 AAAA(
@@ -75,7 +83,11 @@ for (var idx in domains) {
     }
 
     if (domainData.records.CNAME) {
-        if(domainData.records.CNAME.proxied === true) proxyState = proxy.on;
+        if(domainData.records.CNAME.proxied === true) {
+            proxyState = proxy.on;
+        } else {
+            proxyState = proxy.off;
+        }
 
         commit[domainData.domain].push(
             CNAME(domainData.subdomain, domainData.records.CNAME.value, proxyState)

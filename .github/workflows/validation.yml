@@ -1,31 +1,31 @@
 name: Validation
 
 on:
-  workflow_dispatch: {}
-  push:
-    branches: [main]
-    tags-ignore: ["**"]
-    paths-ignore: ["**.md"]
-  pull_request:
-    paths-ignore: ["**.md"]
+    workflow_dispatch: {}
+    push:
+        branches: [main]
+        tags-ignore: ["**"]
+        paths-ignore: ["**.md"]
+    pull_request:
+        paths-ignore: ["**.md"]
 
 concurrency:
-  group: ${{ github.ref }}-tests
-  cancel-in-progress: true
+    group: ${{ github.ref }}-tests
+    cancel-in-progress: true
 
 jobs:
-  gitleaks:
-    name: GitLeaks
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with: { fetch-depth: 0 }
-      - uses: gacts/gitleaks@v1
+    gitleaks:
+        name: GitLeaks
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with: { fetch-depth: 0 }
+            - uses: gacts/gitleaks@v1
 
-  check:
-    name: DNSControl Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: gacts/install-dnscontrol@v1
-      - run: dnscontrol check
+    check:
+        name: DNSControl Check
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: gacts/install-dnscontrol@v1
+            - run: dnscontrol check

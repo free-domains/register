@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "astropost",
+
+    "owner": {
+        "email": "enzo.coquelle06@gmail.com"
+    },
+
+    "records": {
+        "A": ["76.76.21.61"]
+    },
+
+    "proxied": true
+}

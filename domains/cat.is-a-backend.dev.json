@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "cat",
+
+    "owner": {
+        "email": "domains@frcat.xyz"
+    },
+
+    "records": {
+        "CNAME": "2c8701ac-faec-48e3-9ab2-b9ebe0db382c.id.repl.co"
+    },
+
+    "proxied": true
+}

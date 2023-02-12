@@ -14,18 +14,23 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-    gitleaks:
-        name: GitLeaks
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-              with: { fetch-depth: 0 }
-            - uses: gacts/gitleaks@v1
-
-    check:
-        name: DNSControl Check
+    records:
+        name: Records
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - uses: gacts/install-dnscontrol@v1
             - run: dnscontrol check
+
+    schemas:
+        name: Schemas
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: walbo/validate-json@v1.1.0
+        with:
+            schema-version: draft-07
+            print-valid-files: true
+            fail-on-missing-schema: true
+            strict: false
+            files: ./domains/**/*.json

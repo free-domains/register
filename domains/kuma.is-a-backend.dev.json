@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "kuma",
+
+    "owner": {
+        "email": "fys0002@dsc.vic.edu.au"
+    },
+
+    "records": {
+        "CNAME": "1af9fbf5-d777-4dca-945f-7fa34b2cf4ae.cfargotunnel.com"
+    },
+
+    "proxied": true
+}

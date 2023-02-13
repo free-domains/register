@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "parsa",
+
+    "owner": {
+        "email": "aparat.mmr.game@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "www.parsa-alidoust.ir"
+    },
+
+    "proxied": true
+}

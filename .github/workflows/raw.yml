@@ -18,7 +18,7 @@ jobs:
               with:
                   node-version: 16
 
-            - name: Execute Script
+            - name: Run Script
               run: |
                   node scripts/raw.js
 

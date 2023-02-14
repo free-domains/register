@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const directoryPath = path.join(__dirname, "main/domains");
+const directoryPath = path.join(__dirname, "../domains");
 
 let combinedArray = [];
 

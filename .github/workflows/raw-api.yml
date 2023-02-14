@@ -20,14 +20,14 @@ jobs:
 
             - name: Run Script
               run: |
-                  node scripts/raw.js
+                  node scripts/raw-api.js
 
             - name: Push Data
               uses: cpina/github-action-push-to-another-repository@main
               with:
-                  source-directory: "raw"
+                  source-directory: "raw-api"
                   destination-github-username: free-domains
-                  destination-repository-name: raw
+                  destination-repository-name: raw-api
                   user-email: actions@github.com
                   user-name: github-actions
                   commit-message: "Update Data via free-domains/register"

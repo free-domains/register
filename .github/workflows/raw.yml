@@ -31,3 +31,5 @@ jobs:
                   user-email: actions@github.com
                   user-name: github-actions
                   commit-message: "Update Data via free-domains/register"
+              env:
+                  API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}

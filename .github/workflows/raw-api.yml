@@ -28,8 +28,8 @@ jobs:
                   source-directory: "raw-api"
                   destination-github-username: free-domains
                   destination-repository-name: raw-api
-                  user-email: actions@github.com
-                  user-name: github-actions
+                  user-email: bot@freesubdomains.org
+                  user-name: free-domains-bot
                   commit-message: "Update Data via free-domains/register"
               env:
                   API_TOKEN_GITHUB: ${{ secrets.PAT_TOKEN }}

@@ -1,0 +1,32 @@
+name: Update Raw API
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    run-script:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+
+            - name: Execute Script
+              run: |
+                  node scripts/raw.js
+
+            - name: Push Data
+              uses: cpina/github-action-push-to-another-repository@main
+              with:
+                  source-directory: "raw"
+                  destination-github-username: free-domains
+                  destination-repository-name: raw
+                  user-email: actions@github.com
+                  user-name: github-actions
+                  commit-message: "Update Data via free-domains/register"

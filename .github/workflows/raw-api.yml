@@ -3,6 +3,8 @@ name: Raw API
 on:
     push:
         branches: [main]
+        paths:
+            - "domains/*.json"
 
 jobs:
     update:

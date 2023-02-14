@@ -1,11 +1,12 @@
-name: Update Raw API
+name: Raw API
 
 on:
     push:
         branches: [main]
 
 jobs:
-    run-script:
+    update:
+        name: Update
         runs-on: ubuntu-latest
 
         steps:

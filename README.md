@@ -20,7 +20,7 @@
   <summary>CLI</summary>
   <br>
 
-  > The CLI has 2 prefixes, `domains` and `free-domains`.
+  > The CLI has 3 prefixes, `domains`, `fd` and `free-domains`.
 
   1. Install the CLI
 

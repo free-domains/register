@@ -19,39 +19,7 @@
             "2606:50c0:8003::153"
         ],
 
-        "MX": [
-            {
-                "priority": 37,
-                "value": "route1.mx.cloudflare.net"
-            },
-
-            {
-                "priority": 87,
-                "value": "route2.mx.cloudflare.net"
-            },
-
-            {
-                "priority": 52,
-                "value": "route3.mx.cloudflare.net"
-            }
-        ],
-
         "TXT": [
-            {
-                "name": "@",
-                "value": "v=spf1 include:_spf.mx.cloudflare.net ~all"
-            },
-
-            {
-                "name": "_github-challenge-free-domains-org",
-                "value": "b5822037c3"
-            },
-
-            {
-                "name": "_github-challenge-is-a-frontend-dev-org",
-                "value": "8d806a56bc"
-            },
-
             {
                 "name": "_github-pages-challenge-free-domains",
                 "value": "48ff7988789c1fb49dd4be28c0fe70"

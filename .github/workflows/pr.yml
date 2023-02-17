@@ -1,10 +1,11 @@
-name: Labeler
+name: PR
 
 on:
     - pull_request_target
 
 jobs:
-    triage:
+    label:
+        name: Label
         permissions:
             contents: read
             pull-requests: write

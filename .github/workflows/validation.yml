@@ -4,18 +4,16 @@ on:
     workflow_dispatch: {}
     push:
         branches: [main]
-        tags-ignore: ["**"]
-        paths-ignore: ["**.md"]
     pull_request:
-        paths-ignore: ["**.md"]
+        tags-ignore: ["**"]
 
 concurrency:
     group: ${{ github.ref }}-tests
     cancel-in-progress: true
 
 jobs:
-    records:
-        name: Records
+    dns:
+        name: DNS
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3

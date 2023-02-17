@@ -1,0 +1,25 @@
+name: Issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+
+jobs:
+  comment:
+    name: Comment
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          body: Thank you for opening an issue, we will respond as soon as possible.
+          issue-number: ${{ github.event.issue.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}

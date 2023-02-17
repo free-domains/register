@@ -16,8 +16,10 @@
 
 > Domains used for illegal purposes or being abused will be removed and permanently banned without notice.
 
+Please select a method below to show instructions on how to register a domain.
+
 <details>
-  <summary>CLI</summary>
+  <summary>CLI (recommended)</summary>
   <br>
 
   > The CLI has 3 prefixes: `domains`, `fd` and `free-domains`.
@@ -121,11 +123,5 @@
 \*Only available when your domain has `proxied` mode set to `true`.
 
 [dnssec]:https://developers.cloudflare.com/dns/additional-options/dnssec
-[ssl-full]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full/
+[ssl-full]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full
 [caching-levels]:https://developers.cloudflare.com/cache/how-to/set-caching-levels
-[crawler-hints]:https://blog.cloudflare.com/crawler-hints-how-cloudflare-is-reducing-the-environmental-impact-of-web-searches/
-[http2]:https://www.cloudflare.com/website-optimization/http2/what-is-http2/
-[http2-to-origin]:https://developers.cloudflare.com/cache/how-to/enable-http2-to-origin
-[0rtt]:https://developers.cloudflare.com/fundamentals/network/0-rtt-connection-resumption/
-[grpc]:https://support.cloudflare.com/hc/en-us/articles/360050483011
-[pseudo-ipv4]:https://support.cloudflare.com/hc/en-us/articles/229666767

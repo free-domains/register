@@ -9,8 +9,8 @@
     },
 
     "records": {
-        "CNAME": "dkwygtig.github.io"
+        "CNAME": "dkwygtig.github.io/personal"
     },
 
-    "proxied": false
+    "proxied": true
 }

@@ -1,7 +1,7 @@
 {
     "$schema": "../schemas/domain.json",
 
-    "domain": "fd",
+    "domain": "is-a-frontend.dev",
     "subdomain": "mgnewco",
 
     "owner": {

@@ -1,0 +1,37 @@
+name: Raw API
+
+on:
+    push:
+        branches: [main]
+        paths:
+            - "domains/*.json"
+
+jobs:
+    update:
+        name: Update
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+
+            - name: Run Script
+              run: |
+                  node scripts/raw-api.js
+
+            - name: Push Data
+              uses: cpina/github-action-push-to-another-repository@main
+              with:
+                  source-directory: "raw-api"
+                  destination-github-username: free-domains
+                  destination-repository-name: raw-api
+                  user-email: bot@freesubdomains.org
+                  user-name: free-domains-bot
+                  commit-message: "Update Data via free-domains/register"
+              env:
+                  API_TOKEN_GITHUB: ${{ secrets.PAT_TOKEN }}

@@ -1,4 +1,4 @@
-name: Deploy Records
+name: Deploy
 
 on:
     workflow_dispatch: {}

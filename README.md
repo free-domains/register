@@ -11,6 +11,7 @@
 </p>
 
 <p align="center">Free subdomains for personal sites, open-source projects, and more.</p>
+<p align="center">If you want to find projects similar to this one, take a look on <a href="https://free-for.life/#/?id=domains">Free For Life</a>.</p>
 
 # Register
 

@@ -4,7 +4,8 @@ on:
     push:
         branches: [main]
         paths:
-            - "domains/*.json"
+            - "/domains/*.json"
+            - "/scripts/raw-api.js"
 
 jobs:
     update:

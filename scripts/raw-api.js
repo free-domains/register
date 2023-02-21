@@ -31,6 +31,7 @@ fs.readdir(directoryPath, function (err, files) {
                 delete item.$schema;
 
                 item.owner.email = item.owner.email.replace(/@/, " (at) ");
+                item.owner.email = item.owner.email.replace(/./, " (dot) ");
             }
 
             combinedArray = combinedArray.concat(dataArray);

@@ -30,8 +30,7 @@ fs.readdir(directoryPath, function (err, files) {
             for(const item of dataArray) {
                 delete item.$schema;
 
-                item.owner.email = item.owner.email.replace(/@/, " (at) ");
-                item.owner.email = item.owner.email.replace(/./, " (dot) ");
+                item.owner.email = item.owner.email.replace(/@/, " (at) ");9
             }
 
             combinedArray = combinedArray.concat(dataArray);

@@ -6,12 +6,12 @@ on:
         branches: [main]
         paths:
             - "/domains/**/*.json"
-            - "/schemas/"
+            - "/schemas"
             - "/dnsconfig.js"
     pull_request:
         paths:
             - "/domains/**/*.json"
-            - "/schemas/"
+            - "/schemas"
             - "/dnsconfig.js"
 
 concurrency:

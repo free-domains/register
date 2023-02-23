@@ -5,14 +5,14 @@ on:
     push:
         branches: [main]
         paths:
-            - "domains/**/*.json"
-            - "schemas/**/*"
-            - "dnsconfig.js"
+            - "/domains/**/*.json"
+            - "/schemas"
+            - "/dnsconfig.js"
     pull_request:
         paths:
-            - "domains/**/*.json"
-            - "schemas/**/*"
-            - "dnsconfig.js"
+            - "/domains/**/*.json"
+            - "/schemas"
+            - "/dnsconfig.js"
 
 concurrency:
     group: ${{ github.ref }}-tests

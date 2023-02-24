@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "dr-dee",
+
+    "owner": {
+        "email": "gohildeepak2003@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "oom.onrender.com"
+    },
+
+    "proxied": true
+}

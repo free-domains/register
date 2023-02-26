@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-frontend.dev",
+    "subdomain": "doggo",
+
+    "owner": {
+        "email": "wolfo189@protonmail.com"
+    },
+
+    "records": {
+        "NS": ["ns1.zilore.net", "ns2.zilore.net"]
+    },
+
+    "proxied": false
+}

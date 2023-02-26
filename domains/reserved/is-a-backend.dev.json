@@ -33,12 +33,12 @@
             {
                 "name": "_github-pages-challenge-free-domains",
                 "value": "2b1d1bccb97af4e747c6f48dd903ff"
-            }
+            },
 
             {
                 "name": "@",
                 "value": "v=spf1 -all"
-            },
+            }
         ]
     },
 

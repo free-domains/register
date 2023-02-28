@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "robsd",
+
+    "owner": {
+        "email": "rob@robertd.co.uk"
+    },
+
+    "records": {
+        "CNAME": "robsd.pages.dev"
+    },
+
+    "proxied": false
+}

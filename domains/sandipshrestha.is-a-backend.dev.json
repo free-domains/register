@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "sandipshrestha",
+
+    "owner": {
+        "email": "sandip.stha120@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "www.sandipshrestha.dev"
+    },
+
+    "proxied": true
+}

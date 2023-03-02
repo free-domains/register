@@ -9,7 +9,14 @@
     },
 
     "records": {
-        "CNAME": "wdhdns.com"
+        "CNAME": "wdhdns.com",
+
+        "TXT": [
+            {
+                "name": "_github-pages-challenge-WilliamDavidHarrison",
+                "value": "48bebc4d20ca9ae5e712b5c1d0e39b"
+            }
+        ]
     },
 
     "proxied": false

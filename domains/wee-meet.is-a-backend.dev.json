@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "wee-meet",
+
+    "owner": {
+        "email": "Kaushalkumar304@gmail.com"
+    },
+
+    "records": {
+        "A": ["20.239.77.47"]
+    },
+
+    "proxied": false
+}

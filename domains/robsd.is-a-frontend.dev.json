@@ -2,14 +2,14 @@
     "$schema": "../schemas/domain.json",
 
     "domain": "is-a-frontend.dev",
-    "subdomain": "will",
+    "subdomain": "robsd",
 
     "owner": {
-        "email": "william@freesubdomains.org"
+        "email": "rob@robertd.co.uk"
     },
 
     "records": {
-        "CNAME": "wdhdns.com"
+        "CNAME": "robsd.pages.dev"
     },
 
     "proxied": false

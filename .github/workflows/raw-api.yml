@@ -5,7 +5,7 @@ on:
         branches: [main]
         paths:
             - ".github/workflows/raw-api.yml"
-            - "domains/*.json"
+            - "domains/*"
             - "scripts/raw-api.js"
 
 jobs:

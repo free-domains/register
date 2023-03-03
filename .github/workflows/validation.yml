@@ -4,6 +4,10 @@ on:
     workflow_dispatch: {}
     push:
         branches: [main]
+        paths:
+            - "domains/"
+            - "schemas/"
+            - "dnsconfig.js"
     pull_request:
 
 concurrency:
@@ -18,3 +22,15 @@ jobs:
             - uses: actions/checkout@v3
             - uses: gacts/install-dnscontrol@v1
             - run: dnscontrol check
+
+    json:
+        name: JSON
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: JSON Syntax Check
+            uses: limitusus/json-syntax-check@v1
+            with:
+                pattern: "\\.json$"
+            env:
+                base: "domains/"

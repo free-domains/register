@@ -2,7 +2,6 @@ var regNone = NewRegistrar("none");
 var providerCf = DnsProvider(NewDnsProvider("cloudflare"));
 
 var proxy = {
-    // https://stackexchange.github.io/dnscontrol/providers/cloudflare
     off: { cloudflare_proxy: "off" },
     on: { cloudflare_proxy: "on" }
 };

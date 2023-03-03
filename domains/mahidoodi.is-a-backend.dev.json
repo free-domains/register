@@ -12,5 +12,5 @@
         "CNAME": "crimson-lab-e0b9.powerfull.workers.dev"
     },
 
-    "proxied": true
+    "proxied": false
 }

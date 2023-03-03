@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "mahidoodi",
+
+    "owner": {
+        "email": "ahmad.yk94@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "crimson-lab-e0b9.powerfull.workers.dev"
+    },
+
+    "proxied": false
+}

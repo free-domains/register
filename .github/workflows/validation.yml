@@ -4,6 +4,10 @@ on:
     workflow_dispatch: {}
     push:
         branches: [main]
+        paths:
+            - "domains/"
+            - "schemas/"
+            - "dnsconfig.js"
     pull_request:
 
 concurrency:

@@ -33,4 +33,4 @@ jobs:
             with:
                 pattern: "\\.json$"
             env:
-                base: "domains/"
+                BASE: "domains/"

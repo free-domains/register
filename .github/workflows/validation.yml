@@ -29,8 +29,8 @@ jobs:
         steps:
           - uses: actions/checkout@v2
           - name: JSON Syntax Check
-              uses: limitusus/json-syntax-check@v1
-              with:
-                  pattern: "\\.json$"
-              env:
-                  base: "domains/"
+            uses: limitusus/json-syntax-check@v1
+            with:
+                pattern: "\\.json$"
+            env:
+                BASE: "domains/"

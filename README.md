@@ -17,6 +17,8 @@
 
 Please select a method below to show instructions on how to register a domain.
 
+---
+
 <details>
   <summary>CLI (recommended)</summary>
   <br>
@@ -48,6 +50,8 @@ Please select a method below to show instructions on how to register a domain.
   ```
 
 </details>
+
+---
 
 <details>
   <summary>Manual</summary>
@@ -94,6 +98,8 @@ Please select a method below to show instructions on how to register a domain.
   6. Enjoy your new domain!
 
 </details>
+
+---
 
 ## Domains
 

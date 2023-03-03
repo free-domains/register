@@ -6,6 +6,7 @@ on:
         paths:
             - ".github/workflows/raw-api.yml"
             - "domains/*"
+            - "raw-api/"
             - "scripts/raw-api.js"
 
 jobs:

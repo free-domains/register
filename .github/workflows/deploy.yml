@@ -5,7 +5,7 @@ on:
     push:
         branches: [main]
         paths:
-            - "domains/"
+            - "domains/**"
             - ".github/workflows/deploy.yml"
 
 concurrency:

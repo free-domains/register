@@ -5,8 +5,8 @@ on:
     push:
         branches: [main]
         paths:
-            - domains/
-            - .github/workflows/deploy.yml
+            - "domains/"
+            - ".github/workflows/deploy.yml"
 
 concurrency:
     group: ${{ github.ref }}-deploy

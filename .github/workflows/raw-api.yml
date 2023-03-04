@@ -6,7 +6,6 @@ on:
         paths:
             - ".github/workflows/raw-api.yml"
             - "domains/*"
-            - "raw-api/"
             - "scripts/raw-api.js"
 
 jobs:
@@ -23,9 +22,13 @@ jobs:
               with:
                   node-version: 16
 
+            - run: mkdir raw-api
+
+            - run: echo "raw.freesubdomains.org" > ./raw-api/CNAME
+            - run: echo "" > ./raw-api/index.json
+
             - name: Run Script
-              run: |
-                  node scripts/raw-api.js
+              run: node scripts/raw-api.js
 
             - name: Push Data
               uses: cpina/github-action-push-to-another-repository@main

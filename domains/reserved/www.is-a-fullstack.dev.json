@@ -1,11 +1,11 @@
 {
     "$schema": "../../schemas/reserved-domain.json",
 
-    "domain": "is-a-frontend.dev",
+    "domain": "is-a-fullstack.dev",
     "subdomain": "www",
 
     "records": {
-        "CNAME": "is-a-frontend.dev"
+        "CNAME": "is-a-fullstack.dev"
     },
 
     "proxied": false

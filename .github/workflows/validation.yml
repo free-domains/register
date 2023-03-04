@@ -26,7 +26,7 @@ jobs:
               uses: koenrh/dnscontrol-action@v3
               with:
                   args: check
-                  config_file: "dns/config.js"
+                  config_file: "scripts/dns.js"
 
     json:
         name: JSON

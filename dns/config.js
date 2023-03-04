@@ -45,7 +45,7 @@ var commit = {};
 
 for (var idx in domains) {
     var domainData = domains[idx].data;
-    var proxyState = proxy.off; // Disabled by default
+    var proxyState = proxy.off;
 
     if (!commit[domainData.domain]) commit[domainData.domain] = [];
     if (domainData.proxied === true) proxyState = proxy.on;

@@ -9,7 +9,7 @@ fs.readdir(directoryPath, function (err, files) {
     if(err) throw err;
 
     function removeValue(value, index, arr) {
-        if (value === "reserved") {
+        if(value === "reserved") {
             arr.splice(index, 1);
             return true;
         }

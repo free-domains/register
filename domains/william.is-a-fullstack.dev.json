@@ -1,7 +1,7 @@
 {
     "$schema": "../schemas/domain.json",
 
-    "domain": "is-a-backend.dev",
+    "domain": "is-a-fullstack.dev",
     "subdomain": "william",
 
     "owner": {

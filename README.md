@@ -58,7 +58,7 @@ Please select a method below to show instructions on how to register a domain.
   <br>
 
   1. **Star** and **[Fork](https://github.com/free-domains/register/fork)** this repository
-  2. Add a new file called `example.domain.com.json` in the `/domains` folder to register the `example` subdomain on the `domain.com`.
+  2. Add a new file called `example.domain.dev.json` in the `/domains` folder to register the `example` subdomain on the `domain.dev`.
     - An list of available domains can be found [here](#domains).
   3. Edit it to meet your needs.
     - The file listed below is just an **example**, provide a **valid** JSON file with your needs.
@@ -68,7 +68,7 @@ Please select a method below to show instructions on how to register a domain.
   {
       "$schema": "../schemas/domain.json",
 
-      "domain": "is-a-frontend.dev",
+      "domain": "is-a-fullstack.dev",
       "subdomain": "example",
 
       "owner": {
@@ -107,6 +107,7 @@ Please select a method below to show instructions on how to register a domain.
 |:-:|
 | [`is-a-backend.dev`](https://is-a-backend.dev) |
 | [`is-a-frontend.dev`](https://is-a-frontend.dev) |
+| [`is-a-fullstack.dev`](https://is-a-fullstack.dev) |
 
 ### Settings
 

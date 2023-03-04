@@ -5,9 +5,10 @@ on:
     push:
         branches: [main]
         paths:
-            - "domains/"
-            - "schemas/"
-            - "dnsconfig.js"
+            - "dns/**"
+            - "domains/**"
+            - "schemas/**"
+            - ".github/workflows/validation.yml"
     pull_request:
 
 concurrency:
@@ -20,5 +21,21 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: gacts/install-dnscontrol@v1
-            - run: dnscontrol check
+
+            - name: Check
+              uses: koenrh/dnscontrol-action@v3
+              with:
+                  args: check
+                  config_file: "scripts/dns.js"
+
+    json:
+        name: JSON
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: JSON Syntax Check
+            uses: limitusus/json-syntax-check@v1
+            with:
+                pattern: "\\.json$"
+            env:
+                BASE: "domains/"

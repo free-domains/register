@@ -25,6 +25,7 @@ jobs:
             - run: mkdir raw-api
 
             - run: echo "raw.freesubdomains.org" > ./raw-api/CNAME
+
             - run: echo "" > ./raw-api/index.json
 
             - name: Run Script

@@ -22,12 +22,11 @@ jobs:
             - name: Create creds.json
               run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","accountid":"$CF_ID","apitoken":"$CF_TOKEN"}}' > ./creds.json
 
-            - run: ls dns
-
             - name: Push
               uses: koenrh/dnscontrol-action@v3
               env:
                   CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
               with:
                   args: push
-                  config_file: "./dns/config.js"
+                  config_file: 'dns/config.js'
+                  creds_file: 'creds.json'

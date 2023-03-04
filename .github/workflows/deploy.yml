@@ -19,6 +19,9 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Create creds.json
+              run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","apitoken":"$CLOUDFLARE_API_TOKEN"}}' > ./creds.json
+
             - name: Push Data
               uses: koenrh/dnscontrol-action@v3
               env:
@@ -26,4 +29,3 @@ jobs:
               with:
                   args: push
                   config_file: "scripts/dns.js"
-                  creds_file: "dns/creds.json"

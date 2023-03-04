@@ -30,4 +30,4 @@ jobs:
                   CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
               with:
                   args: push
-                  config_file: "/dns/config.js"
+                  config_file: "./dns/config.js"

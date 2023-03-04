@@ -2,13 +2,13 @@ domain:
 - domains/*
 
 dns:
-- "dnsconfig.js"
+- "scripts/dns.js"
 
 readme:
 - "README.md"
 
 schemas:
-- schemas/
+- schemas/**
 
 workflows:
-- .github/workflows/
+- .github/workflows/**

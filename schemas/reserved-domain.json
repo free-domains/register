@@ -9,7 +9,7 @@
         },
         "domain": {
             "type": "string",
-            "enum": ["is-a-backend.dev", "is-a-frontend.dev"]
+            "enum": ["is-a-backend.dev", "is-a-frontend.dev", "is-a-fullstack.dev"]
         },
         "subdomain": {
             "type": "string",

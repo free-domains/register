@@ -5,9 +5,8 @@ on:
     push:
         branches: [main]
         paths:
-            - "domains/"
-            - "schemas/"
-            - "dnsconfig.js"
+            - "dns/**"
+            - "schemas/**"
     pull_request:
 
 concurrency:
@@ -20,8 +19,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: gacts/install-dnscontrol@v1
-            - run: dnscontrol check
+
+            - name: Check
+              uses: koenrh/dnscontrol-action@v3
+              with:
+                  args: check
+                  config_file: "scripts/dns.js"
 
     json:
         name: JSON

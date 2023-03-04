@@ -5,9 +5,9 @@ on:
     push:
         branches: [main]
         paths:
+            - "dns/**"
             - "domains/**"
             - "schemas/**"
-            - "dns/**"
     pull_request:
 
 concurrency:

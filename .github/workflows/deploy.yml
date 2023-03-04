@@ -5,8 +5,8 @@ on:
     push:
         branches: [main]
         paths:
-            - ".github/workflows/deploy.yml"
             - "domains/"
+            - ".github/workflows/deploy.yml"
 
 concurrency:
     group: ${{ github.ref }}-deploy
@@ -19,7 +19,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Push Records
+            - name: Push Data
               uses: koenrh/dnscontrol-action@v3
               env:
                   CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

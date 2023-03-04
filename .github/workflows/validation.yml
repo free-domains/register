@@ -8,6 +8,7 @@ on:
             - "dns/**"
             - "domains/**"
             - "schemas/**"
+            - ".github/workflows/validation.yml"
     pull_request:
 
 concurrency:

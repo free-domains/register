@@ -4,8 +4,8 @@ on:
     push:
         branches: [main]
         paths:
-            - ".github/workflows/raw-api.yml"
             - "domains/*"
+            - ".github/workflows/raw-api.yml"
             - "scripts/raw-api.js"
 
 jobs:

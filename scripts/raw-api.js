@@ -34,7 +34,7 @@ fs.readdir(directoryPath, function (err, files) {
 
                 if(optout.includes(item.owner.email.toLowerCase())) {
                     delete item;
-                    break;
+                    return;
                 }
 
                 item.owner.email = item.owner.email.replace(/@/, " (at) ");

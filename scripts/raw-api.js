@@ -33,7 +33,7 @@ fs.readdir(directoryPath, function (err, files) {
                 delete item.$schema;
 
                 if(optout.includes(item.owner.email.toLowerCase())) {
-                    delete item;
+                    delete dataArray[item.index];
                     return;
                 }
 

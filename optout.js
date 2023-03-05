@@ -3,4 +3,5 @@
 
 module.exports = [
 //  "john@example.com"
+    "maskduck@proton.me"
 ]

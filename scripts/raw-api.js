@@ -30,6 +30,8 @@ fs.readdir(directoryPath, function (err, files) {
             const dataArray = [JSON.parse(data)];
 
             for(const item of dataArray) {
+                if(optout.includes(item.owner.email.toLowerCase())) return delete item;
+
                 delete item.$schema;
 
                 item.owner.email = item.owner.email.replace(/@/, " (at) ");
@@ -38,9 +40,7 @@ fs.readdir(directoryPath, function (err, files) {
             combinedArray = combinedArray.concat(dataArray);
 
             if(combinedArray.length === files.length) {
-                const filteredData = combinedArray.filter(item => !optout.includes(item.owner.email.toLowerCase()));
-
-                fs.writeFile("raw-api/index.json", JSON.stringify(filteredData), (err) => {
+                fs.writeFile("raw-api/index.json", JSON.stringify(combinedArray), (err) => {
                     if(err) throw err;
                 })
             }

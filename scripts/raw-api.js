@@ -30,9 +30,12 @@ fs.readdir(directoryPath, function (err, files) {
             const dataArray = [JSON.parse(data)];
 
             for(const item of dataArray) {
-                if(optout.includes(item.owner.email.toLowerCase())) return delete item;
-
                 delete item.$schema;
+
+                if(optout.includes(item.owner.email.toLowerCase())) {
+                    delete item;
+                    break;
+                }
 
                 item.owner.email = item.owner.email.replace(/@/, " (at) ");
             }

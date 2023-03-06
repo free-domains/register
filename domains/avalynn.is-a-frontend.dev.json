@@ -9,14 +9,7 @@
     },
 
     "records": {
-        "CNAME": "cname.vercel-dns.com",
-
-        "TXT": [
-            {
-                "name": "_vercel",
-                "value": "vc-domain-verify=avalynn.is-a-frontend.dev,33ce62aed049a154e3b5"
-            }
-        ]
+        "CNAME": "cname.vercel-dns.com"
     },
 
     "proxied": false

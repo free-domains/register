@@ -1,0 +1,12 @@
+{
+    "$schema": "../../schemas/reserved-domain.json",
+
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "*",
+
+    "records": {
+        "CNAME": "wdhdns.com"
+    },
+
+    "proxied": false
+}

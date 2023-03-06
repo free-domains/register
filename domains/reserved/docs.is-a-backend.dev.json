@@ -1,0 +1,12 @@
+{
+    "$schema": "../../schemas/reserved-domain.json",
+
+    "domain": "is-a-backend.dev",
+    "subdomain": "docs",
+
+    "records": {
+        "CNAME": "wdhdns.com"
+    },
+
+    "proxied": false
+}

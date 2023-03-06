@@ -6,6 +6,7 @@ on:
         branches: [main]
         paths:
             - "dns/**"
+            - "domains/**"
             - "schemas/**"
     pull_request:
 

@@ -9,5 +9,3 @@ If a subdomain is being abused, it will be immediately taken down and the owner 
 Free Domains may use data you have provided for an improved user experience.
 
 By using our service, you agree to us processing your data.
-
-> To opt out of data processing, you can add your email to the [`optout.js`](https://github.com/free-domains/register/blob/main/optout.js) file.

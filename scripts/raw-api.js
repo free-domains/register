@@ -1,8 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-const optout = require("../optout.js");
-
 const directoryPath = path.join(__dirname, "../domains");
 
 let combinedArray = [];
@@ -31,11 +29,6 @@ fs.readdir(directoryPath, function (err, files) {
 
             for(const item of dataArray) {
                 delete item.$schema;
-
-                if(optout.includes(item.owner.email.toLowerCase())) {
-                    delete dataArray[item.index];
-                    return;
-                }
 
                 item.owner.email = item.owner.email.replace(/@/, " (at) ");
             }

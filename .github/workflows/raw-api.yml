@@ -7,7 +7,6 @@ on:
             - "domains/*"
             - ".github/workflows/raw-api.yml"
             - "scripts/raw-api.js"
-            - "optout.js"
 
 jobs:
     update:

@@ -15,6 +15,8 @@
 
 > Domains used for illegal purposes or being abused will be removed and permanently banned without notice.
 
+> We do not support Netlify or Vercel.
+
 Please select a method below to show instructions on how to register a domain.
 
 ---

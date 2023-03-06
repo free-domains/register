@@ -4,7 +4,9 @@ on:
     workflow_dispatch: {}
     push:
         branches: [main]
-        paths: [domains/**, .github/workflows/deploy-records.yml]
+        paths:
+            - "domains/**"
+            - ".github/workflows/deploy.yml"
 
 concurrency:
     group: ${{ github.ref }}-deploy
@@ -17,12 +19,13 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - uses: gacts/install-dnscontrol@v1
+            - name: Create creds.json
+              run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","apitoken":"$CLOUDFLARE_API_TOKEN"}}' > ./creds.json
 
-            - name: Create credentials file
-              run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","accountid":"$CF_ID","apitoken":"$CF_TOKEN"}}' > ./creds.json
-
-            - run: dnscontrol push
+            - name: Push Data
+              uses: koenrh/dnscontrol-action@v3
               env:
-                  CF_ID: ${{ secrets.CF_ACCOUNT_ID }}
-                  CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+                  CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+              with:
+                  args: push
+                  config_file: "scripts/dns.js"

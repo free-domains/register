@@ -15,6 +15,7 @@ jobs:
               with:
                   repo-token: "${{ secrets.GITHUB_TOKEN }}"
                   sync-labels: true
+
     check-star:
         name: Check Star
         runs-on: ubuntu-latest

@@ -1,14 +1,11 @@
 domain:
 - domains/*
 
-dns:
-- "scripts/dns.js"
+scripts:
+- scripts/**
 
 readme:
 - "README.md"
-
-schemas:
-- schemas/**
 
 workflows:
 - .github/workflows/**

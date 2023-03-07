@@ -6,7 +6,6 @@ on:
         branches: [main]
         paths:
             - "domains/**"
-            - "schemas/**"
             - "scripts/dns.js"
     pull_request:
 
@@ -39,17 +38,3 @@ jobs:
                   pattern: "\\.json$"
               env:
                   BASE: "domains/"
-
-    schemas:
-        name: Schemas
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-
-            - uses: walbo/validate-json@v1.1.0
-              with:
-                  schema-version: draft-07
-                  print-valid-files: true
-                  fail-on-missing-schema: true
-                  strict: false
-                  files: ./domains/**/*.json

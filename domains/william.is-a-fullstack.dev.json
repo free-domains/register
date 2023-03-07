@@ -1,6 +1,4 @@
 {
-    "$schema": "../schemas/domain.json",
-
     "domain": "is-a-fullstack.dev",
     "subdomain": "william",
 

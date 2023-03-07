@@ -1,6 +1,4 @@
 {
-    "$schema": "../../schemas/reserved-domain.json",
-
     "domain": "is-a-backend.dev",
     "subdomain": "*",
 

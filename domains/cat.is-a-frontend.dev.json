@@ -1,6 +1,4 @@
 {
-    "$schema": "../schemas/domain.json",
-
     "domain": "is-a-frontend.dev",
     "subdomain": "cat",
 

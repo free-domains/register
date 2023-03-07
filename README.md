@@ -68,8 +68,6 @@ Please select a method below to show instructions on how to register a domain.
 
   ```json
   {
-      "$schema": "../schemas/domain.json",
-
       "domain": "is-a-fullstack.dev",
       "subdomain": "example",
 

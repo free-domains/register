@@ -28,8 +28,6 @@ fs.readdir(directoryPath, function (err, files) {
             const dataArray = [JSON.parse(data)];
 
             for(const item of dataArray) {
-                delete item.$schema;
-
                 item.owner.email = item.owner.email.replace(/@/, " (at) ");
             }
 

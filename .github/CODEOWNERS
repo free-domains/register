@@ -2,6 +2,3 @@
 
 # Domains
 /domains/* @free-domains/maintainers
-
-# Markdown Files
-*.md @free-domains/maintainers

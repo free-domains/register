@@ -43,4 +43,4 @@ jobs:
                   user-name: free-domains-bot
                   commit-message: "Update Data via free-domains/register"
               env:
-                  API_TOKEN_GITHUB: ${{ secrets.PAT_TOKEN }}
+                  API_TOKEN_GITHUB: ${{ secrets.BOT }}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "playpen",
+
+    "owner": {
+        "email": "matan.gamer2020@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "12eb0b86-3fea-4745-8317-911d347540cb.id.repl.co"
+    },
+
+    "proxied": true
+}

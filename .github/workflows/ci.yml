@@ -7,7 +7,7 @@ on:
     pull_request:
         types: [opened, reopened, synchronize]
 
-permissions: write-all, workflows
+permissions: write-all
 
 jobs:
     prettier:

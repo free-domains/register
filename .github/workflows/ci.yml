@@ -11,7 +11,7 @@ permissions: write-all
 
 jobs:
     prettier:
-        - name: Prettier
+          name: Prettier
           runs-on: ubuntu-latest
 
           steps:

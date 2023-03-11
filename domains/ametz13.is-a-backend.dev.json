@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "ametz13",
+
+    "owner": {
+        "email": "ametz13@asu.edu"
+    },
+
+    "records": {
+        "CNAME": "cfb6u2-8080.csb.app"
+    },
+
+    "proxied": false
+}

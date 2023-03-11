@@ -52,58 +52,40 @@ for (var idx in domains) {
 
     if (domainData.records.A) {
         for (var a in domainData.records.A) {
-            commit[domainData.domain].push(
-                A(domainData.subdomain, IP(domainData.records.A[a]), proxyState)
-            );
+            commit[domainData.domain].push(A(domainData.subdomain, IP(domainData.records.A[a]), proxyState));
         }
     }
 
     if (domainData.records.AAAA) {
         for (var aaaa in domainData.records.AAAA) {
-            commit[domainData.domain].push(
-                AAAA(
-                    domainData.subdomain,
-                    domainData.records.AAAA[aaaa],
-                    proxyState
-                )
-            );
+            commit[domainData.domain].push(AAAA(domainData.subdomain, domainData.records.AAAA[aaaa], proxyState));
         }
     }
 
     if (domainData.records.CNAME) {
-        commit[domainData.domain].push(
-            CNAME(domainData.subdomain, domainData.records.CNAME + ".", proxyState)
-        );
+        commit[domainData.domain].push(CNAME(domainData.subdomain, domainData.records.CNAME + ".", proxyState));
     }
 
     if (domainData.records.MX) {
         for (var mx in domainData.records.MX) {
-            commit[domainData.domain].push(
-                MX(domainData.subdomain, domainData.records.MX[mx].priority, domainData.records.MX[mx].value + ".")
-            );
+            commit[domainData.domain].push(MX(domainData.subdomain, domainData.records.MX[mx].priority, domainData.records.MX[mx].value + "."));
         }
     }
 
     if (domainData.records.NS) {
         for (var ns in domainData.records.NS) {
-            commit[domainData.domain].push(
-                NS(domainData.subdomain, domainData.records.NS[ns] + ".")
-            );
+            commit[domainData.domain].push(NS(domainData.subdomain, domainData.records.NS[ns] + "."));
         }
     }
 
     if (domainData.records.TXT) {
         for (var txt in domainData.records.TXT) {
-            if(domainData.records.TXT[txt].name === "@") {
+            if (domainData.records.TXT[txt].name === "@") {
                 commit[domainData.domain].push(TXT(domainData.subdomain, domainData.records.TXT[txt].value));
             } else if (domainData.subdomain === "@") {
-                commit[domainData.domain].push(
-                    TXT(domainData.records.TXT[txt].name, domainData.records.TXT[txt].value)
-                );
+                commit[domainData.domain].push(TXT(domainData.records.TXT[txt].name, domainData.records.TXT[txt].value));
             } else {
-                commit[domainData.domain].push(
-                    TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value)
-                );
+                commit[domainData.domain].push(TXT(domainData.records.TXT[txt].name + "." + domainData.subdomain, domainData.records.TXT[txt].value));
             }
         }
     }

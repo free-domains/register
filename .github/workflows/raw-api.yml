@@ -1,6 +1,8 @@
 name: Raw API
 
 on:
+    workflow_dispatch: {}
+
     push:
         branches: [main]
         paths:

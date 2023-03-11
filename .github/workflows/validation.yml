@@ -2,11 +2,13 @@ name: Validation
 
 on:
     workflow_dispatch: {}
+
     push:
         branches: [main]
         paths:
             - "domains/**"
             - "scripts/dns.js"
+
     pull_request:
 
 concurrency:

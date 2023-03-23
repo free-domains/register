@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "simpuskapa",
+
+    "owner": {
+        "email": "alfiankan19@gmail.com"
+    },
+
+    "records": {
+        "A": ["103.150.190.176"]
+    },
+
+    "proxied": false
+}

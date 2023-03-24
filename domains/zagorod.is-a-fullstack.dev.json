@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "zagorod",
+
+    "owner": {
+        "email": "shimkonn@gmail.com"
+    },
+
+    "records": {
+        "A": [""]
+    },
+
+    "proxied": false
+}

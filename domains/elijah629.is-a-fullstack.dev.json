@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "elijah629",
+
+    "owner": {
+        "email": "EliOzcan@outlook.com"
+    },
+
+    "records": {
+        "CNAME": "elijah629.vercel.app"
+    },
+
+    "proxied": false
+}

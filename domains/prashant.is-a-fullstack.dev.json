@@ -1,11 +1,14 @@
 {
     "domain": "is-a-backend.dev",
-    "subdomain": "Prashant",
+    "subdomain": "prashant",
+
     "owner": {
         "email": "meprazhant@gmail.com"
     },
+
     "records": {
-        "CNAME": "cname.vercel-dns.com."
+        "CNAME": "cname.vercel-dns.com"
     },
+
     "proxied": false
 }

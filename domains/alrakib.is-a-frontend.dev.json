@@ -8,9 +8,10 @@
 
     "records": {
         "A": ["172.104.51.65"],
+
         "TXT": [
             {
-                "name": "alrakib.is-a-frontend.dev",
+                "name": "@",
                 "value": "v=spf1 +a +mx +ip4:172.104.51.65 ~all"
             }
         ]

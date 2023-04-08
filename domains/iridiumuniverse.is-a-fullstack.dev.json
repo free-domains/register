@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "iridiumuniverse",
+
+    "owner": {
+        "email": "zackjohn932@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "200000"
+    },
+
+    "proxied": true
+}

@@ -1,0 +1,20 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "alrakib",
+
+    "owner": {
+        "email": "alraakib@gmail.com"
+    },
+
+    "records": {
+        "A": ["172.104.51.65"],
+        "TXT": [
+            {
+                "name": "alrakib.is-a-frontend.dev",
+                "value": "v=spf1 +a +mx +ip4:172.104.51.65 ~all"
+            }
+        ]
+    },
+
+    "proxied": false
+}

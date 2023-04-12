@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "verbalize",
+
+    "owner": {
+        "email": "arnu515@protonmail.com"
+    },
+
+    "records": {
+        "A": ["71.71.27.27"]
+    },
+
+    "proxied": false
+}

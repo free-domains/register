@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "revelav2",
+
+    "owner": {
+        "email": "me@joshsevero.dev"
+    },
+
+    "records": {
+        "CNAME": "proxy.revela-network.com"
+    },
+
+    "proxied": false
+}

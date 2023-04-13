@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.freesubdomains.org/cover.png">
+  <a href="https://freesubdomains.org"><img src="https://media.freesubdomains.org/cover.png"></a>
 </p>
 
 <h1 align="center">Free Domains</h1>
@@ -12,10 +12,6 @@
 <p align="center">If you want to find projects similar to this one, take a look on <a href="https://free-for.life/#/?id=domains">Free For Life</a>.</p>
 
 # Register
-
-> Domains used for illegal purposes or being abused will be removed and permanently banned without notice.
-
-> We do not support Netlify or Vercel.
 
 Please select a method below to show instructions on how to register a domain.
 
@@ -113,21 +109,17 @@ Please select a method below to show instructions on how to register a domain.
 
 > All domains use the same settings.
 
-| Setting                                             | Option                |
-|-----------------------------------------------------|-----------------------|
-| [DNSSEC][dnssec]                                    | ✅                    |
-| Email                                               | ❌                    |
-| SSL/TLS*                                            | [Full][ssl-full]      |
-| Always Use HTTPS*                                   | ✅                    |
-| HTTP Strict Transport Security (HSTS)               | ✅                    |
-| Minimum TLS Version*                                | 1.0                   |
-| Opportunistic Encryption, TLS 1.3*                  | ✅                    |
-| WAF (Web Application Firewall)*                     | Medium Security Level |
-| Browser Integrity Check*                            | ✅                    |
-| [Caching Level][caching-levels], Browser Cache TTL* | Standard, 4 hours     |
+| Setting                               | Option                |
+|---------------------------------------|-----------------------|
+| DNSSEC                                | ✅ |
+| Email                                 | ❌ |
+| SSL/TLS*                              | Full |
+| Always Use HTTPS*                     | ✅ |
+| HTTP Strict Transport Security (HSTS) | ✅ |
+| Minimum TLS Version*                  | 1.0 |
+| Opportunistic Encryption, TLS 1.3*    | ✅ |
+| WAF (Web Application Firewall)*       | Medium Security Level |
+| Browser Integrity Check*              | ✅ |
+| Caching Level, Browser Cache TTL*     | Standard, 4 hours |
 
 \*Only available when your domain has `proxied` mode set to `true`.
-
-[dnssec]:https://developers.cloudflare.com/dns/additional-options/dnssec
-[ssl-full]:https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full
-[caching-levels]:https://developers.cloudflare.com/cache/how-to/set-caching-levels

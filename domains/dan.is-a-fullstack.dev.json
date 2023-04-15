@@ -10,5 +10,5 @@
         "AAAA": ["2a00:da00:1800:122::1"],
     },
 
-    "proxied": true
+    "proxied": "true"
 }

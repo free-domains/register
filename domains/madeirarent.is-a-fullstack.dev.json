@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "madeirarent",
+
+    "owner": {
+        "email": "wesley.generoso.95@gmail.com"
+    },
+
+    "records": {
+        "A": ["185.15.22.176"]
+    },
+
+    "proxied": false
+}

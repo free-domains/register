@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "potato",
+
+    "owner": {
+        "email": "potatochips0706@gmail.com"
+    },
+
+    "records": {
+        "A": ["222.166.44.99"]
+    },
+
+    "proxied": false
+}

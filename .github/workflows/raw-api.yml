@@ -36,7 +36,7 @@ jobs:
               run: node scripts/raw-api.js
 
             - name: Push
-              uses: cpina/github-action-push-to-another-repository@main
+              uses: WHActions/push-to-repo@main
               with:
                   source-directory: "raw-api"
                   destination-github-username: free-domains

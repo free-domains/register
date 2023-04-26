@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "dtmirror1",
+
+    "owner": {
+        "email": "ktoya170214@gmail.com"
+    },
+
+    "records": {
+        "A": ["91.203.193.39"]
+    },
+
+    "proxied": true
+}

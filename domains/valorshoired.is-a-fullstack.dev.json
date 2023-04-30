@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "valorshoired",
+
+    "owner": {
+        "email": "isaacisapop@gmail.com"
+    },
+
+    "records": {
+        "A": ["172.16.0.4"]
+    },
+
+    "proxied": false
+}

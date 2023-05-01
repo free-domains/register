@@ -13,24 +13,36 @@ fs.readdirSync("domains").forEach(file => {
                     const info = `${domain} ${recordType} ${value}`;
 
                     try {
-                        exec(`ping -c 1 ${value}`);
-                        console.log(`PASS ${info}`);
-                        fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
-                    } catch {
-                        console.log(`FAIL ${info}`);
-                        fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
+                        const { stdout, stderr, status } = exec(`ping -c 1 ${value}`);
+
+                        if (status === 0) {
+                            console.log(`PASS ${info}`);
+                            fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
+                        } else {
+                            console.log(`FAIL ${info}: ${stderr}`);
+                            fs.appendFileSync("ping_results.txt", `FAIL ${info}: ${stderr}\n`);
+                        }
+                    } catch (error) {
+                        console.log(`FAIL ${info}: ${error}`);
+                        fs.appendFileSync("ping_results.txt", `FAIL ${info}: ${error}\n`);
                     }
                 }
             } else if (recordType === "CNAME") {
                 const info = `${domain} ${recordType} ${recordValue}`;
 
                 try {
-                    exec(`ping -c 1 ${recordValue}`);
-                    console.log(`PASS ${info}`);
-                    fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
-                } catch {
-                    console.log(`FAIL ${info}`);
-                    fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
+                    const { stdout, stderr, status } = exec(`ping -c 1 ${recordValue}`);
+
+                    if (status === 0) {
+                        console.log(`PASS ${info}`);
+                        fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
+                    } else {
+                        console.log(`FAIL ${info}: ${stderr}`);
+                        fs.appendFileSync("ping_results.txt", `FAIL ${info}: ${stderr}\n`);
+                    }
+                } catch (error) {
+                    console.log(`FAIL ${info}: ${error}`);
+                    fs.appendFileSync("ping_results.txt", `FAIL ${info}: ${error}\n`);
                 }
             }
         }

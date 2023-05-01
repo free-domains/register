@@ -24,18 +24,16 @@ jobs:
               with:
                   node-version: 16
 
-            - run: mkdir raw-api
+            - name: Create raw-api Directory
+              run: |
+                  mkdir raw-api
+                  echo "raw.freesubdomains.org" > ./raw-api/CNAME
+                  echo "" > ./raw-api/index.json
 
-            - name: Create CNAME
-              run: echo "raw.freesubdomains.org" > ./raw-api/CNAME
-
-            - name: Create index.json
-              run: echo "" > ./raw-api/index.json
-
-            - name: Run Script
+            - name: Execute Script
               run: node scripts/raw-api.js
 
-            - name: Push
+            - name: Commit
               uses: cpina/github-action-push-to-another-repository@main
               with:
                   source-directory: "raw-api"

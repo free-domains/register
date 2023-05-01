@@ -6,6 +6,8 @@ const ping = (host) => {
         exec(`ping -c 1 ${host}`, (error, stdout, stderr) => {
             if (error) {
                 reject(error);
+            } else if (stderr.match(/(unknown|unreachable|failure)/i)) {
+                reject(new Error(`Host unreachable: ${host}`));
             } else {
                 resolve({ stdout, stderr });
             }

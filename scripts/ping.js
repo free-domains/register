@@ -13,7 +13,7 @@ fs.readdirSync("domains").forEach(file => {
                     const info = `${domain} ${recordType} ${value}`;
 
                     try {
-                        exec(`ping ${recordValue}`);
+                        exec(`ping -c 1 ${value}`);
                         console.log(`PASS ${info}`);
                         fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
                     } catch {
@@ -25,7 +25,7 @@ fs.readdirSync("domains").forEach(file => {
                 const info = `${domain} ${recordType} ${recordValue}`;
 
                 try {
-                    exec(`ping ${recordValue}`);
+                    exec(`ping -c 1 ${recordValue}`);
                     console.log(`PASS ${info}`);
                     fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
                 } catch {

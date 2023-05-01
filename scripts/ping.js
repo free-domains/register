@@ -11,7 +11,7 @@ fs.readdirSync("domains").forEach((file) => {
             if (recordType === "A" || recordType === "AAAA") {
                 for (const val of recordValue) {
                     try {
-                        execSync(`ping ${val}`);
+                        execSync(`ping -c 1 ${val}`);
                         console.log(`PASS ${domain} ${recordType} ${val}`);
                         fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${val}\n`);
                     } catch (err) {
@@ -22,7 +22,7 @@ fs.readdirSync("domains").forEach((file) => {
                 }
             } else if (recordType === "CNAME") {
                 try {
-                    execSync(`ping ${recordValue}`);
+                    execSync(`ping -c 1 ${recordValue}`);
                     console.log(`PASS ${domain} ${recordType} ${recordValue}`);
                     fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${recordValue}\n`);
                 } catch(err) {

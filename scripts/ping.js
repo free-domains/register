@@ -20,12 +20,12 @@ fs.readdirSync("domains").forEach(file => {
                             fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
                         } else {
                             console.log(`FAIL ${info}`);
-                            console.log(stderr);
+                            console.log(status);
                             fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
                         }
                     } catch (error) {
                         console.log(`FAIL ${info}: ${error}`);
-                        console.log(stderr);
+                        console.log(status);
                         fs.appendFileSync("ping_results.txt", `FAIL ${info}: ${error}\n`);
                     }
                 }
@@ -40,12 +40,12 @@ fs.readdirSync("domains").forEach(file => {
                         fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
                     } else {
                         console.log(`FAIL ${info}`);
-                        console.log(stderr);
+                        console.log(status);
                         fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
                     }
                 } catch (error) {
                     console.log(`FAIL ${info}: ${error}`);
-                    console.log(stderr);
+                    console.log(status);
                     fs.appendFileSync("ping_results.txt", `FAIL ${info}: ${error}\n`);
                 }
             }

@@ -11,21 +11,23 @@ fs.readdirSync("domains").forEach((file) => {
             if (recordType === "A" || recordType === "AAAA") {
                 for (const val of recordValue) {
                     try {
-                        execSync(`ping -c 1 ${val}`);
+                        execSync(`ping ${val}`);
                         console.log(`PASS ${domain} ${recordType} ${val}`);
                         fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${val}\n`);
-                    } catch (error) {
+                    } catch (err) {
                         console.log(`FAIL ${domain} ${recordType} ${val}`);
+                        console.log(err);
                         fs.appendFileSync("ping_results.txt", `FAIL ${domain} ${recordType} ${val}\n`);
                     }
                 }
             } else if (recordType === "CNAME") {
                 try {
-                    execSync(`ping -c 1 ${recordValue}`);
+                    execSync(`ping ${recordValue}`);
                     console.log(`PASS ${domain} ${recordType} ${recordValue}`);
                     fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${recordValue}\n`);
                 } catch(err) {
                     console.log(`FAIL ${domain} ${recordType} ${recordValue}`);
+                    console.log(err);
                     fs.appendFileSync("ping_results.txt", `FAIL ${domain} ${recordType} ${recordValue}\n`);
                 }
             }

@@ -33,6 +33,7 @@ fs.readdirSync("domains").forEach(file => {
                         })
                         .catch((error) => {
                             console.log(`FAIL ${info}`);
+                            console.log(error);
                             fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
                         });
                 }
@@ -46,6 +47,7 @@ fs.readdirSync("domains").forEach(file => {
                     })
                     .catch((error) => {
                         console.log(`FAIL ${info}`);
+                        console.log(error);
                         fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
                     });
             }

@@ -66,6 +66,6 @@ jobs:
               run: |
                   git config --global user.email "bot@freesubdomains.org"
                   git config --global user.name "free-domains-bot"
-                  git add ../ping_results.txt
+                  git add ping_results.txt
                   git commit -m "Update Ping Results"
                   git push

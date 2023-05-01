@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { exec } = require("child_process");
+const { execSync } = require("child_process");
 
 fs.readdirSync("domains").forEach(async (file) => {
     if (file.endsWith(".json")) {
@@ -11,7 +11,7 @@ fs.readdirSync("domains").forEach(async (file) => {
             if (recordType === "A" || recordType === "AAAA") {
                 for (const val of recordValue) {
                     try {
-                        await exec(`ping -c 1 ${recordValue}`);
+                        await execSync(`ping -c 1 ${recordValue}`);
                         console.log(`PASS ${domain} ${recordType} ${val}`);
                         fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${val}\n`);
                     } catch {
@@ -21,7 +21,7 @@ fs.readdirSync("domains").forEach(async (file) => {
                 }
             } else if (recordType === "CNAME") {
                 try {
-                    await exec(`ping -c 1 ${recordValue}`);
+                    await execSync(`ping -c 1 ${recordValue}`);
                     console.log(`PASS ${domain} ${recordType} ${recordValue}`);
                     fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${recordValue}\n`);
                 } catch {

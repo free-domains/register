@@ -34,5 +34,3 @@ fs.readdirSync("domains").forEach((file) => {
         }
     }
 });
-
-fs.appendFileSync("ping_results.txt", "\n");

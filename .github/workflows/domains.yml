@@ -30,7 +30,7 @@ jobs:
             - name: Create ping_results.txt
               run: |
                   touch ping_results.txt
-                  echo "Updated: $(date +'%d/%m/%Y %T %Z %z')" >> ping_results.txt
+                  echo "--- $(date +'%d/%m/%Y %T %Z') ---" >> ping_results.txt
 
             - name: Execute Script
               run: node scripts/ping.js

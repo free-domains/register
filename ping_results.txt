@@ -1,4 +1,4 @@
----- 01/05/2023 04:31:47 UTC ----
+---- 01/05/2023 04:34:14 UTC ----
 PASS addison.is-a-frontend.dev CNAME addison.is-a.dev
 PASS alrakib.is-a-frontend.dev A 172.104.51.65
 PASS axorax.is-a-fullstack.dev CNAME axorax.github.io
@@ -22,14 +22,8 @@ PASS robsd.is-a-fullstack.dev CNAME robsd.pages.dev
 PASS scronite.is-a-backend.dev CNAME ammazon-api.onrender.com
 PASS simpuskapa.is-a-backend.dev A 103.150.190.176
 PASS simpuskapa.is-a-frontend.dev A 103.150.190.176
-PASS test.is-a-backend.dev A 185.199.108.153
-PASS test.is-a-backend.dev A 185.199.109.153
-PASS test.is-a-backend.dev A 185.199.110.153
-PASS test.is-a-backend.dev A 185.199.111.153
-PASS test.is-a-backend.dev AAAA 2606:50c0:8000::153
-PASS test.is-a-backend.dev AAAA 2606:50c0:8001::153
-PASS test.is-a-backend.dev AAAA 2606:50c0:8002::153
-PASS test.is-a-backend.dev AAAA 2606:50c0:8003::153
+PASS test.is-a-backend.dev A 0.0.0.0
+PASS test.is-a-backend.dev A 1.1.1.1
 PASS ui.is-a-fullstack.dev CNAME sex-m3k9.onrender.com
 PASS valorshoired.is-a-frontend.dev A 172.16.0.4
 PASS valorshoired.is-a-fullstack.dev A 172.16.0.4

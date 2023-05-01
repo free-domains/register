@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { exec } = require("child_process");
 
-fs.readdirSync("domains").forEach(async (file) => {
+fs.readdirSync("domains").forEach(file => {
     if (file.endsWith(".json")) {
         const domain = file.slice(0, -5);
 
@@ -9,24 +9,28 @@ fs.readdirSync("domains").forEach(async (file) => {
 
         for (const [recordType, recordValue] of Object.entries(data.records)) {
             if (recordType === "A" || recordType === "AAAA") {
-                for (const val of recordValue) {
+                for (const value of recordValue) {
+                    const info = `${domain} ${recordType} ${value}`;
+
                     try {
-                        await exec(`ping -c 1 ${recordValue}`);
-                        console.log(`PASS ${domain} ${recordType} ${val}`);
-                        fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${val}\n`);
+                        exec(`ping ${recordValue}`);
+                        console.log(`PASS ${info}`);
+                        fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
                     } catch {
-                        console.log(`FAIL ${domain} ${recordType} ${val}`);
-                        fs.appendFileSync("ping_results.txt", `FAIL ${domain} ${recordType} ${val}\n`);
+                        console.log(`FAIL ${info}`);
+                        fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
                     }
                 }
             } else if (recordType === "CNAME") {
+                const info = `${domain} ${recordType} ${recordValue}`;
+
                 try {
-                    await exec(`ping -c 1 ${recordValue}`);
-                    console.log(`PASS ${domain} ${recordType} ${recordValue}`);
-                    fs.appendFileSync("ping_results.txt", `PASS ${domain} ${recordType} ${recordValue}\n`);
+                    exec(`ping ${recordValue}`);
+                    console.log(`PASS ${info}`);
+                    fs.appendFileSync("ping_results.txt", `PASS ${info}\n`);
                 } catch {
-                    console.log(`FAIL ${domain} ${recordType} ${recordValue}`);
-                    fs.appendFileSync("ping_results.txt", `FAIL ${domain} ${recordType} ${recordValue}\n`);
+                    console.log(`FAIL ${info}`);
+                    fs.appendFileSync("ping_results.txt", `FAIL ${info}\n`);
                 }
             }
         }

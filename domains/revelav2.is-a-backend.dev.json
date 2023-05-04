@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "CNAME": "proxy.revela-network.com"
+        "CNAME": "proxy.revela.network"
     },
 
     "proxied": false

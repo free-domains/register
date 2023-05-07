@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "william",
+
+    "owner": {
+        "email": "william@freesubdomains.org"
+    },
+
+    "records": {
+        "CNAME": "wdhdns.com"
+    },
+
+    "proxied": false
+}

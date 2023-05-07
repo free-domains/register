@@ -1,14 +1,14 @@
 name: Raw API
 
 on:
-    workflow_dispatch: {}
-
     push:
         branches: [main]
         paths:
             - "domains/*"
             - ".github/workflows/raw-api.yml"
             - "scripts/raw-api.js"
+
+    workflow_dispatch:
 
 jobs:
     update:

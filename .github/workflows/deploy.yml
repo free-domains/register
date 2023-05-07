@@ -1,13 +1,13 @@
 name: Deploy
 
 on:
-    workflow_dispatch: {}
-
     push:
         branches: [main]
         paths:
             - "domains/**"
             - ".github/workflows/deploy.yml"
+
+    workflow_dispatch:
 
 concurrency:
     group: ${{ github.ref }}-deploy

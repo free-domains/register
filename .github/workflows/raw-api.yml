@@ -16,19 +16,17 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout
-              uses: actions/checkout@v3
+            - uses: actions/checkout@v3
+
+            - uses: actions/checkout@v3
+              with:
+                  repository: free-domains/raw-api
+                  path: main
 
             - name: Setup Node
               uses: actions/setup-node@v2
               with:
                   node-version: 16
-
-            - name: Create raw-api Directory
-              run: |
-                  mkdir raw-api
-                  echo "raw.freesubdomains.org" > ./raw-api/CNAME
-                  echo "" > ./raw-api/index.json
 
             - name: Execute Script
               run: node scripts/raw-api.js
@@ -36,7 +34,7 @@ jobs:
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main
               with:
-                  source-directory: "raw-api"
+                  source-directory: "main"
                   destination-github-username: free-domains
                   destination-repository-name: raw-api
                   user-email: bot@freesubdomains.org

@@ -23,26 +23,20 @@ jobs:
                   repository: free-domains/raw-api
                   path: main
 
-            - run: ls
-
             - name: Setup Node
               uses: actions/setup-node@v2
               with:
                   node-version: 16
 
-            - name: Create raw-api Directory
-              run: |
-                  mkdir raw-api
-                  echo "raw.freesubdomains.org" > ./raw-api/CNAME
-                  echo "" > ./raw-api/index.json
-
             - name: Execute Script
-              run: node scripts/raw-api.js
+              run: |
+                  cd main
+                  node scripts/raw-api.js
 
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main
               with:
-                  source-directory: "raw-api"
+                  source-directory: "main"
                   destination-github-username: free-domains
                   destination-repository-name: raw-api
                   user-email: bot@freesubdomains.org

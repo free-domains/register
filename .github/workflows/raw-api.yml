@@ -29,9 +29,7 @@ jobs:
                   node-version: 16
 
             - name: Execute Script
-              run: |
-                  cd main
-                  node scripts/raw-api.js
+              run: node scripts/raw-api.js
 
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main

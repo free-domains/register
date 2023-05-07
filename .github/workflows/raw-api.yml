@@ -28,6 +28,8 @@ jobs:
               with:
                   node-version: 16
 
+            - run: ls main
+
             - name: Execute Script
               run: node scripts/raw-api.js
 

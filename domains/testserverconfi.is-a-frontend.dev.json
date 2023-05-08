@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "testserverconfi",
+
+    "owner": {
+        "email": "King.Khanrocks.khan@gmail.com"
+    },
+
+    "records": {
+        "A": ["138.2.87.228"]
+    },
+
+    "proxied": true
+}

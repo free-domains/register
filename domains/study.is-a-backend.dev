@@ -1,0 +1,22 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "study",
+
+    "owner": {
+        "email": "baileymagoffin2008@gmail.com"
+    },
+
+    "records": {
+      
+       
+      "CNAME": "d3d7a16e-b7ac-44e2-b4c7-86e2e6ac2d3f.id.repl.co",
+        "TXT": [
+            {
+                "name": "@",
+                "value": "replit-verify=d3d7a16e-b7ac-44e2-b4c7-86e2e6ac2d3f"
+            }
+        ]
+    },
+
+    "proxied": false
+}

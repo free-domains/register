@@ -13,7 +13,7 @@ jobs:
         steps:
             - uses: actions/labeler@v4
               with:
-                  repo-token: "${{ secrets.GITHUB_TOKEN }}"
+                  repo-token: "${{ secrets.BOT }}"
                   sync-labels: true
 
     check-star:

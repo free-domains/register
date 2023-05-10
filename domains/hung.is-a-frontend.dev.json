@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "hung",
+
+    "owner": {
+        "email": "giahunghust@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "hunghg-portfolio.vercel.app"
+    },
+
+    "proxied": false
+}

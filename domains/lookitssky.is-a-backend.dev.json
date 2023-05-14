@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "lookitssky",
+
+    "owner": {
+        "email": "joubertjude@gmail.com"
+    },
+
+    "records": {
+        "A": ["141.148.148.93"]
+    },
+
+    "proxied": false
+}

@@ -8,7 +8,8 @@
 
     "records": {
         "A": [""],
-         "TXT": [
+
+        "TXT": [
             {
                 "name": "_vercel",
                 "value": "vc-domain-verify=khaled.is-a-frontend.dev,f94563021260b705c975"
@@ -17,5 +18,5 @@
         
     },
 
-    "proxied": true
+    "proxied": false
 }

@@ -15,14 +15,3 @@ jobs:
               with:
                   repo-token: "${{ secrets.BOT }}"
                   sync-labels: true
-
-    check-star:
-        name: Check Star
-        runs-on: ubuntu-latest
-        steps:
-            - { uses: gacts/is-stargazer@v1, with: { username: "${{ github.event.pull_request.user.login }}" }, id: check-star }
-
-            - if: steps.check-star.outputs.is-stargazer != 'true'
-              uses: actions/github-script@v6
-              with:
-                  script: core.setFailed('⭐ Please star the repository!')

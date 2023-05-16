@@ -10,7 +10,7 @@ on:
     workflow_dispatch:
 
 concurrency:
-    group: ${{ github.ref }}-deploy
+    group: ${{ github.ref }}-publish
     cancel-in-progress: false
 
 jobs:

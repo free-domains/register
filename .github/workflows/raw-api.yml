@@ -9,6 +9,10 @@ on:
 
     workflow_dispatch:
 
+concurrency:
+    group: ${{ github.ref }}-raw-api
+    cancel-in-progress: true
+
 jobs:
     update:
         name: Update

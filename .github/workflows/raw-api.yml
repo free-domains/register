@@ -32,9 +32,6 @@ jobs:
             - name: Update Data
               run: node scripts/raw-api.js
 
-            - name: Run Prettier
-              run: npx prettier raw-api/index.json --write --tab-width 4 --print-width 1
-
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main
               with:

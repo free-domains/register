@@ -6,7 +6,6 @@ on:
         paths:
             - "domains/*"
             - ".github/workflows/raw-api.yml"
-            - "scripts/raw-api.js"
 
     workflow_dispatch:
 
@@ -30,7 +29,7 @@ jobs:
                   node-version: 16
 
             - name: Update Data
-              run: node scripts/raw-api.js
+              run: node raw-api/scripts/update.js
 
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main

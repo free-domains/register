@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "halo",
+
+    "owner": {
+        "email": "ethan.james.hume.6521@googlemail.com"
+    },
+
+    "records": {
+        "A": ["1.0.0.1"]
+    },
+
+    "proxied": true
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "clemens",
+
+    "owner": {
+        "email": "clemens.horn@mni.thm.de"
+    },
+
+    "records": {
+        "CNAME": "cname.vercel-dns.com"
+    },
+
+    "proxied": true
+}

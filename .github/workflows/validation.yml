@@ -58,11 +58,10 @@ jobs:
 
                       echo "Validating $owner_email in $filename"
 
-                      wdhdev/validate-email-action@main --email "$owner_email" > validation_result.txt &
-                      validation_pid=$!
-                      wait $validation_pid
+                      result=$(wdhdev/validate-email-action@main --email "$owner_email" &)
+                      wait $result
 
-                      if [[ $? -ne 0 ]]; then
+                      if [[ $result -ne 0 ]]; then
                           echo "::error::FAIL $owner_email $filename"
                           echo "FAIL $owner_email $filename" >> failed_validations.txt
                       else
@@ -76,17 +75,6 @@ jobs:
                   if [[ -s failed_validations.txt ]]; then
                       exit 1
                   fi
-
-            - name: Results
-              run: |
-                  echo "Validation Results"
-                  echo "------------------"
-                  echo "Passed Validations"
-                  cat passed_validations.txt
-                  echo "------------------"
-                  echo "Failed Validations"
-                  cat failed_validations.txt
-                  echo "------------------"
 
     json:
         name: JSON

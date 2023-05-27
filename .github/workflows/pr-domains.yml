@@ -16,7 +16,13 @@ jobs:
             - name: Find Files
               id: find_files
               run: |
-                  echo "::set-output name=files::$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')"
+                  files=$(curl -s -H "Authorization: Bearer ${{ secrets.BOT }}" \
+                          "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?per_page=100" \
+                          | jq -r '.[] | select(.status == "added" or .status == "modified") | .filename' \
+                          | grep 'domains/' \
+                          | grep '\.json$')
+
+                  echo "::set-output name=files::$files"
 
             - name: Retrieve and Validate Emails
               id: validate_email

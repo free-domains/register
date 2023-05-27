@@ -19,10 +19,13 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
+              with:
+                  token: ${{ secrets.BOT }}
 
             - uses: actions/setup-node@v3
               with:
                   node-version: 16
+                  cache-dependency-path: scripts/validate-email/package-lock.json
 
             - run: cd scripts/validate-email
 

@@ -61,9 +61,10 @@ jobs:
                       result=$(node scripts/validate-email/dist/index.js --email "$email")
                       echo "Raw response: $result"
 
-                      set -x  # Enable debugging mode
-                      fixed_result=$(echo "$result" | jq '.')
-                      set +x  # Disable debugging mode
+                      fixed_result=$(jq '.' <<EOF
+                      $result
+                      EOF
+                      )
 
                       success=$(echo "$fixed_result" | jq -r '.success')
 

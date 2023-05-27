@@ -38,20 +38,18 @@ jobs:
               id: email_validation
               run: |
                   for file in ${{ steps.find_files.outputs.files }}; do
+                      filename=$(basename "$file")
                       owner_email=$(jq -r '.owner.email' "$file")
 
                       if ! email_validation_result=$(wdhdev/validate-email-action@main --email "$owner_email"); then
-                          echo "FAIL $owner_email $file"
-                          echo "FAIL $owner_email $file" >> failed_validations.txt
+                          echo "::error::FAIL $owner_email $filename"
+                          echo "FAIL $owner_email $filename" >> failed_validations.txt
                       else
-                          echo "PASS $owner_email $file"
-                          echo "PASS $owner_email $file" >> passed_validations.txt
+                          echo "PASS $owner_email $filename"
+                          echo "PASS $owner_email $filename" >> passed_validations.txt
                       fi
                   done
 
                   if [[ -s failed_validations.txt ]]; then
-                      echo ""
-                      echo "::error::Email validation failed for the following files:"
-                      cat failed_validations.txt
                       exit 1
                   fi

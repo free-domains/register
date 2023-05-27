@@ -25,9 +25,10 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: 16
-                  cache-dependency-path: scripts/validate-email/package-lock.json
 
-            - run: cd scripts/validate-email
+            - run: |
+                  cd ./scripts/validate-email
+                  ls
 
             - name: Remove dist Directory
               run: rm -rf dist

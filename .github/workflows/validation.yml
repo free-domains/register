@@ -63,6 +63,8 @@ jobs:
                           echo "PASS $owner_email $filename"
                           echo "PASS $owner_email $filename" >> passed_validations.txt
                       fi
+
+                      echo "$email_validation_result"
                   done
 
                   if [[ -s failed_validations.txt ]]; then

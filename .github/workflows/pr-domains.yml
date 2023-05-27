@@ -52,8 +52,6 @@ jobs:
                       exit 1
                   fi
 
-                  echo "::set-output name=failed_validations::$failed_validations"
-
             - name: Fail Workflow on Validation Failure
-              if: ${{ steps.email_validation.outputs.failed_validations != '' }}
+              if: ${{ failure() && steps.email_validation.outputs.failed_validations != '' }}
               run: exit 1

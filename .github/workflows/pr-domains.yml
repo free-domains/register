@@ -51,3 +51,7 @@ jobs:
                       echo "::error::Email validation failed for the following files:\n${failed_validations}"
                       exit 1
                   fi
+
+            - name: Fail Workflow on Validation Failure
+              if: ${{ job.status == 'success' && steps.email_validation.outputs.failed_validations != '' }}
+              run: exit 1

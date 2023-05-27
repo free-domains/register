@@ -13,10 +13,10 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Find Modified JSON Files
+            - name: Find Files
               id: find_files
               run: |
-                  echo "::set-output name=files::$(git diff --name-only --diff-filter=M "domains/" | grep '\.json$' || echo '')"
+                  echo "::set-output name=files::$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')"
 
             - name: Retrieve and Validate Emails
               id: validate_email

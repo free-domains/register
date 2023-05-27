@@ -7,13 +7,13 @@ const argv = minimist(process.argv.slice(2));
 async function validate() {
     const email = argv.email;
 
-    if(!email) return throw new Error("No email provided!");
+    if(!email) throw new Error("No email provided!");
 
     const domain = email.split("@").pop();
 
     const validEmail = validateEmail(email);
 
-    if(!validEmail) return throw new Error("The email address does not match the correct format!");
+    if(!validEmail) throw new Error("The email address does not match the correct format!");
 
     const getMXRecords = util.promisify(dns.resolveMx);
     let mxRecords = [];
@@ -24,7 +24,7 @@ async function validate() {
         throw new Error(`Error fetching MX records for the domain ${domain}: ${err.message}`);
     }
 
-    if(!mxRecords.length) return throw new Error(`No MX records exist for the domain ${domain}!`);
+    if(!mxRecords.length) throw new Error(`No MX records exist for the domain ${domain}!`);
 
     const result = {
         "success": true,

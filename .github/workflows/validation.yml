@@ -61,10 +61,7 @@ jobs:
                       result=$(node scripts/validate-email/dist/index.js --email "$email")
                       echo "Raw response: $result"
 
-                      fixed_result=$(jq '.' <<EOF
-                      $result
-                      EOF
-                      )
+                      fixed_result=$(echo "$result" | jq -R -s -c 'split("\n")')
 
                       success=$(echo "$fixed_result" | jq -r '.success')
 

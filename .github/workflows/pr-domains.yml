@@ -39,7 +39,7 @@ jobs:
 
                       echo "Validating email: $owner_email"
 
-                      if ! email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
+                      if ! email_validation_result=$(wdhdev/validate-email-action@main --email "$owner_email"); then
                           echo "::debug::FAIL $owner_email $file"
                           failed_validations="${failed_validations}FAIL $owner_email $file\n"
                       else

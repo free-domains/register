@@ -52,15 +52,13 @@ jobs:
 
             - name: Validate Emails
               run: |
-                  npm install -g yarn
-
                   for file in ${{ steps.find_files.outputs.files }}; do
                       filename=$(basename "$file")
                       email=$(jq -r '.owner.email' "$file")
 
                       echo "Validating $email in $filename"
 
-                      result=$(yarn run wdhdev/validate-email-action@main --email "$email")
+                      result=$(npx wdhdev/validate-email-action@main --email "$email")
 
                       if [[ -z $result ]]; then
                           echo "::error::FAIL $email $filename"

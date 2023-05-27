@@ -3,7 +3,7 @@ name: Domains
 on:
     pull_request:
         paths:
-            - "domains/**"
+            - "domains/*"
 
 jobs:
     validate_email:
@@ -21,10 +21,14 @@ jobs:
             - name: Retrieve and Validate Emails
               id: validate_email
               run: |
+                  failed_validations=""
+
                   for file in ${{ steps.find_files.outputs.files }}; do
                       owner_email=$(jq -r '.owner.email' "$file")
+
                       echo "Validating email: $owner_email"
                       echo "::set-output name=email::$owner_email"
+                      echo "::set-output name=file::$file"
                   done
 
             - name: Validate Email
@@ -34,6 +38,7 @@ jobs:
 
                   for file in ${{ steps.find_files.outputs.files }}; do
                       owner_email=$(jq -r '.owner.email' "$file")
+
                       echo "Validating email: $owner_email"
 
                       if email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
@@ -45,5 +50,6 @@ jobs:
                   done
 
                   if [ -n "$failed_validations" ]; then
+                      echo "::error::Email validation failed for the following files:\n${failed_validations}"
                       exit 1
                   fi

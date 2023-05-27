@@ -36,26 +36,25 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Check Event Type
-              id: check_event_type
-              run: |
-                  if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-                      echo "::set-output name=event_type::pr"
-                  else
-                      echo "::set-output name=event_type::push"
-                  fi
-
             - name: Find Files
               id: find_files
               run: |
-                  if [[ "${{ steps.check_event_type.outputs.event_type }}" == "pr" ]]; then
+                  if [[ ${{ github.event_name }} == 'pull_request' ]]; then
                       files=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
                           "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?per_page=100" \
                           | jq -r '.[] | select(.status == "added" or .status == "modified") | .filename' \
                           | grep 'domains/' \
                           | grep '\.json$')
-                  else
+                  elif [[ ${{ github.event_name }} == 'push' ]]; then
+                      if [[ -n ${{ github.event.pull_request }} ]]; then
+                          echo "::warning::Ignoring push event as it updates a pull request."
+                          exit 0
+                      fi
+
                       files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
+                  else
+                      echo "::error::Unsupported event: ${{ github.event_name }}"
+                      exit 0
                   fi
 
                   echo "::set-output name=files::$files"

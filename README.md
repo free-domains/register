@@ -1,21 +1,11 @@
-<p align="center">
-  <a href="https://freesubdomains.org"><img src="https://media.freesubdomains.org/cover.png"></a>
-</p>
+# 🌐 Free Domains
+Free subdomains for personal sites, open-source projects, and more.
 
-<h1 align="center">Free Domains</h1>
-
-<p align="center">
-  <a href="https://github.com/free-domains/register/tree/main/domains"><img src="https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file"></a>
-</p>
-
-<p align="center">Free subdomains for personal sites, open-source projects, and more.</p>
-<p align="center">If you want to find projects similar to this one, take a look on <a href="https://free-for.life/#/?id=domains">Free For Life</a>.</p>
+[![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
 
 # Register
-
-Please select a method below to show instructions on how to register a domain.
-
----
+1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
+2. Select a method below to show instructions on how to register a domain.
 
 <details>
   <summary>CLI (recommended)</summary>
@@ -49,13 +39,11 @@ Please select a method below to show instructions on how to register a domain.
 
 </details>
 
----
-
 <details>
   <summary>Manual</summary>
   <br>
 
-  1. **Star** and **[Fork](https://github.com/free-domains/register/fork)** this repository
+  1. **Star** and **[fork](https://github.com/free-domains/register/fork)** this repository.
   2. Add a new file called `example.domain.dev.json` in the `/domains` folder to register the `example` subdomain on the `domain.dev`.
     - An list of available domains can be found [here](#domains).
   3. Edit it to meet your needs.
@@ -95,8 +83,6 @@ Please select a method below to show instructions on how to register a domain.
 
 </details>
 
----
-
 ## Domains
 
 | Domains |
@@ -122,4 +108,4 @@ Please select a method below to show instructions on how to register a domain.
 | Browser Integrity Check*              | ✅ |
 | Caching Level, Browser Cache TTL*     | Standard, 4 hours |
 
-\*Only available when your domain has `proxied` mode set to `true`.
+\*Only available when your domain has `proxied` set to `true`.

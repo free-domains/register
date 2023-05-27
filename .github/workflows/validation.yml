@@ -60,11 +60,12 @@ jobs:
 
                       result=$(node scripts/validate-email/dist/index.js --email "$email")
 
+                      echo "$result"
+                      echo "$result.success"
+
                       if [[ "${result.success}" == "false" ]]; then
                           echo "::error::FAIL $email $filename"
                           echo "FAIL $email $filename" >> failed_validations.txt
-
-                          echo "$result"
                       else
                           echo "PASS $email $filename"
                       fi

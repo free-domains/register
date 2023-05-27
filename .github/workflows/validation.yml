@@ -51,14 +51,14 @@ jobs:
                               "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?per_page=100&page=$page" \
                               | jq -r '.[] | select(.status == "added" or .status == "modified") | .filename' \
                               | grep '^domains/.*\.json$')
-                          files="$files"$'\n'"$additional_files"
+                          files="${files}"$'\n'"${additional_files}"
                           ((page++))
                       done
                   else
                       files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
                   fi
 
-                  echo "::set-output name=files::$files"
+                  echo "::set-output name=files::${files}"
 
             - name: Validate Emails
               run: |

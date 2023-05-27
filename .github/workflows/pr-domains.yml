@@ -53,5 +53,5 @@ jobs:
                   fi
 
             - name: Fail Workflow on Validation Failure
-              if: ${{ job.status == 'success' && steps.email_validation.outputs.failed_validations != '' }}
+              if: ${{ steps.email_validation.outputs.failed_validations != '' }}
               run: exit 1

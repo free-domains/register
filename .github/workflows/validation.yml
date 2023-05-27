@@ -65,7 +65,7 @@ jobs:
 
                       success=$(echo "$fixed_result" | jq -r '.success')
 
-                      if [[ "$success" == "false" == "false" ]]; then
+                      if [[ "$success" == "false" ]]; then
                           echo "::error::FAIL $email $filename"
                           echo "FAIL $email $filename" >> failed_validations.txt
                       else

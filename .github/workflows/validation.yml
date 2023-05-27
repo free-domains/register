@@ -58,18 +58,13 @@ jobs:
 
                       echo "Validating $owner_email in $filename"
 
-                      result=$(wdhdev/validate-email-action@main --email "$owner_email" &)
-                      wait $result
-
-                      echo "$result"
-
-                      if [[ $result -ne 0 ]]; then
+                      if ! wait email_validation_result=$(wdhdev/validate-email-action@main --email "$owner_email"); then
                           echo "::error::FAIL $owner_email $filename"
                           echo "FAIL $owner_email $filename" >> failed_validations.txt
                       else
                           echo "PASS $owner_email $filename"
                           echo "PASS $owner_email $filename" >> passed_validations.txt
-                      fi
+                     fi
                   done
 
                   if [[ -s failed_validations.txt ]]; then

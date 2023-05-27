@@ -26,20 +26,19 @@ jobs:
               with:
                   node-version: 16
 
-            - run: |
-                  cd ./scripts/validate-email
-                  ls
-
             - name: Remove dist Directory
               run: rm -rf dist
+              working-directory: ./scripts/validate-email
 
             - name: Install Dependencies
               run: |
                   npm install
                   npm install -g @vercel/ncc
+              working-directory: ./scripts/validate-email
 
             - name: Build
               run: npm run build
+              working-directory: ./scripts/validate-email
 
             - name: Commit
               run: |
@@ -48,3 +47,4 @@ jobs:
                   git add dist/
                   git commit -m "chore: build validate-email"
                   git push
+              working-directory: ./scripts/validate-email

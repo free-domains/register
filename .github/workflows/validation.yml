@@ -58,9 +58,9 @@ jobs:
 
                       echo "Validating $email in $filename"
 
-                      result=$(node scripts/validate-email/dist/index.js --email "$email" | jq -r '.')
+                      result=$(node scripts/validate-email/dist/index.js --email "$email" | jq -c '.')
 
-                      if [[ "${result.success}" == "false" ]]; then
+                      if [[ $(echo "$result" | jq -r '.success') == "false" ]]; then
                           echo "::error::FAIL $email $filename"
                           echo "FAIL $email $filename" >> failed_validations.txt
                       else

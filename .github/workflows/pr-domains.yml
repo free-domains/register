@@ -53,10 +53,11 @@ jobs:
                   fi
 
                   echo "::set-output name=failed_validations::${failed_validations}"
+                  echo "${failed_validations}" > failed_validations.txt
 
             - name: Log Validations
-              run: echo "${{ steps.email_validation.outputs.failed_validations }}"
+              run: cat failed_validations.txt
 
             - name: Fail Workflow on Validation Failure
-              if: ${{ failure() && steps.email_validation.outputs.failed_validations != '' }}
+              if: ${{ steps.email_validation.outputs.failed_validations != '' }}
               run: exit 1

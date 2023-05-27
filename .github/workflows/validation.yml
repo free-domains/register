@@ -49,9 +49,15 @@ jobs:
                       files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
                   fi
 
+                  if [[ -z $files ]]; then
+                      echo "Skipping job as there are no files to analyse."
+                      echo "::set-output name=skip::true"
+                  fi
+
                   echo "::set-output name=files::$files"
 
             - name: Retrieve Emails
+              if: ${{ !steps.find_files.outputs.skip }}
               id: validate_email
               run: |
                   for file in ${{ steps.find_files.outputs.files }}; do
@@ -62,6 +68,7 @@ jobs:
                   done
 
             - name: Validate Emails
+              if: ${{ !steps.find_files.outputs.skip }}
               run: |
                   for file in ${{ steps.find_files.outputs.files }}; do
                       filename=$(basename "$file")

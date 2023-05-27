@@ -52,24 +52,24 @@ jobs:
 
             - name: Validate Emails
               run: |
+                  npm install -g yarn
+
                   for file in ${{ steps.find_files.outputs.files }}; do
                       filename=$(basename "$file")
-                      owner_email=$(jq -r '.owner.email' "$file")
+                      email=$(jq -r '.owner.email' "$file")
 
-                      echo "Validating $owner_email in $filename"
+                      echo "Validating $email in $filename"
 
-                      email_validation_result=$(wdhdev/validate-email-action@main --email "$owner_email")
-                      wait $email_validation_result
+                      result=$(yarn run wdhdev/validate-email-action@main --email "$email")
 
-                      if ! [[ $email_validation_result ]]; then
-                          echo "::error::FAIL $owner_email $filename"
-                          echo "FAIL $owner_email $filename" >> failed_validations.txt
+                      if [[ -z $result ]]; then
+                          echo "::error::FAIL $email $filename"
+                          echo "FAIL $email $filename" >> failed_validations.txt
                       else
-                          echo "PASS $owner_email $filename"
-                          echo "PASS $owner_email $filename" >> passed_validations.txt
+                          echo "PASS $email $filename"
                      fi
 
-                      echo "$email_validation_result"
+                      echo "$result"
                   done
 
                   if [[ -s failed_validations.txt ]]; then

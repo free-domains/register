@@ -58,14 +58,14 @@ jobs:
 
                       echo "Validating $email in $filename"
 
-                      result=$(npx github:wdhdev/validate-email-action@main --email "$email")
+                      result=$(node scripts/validate-email/dist/index.js --email "$email")
 
                       if [[ -z $result ]]; then
                           echo "::error::FAIL $email $filename"
                           echo "FAIL $email $filename" >> failed_validations.txt
                       else
                           echo "PASS $email $filename"
-                     fi
+                      fi
 
                       echo "$result"
                   done

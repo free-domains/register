@@ -1,0 +1,11 @@
+{
+  "name": "validate-email",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "author": "William Harrison",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}

@@ -1,0 +1,50 @@
+name: Build
+
+on:
+    push:
+        branches: [main]
+        paths:
+            - "scripts/validate-email/*"
+
+    workflow_dispatch:
+
+concurrency:
+    group: ${{ github.ref }}-build
+    cancel-in-progress: true
+
+jobs:
+    validate-email:
+        name: Validate Email
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  token: ${{ secrets.BOT }}
+
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+
+            - name: Remove dist Directory
+              run: rm -rf dist
+              working-directory: ./scripts/validate-email
+
+            - name: Install Dependencies
+              run: |
+                  npm install
+                  npm install -g @vercel/ncc
+              working-directory: ./scripts/validate-email
+
+            - name: Build
+              run: npm run build
+              working-directory: ./scripts/validate-email
+
+            - name: Commit
+              run: |
+                  git config --global user.email "bot@freesubdomains.org"
+                  git config --global user.name "free-domains-bot"
+                  git add dist/
+                  git commit -m "chore: build validate-email"
+                  git push
+              working-directory: ./scripts/validate-email

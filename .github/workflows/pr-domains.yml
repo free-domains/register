@@ -36,13 +36,14 @@ jobs:
                       owner_email=$(jq -r '.owner.email' "$file")
                       echo "Validating email: $owner_email"
 
-                      if ! email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
-                          echo "${file} failed email validation."
-                          failed_validations="${failed_validations}${file}\n"
+                      if email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
+                          echo "PASS $file $owner_email"
+                      else
+                          failed_validations="${failed_validations}${file} ${owner_email}\n"
+                          echo "FAIL $file $owner_email"
                       fi
                   done
 
                   if [ -n "$failed_validations" ]; then
-                      echo "::error:: Email validation failed for the following files:\n${failed_validations}"
                       exit 1
                   fi

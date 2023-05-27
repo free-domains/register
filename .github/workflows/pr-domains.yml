@@ -24,7 +24,7 @@ jobs:
                   for file in ${{ steps.find_files.outputs.files }}; do
                       owner_email=$(jq -r '.owner.email' "$file")
 
-                      echo "Validating email: $owner_email"
+                      echo "::debug::Validating email: $owner_email"
                       echo "::set-output name=email::$owner_email"
                       echo "::set-output name=file::$file"
                   done
@@ -40,10 +40,10 @@ jobs:
                       echo "Validating email: $owner_email"
 
                       if ! email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
-                          echo "FAIL $owner_email $file"
+                          echo "::debug::FAIL $owner_email $file"
                           failed_validations="${failed_validations}FAIL $owner_email $file\n"
                       else
-                          echo "PASS $owner_email $file"
+                          echo "::debug::PASS $owner_email $file"
                       fi
                   done
 

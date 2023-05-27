@@ -54,7 +54,7 @@ jobs:
                       files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
                   else
                       echo "::error::Unsupported event: ${{ github.event_name }}"
-                      exit 0
+                      exit 1
                   fi
 
                   echo "::set-output name=files::$files"

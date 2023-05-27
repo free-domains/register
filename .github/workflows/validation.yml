@@ -61,6 +61,8 @@ jobs:
                       result=$(wdhdev/validate-email-action@main --email "$owner_email" &)
                       wait $result
 
+                      echo "$result"
+
                       if [[ $result -ne 0 ]]; then
                           echo "::error::FAIL $owner_email $filename"
                           echo "FAIL $owner_email $filename" >> failed_validations.txt
@@ -68,8 +70,6 @@ jobs:
                           echo "PASS $owner_email $filename"
                           echo "PASS $owner_email $filename" >> passed_validations.txt
                       fi
-
-                      echo "$?"
                   done
 
                   if [[ -s failed_validations.txt ]]; then

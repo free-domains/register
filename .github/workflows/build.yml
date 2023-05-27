@@ -20,11 +20,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - run: cd scripts/validate-email
-
             - uses: actions/setup-node@v3
               with:
                   node-version: 16
+
+            - run: cd scripts/validate-email
 
             - name: Remove dist Directory
               run: rm -rf dist

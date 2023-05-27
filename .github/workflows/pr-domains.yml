@@ -16,13 +16,11 @@ jobs:
             - name: Find Modified JSON Files
               id: find_files
               run: |
-                  echo "::set-output name=files::$(git diff --name-only --diff-filter=M | grep '\.json$' || echo '')"
+                  echo "::set-output name=files::$(git diff --name-only --diff-filter=M "domains/" | grep '\.json$' || echo '')"
 
             - name: Retrieve and Validate Emails
               id: validate_email
               run: |
-                  failed_validations=""
-
                   for file in ${{ steps.find_files.outputs.files }}; do
                       owner_email=$(jq -r '.owner.email' "$file")
 
@@ -41,15 +39,15 @@ jobs:
 
                       echo "Validating email: $owner_email"
 
-                      if email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
-                          echo "PASS $file $owner_email"
+                      if ! email_validation_result=$(wdhdev/email-validator@main --email "$owner_email"); then
+                          echo "FAIL $owner_email $file"
+                          failed_validations="${failed_validations}FAIL $owner_email $file\n"
                       else
-                          failed_validations="${failed_validations}${file} ${owner_email}\n"
-                          echo "FAIL $file $owner_email"
+                          echo "PASS $owner_email $file"
                       fi
                   done
 
-                  if [ -n "$failed_validations" ]; then
+                  if [[ $failed_validations != "" ]]; then
                       echo "::error::Email validation failed for the following files:\n${failed_validations}"
                       exit 1
                   fi

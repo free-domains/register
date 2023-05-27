@@ -45,16 +45,8 @@ jobs:
                           | jq -r '.[] | select(.status == "added" or .status == "modified") | .filename' \
                           | grep 'domains/' \
                           | grep '\.json$')
-                  elif [[ ${{ github.event_name }} == 'push' ]]; then
-                      if [[ -n ${{ github.event.pull_request }} ]]; then
-                          echo "::warning::Ignoring push event as it updates a pull request."
-                          exit 0
-                      fi
-
-                      files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
                   else
-                      echo "::error::Unsupported event: ${{ github.event_name }}"
-                      exit 1
+                      files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
                   fi
 
                   echo "::set-output name=files::$files"

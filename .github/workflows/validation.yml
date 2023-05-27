@@ -23,7 +23,26 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
-            - name: Check
+            - name: Find Files
+              id: find_files
+              run: |
+                  if [[ ${{ github.event_name }} == 'pull_request' ]]; then
+                      files=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                          "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?per_page=100" \
+                          | jq -r '.[] | select(.status == "added" or .status == "modified") | .filename' \
+                          | grep 'domains/' \
+                          | grep '\.json$')
+                  else
+                      files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
+                  fi
+
+                  if [[ -z $files ]]; then
+                      echo "Skipping job as there are no files to analyse."
+                      echo "::set-output name=skip::true"
+                  fi
+
+            - name: DNSControl Check
+              if: ${{ !steps.find_files.outputs.skip }}
               uses: koenrh/dnscontrol-action@v3
               with:
                   args: check
@@ -56,17 +75,6 @@ jobs:
 
                   echo "::set-output name=files::$files"
 
-            - name: Retrieve Emails
-              if: ${{ !steps.find_files.outputs.skip }}
-              id: validate_email
-              run: |
-                  for file in ${{ steps.find_files.outputs.files }}; do
-                      owner_email=$(jq -r '.owner.email' "$file")
-
-                      echo "::set-output name=email::$owner_email"
-                      echo "::set-output name=file::$file"
-                  done
-
             - name: Validate Emails
               if: ${{ !steps.find_files.outputs.skip }}
               run: |
@@ -93,7 +101,26 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Find Files
+              id: find_files
+              run: |
+                  if [[ ${{ github.event_name }} == 'pull_request' ]]; then
+                      files=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                          "https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files?per_page=100" \
+                          | jq -r '.[] | select(.status == "added" or .status == "modified") | .filename' \
+                          | grep 'domains/' \
+                          | grep '\.json$')
+                  else
+                      files=$(git diff --name-only --diff-filter=AM "domains/" | grep '\.json$' || echo '')
+                  fi
+
+                  if [[ -z $files ]]; then
+                      echo "Skipping job as there are no files to analyse."
+                      echo "::set-output name=skip::true"
+                  fi
+
             - name: JSON Syntax Check
+              if: ${{ !steps.find_files.outputs.skip }}
               uses: limitusus/json-syntax-check@v1
               with:
                   pattern: "\\.json$"

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ewkstest",
+
+    "owner": {
+        "email": "isaaczammit0100@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "ewkstest.is-a-fullstack.dev"
+    },
+
+    "proxied": false
+}

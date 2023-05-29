@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "ads",
+
+    "owner": {
+        "email": "egeselvix@gmail.com"
+    },
+
+    "records": {
+        "A": ["64.226.108.51"]
+    },
+
+    "proxied": true
+}

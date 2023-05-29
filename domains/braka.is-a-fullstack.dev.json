@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "braka",
+
+    "owner": {
+        "email": "tachtasandangsjb@gmail.com"
+    },
+
+    "records": {
+        "A": ["152.67.97.109"]
+    },
+
+    "proxied": true
+}

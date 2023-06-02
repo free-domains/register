@@ -63,6 +63,12 @@ Free subdomains for personal sites, open-source projects, and more.
           "A": ["1.1.1.1", "1.0.0.1"],
           "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
           "CNAME": "example.com",
+          "MX": [
+              {
+                  "priority": 10,
+                  "value": "mx.example.com"
+              }
+          ],
           "TXT": [
               {
                   "name": "@",

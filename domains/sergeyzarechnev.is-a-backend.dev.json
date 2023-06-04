@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "sergeyzarechnev",
+
+    "owner": {
+        "email": "da_kurlzzzzz@mail.ru"
+    },
+
+    "records": {
+        "A": ["89.23.39.35"]
+    },
+
+    "proxied": false
+}

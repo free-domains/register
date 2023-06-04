@@ -3,12 +3,12 @@ Free subdomains for personal sites, open-source projects, and more.
 
 [![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
 
-# Register
+# 🖋️ Register
 1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
 2. Select a method below to show instructions on how to register a domain.
 
 <details>
-  <summary>CLI (recommended)</summary>
+  <summary>⌨️ CLI (recommended)</summary>
   <br>
 
   > The CLI has 3 prefixes: `domains`, `fd` and `free-domains`.
@@ -40,7 +40,7 @@ Free subdomains for personal sites, open-source projects, and more.
 </details>
 
 <details>
-  <summary>Manual</summary>
+  <summary>📝 Manual</summary>
   <br>
 
   1. **Star** and **[fork](https://github.com/free-domains/register/fork)** this repository.
@@ -89,7 +89,7 @@ Free subdomains for personal sites, open-source projects, and more.
 
 </details>
 
-## Domains
+## 🌐 Domains
 
 | Domains |
 |:-:|
@@ -97,7 +97,7 @@ Free subdomains for personal sites, open-source projects, and more.
 | [`is-a-frontend.dev`](https://is-a-frontend.dev) |
 | [`is-a-fullstack.dev`](https://is-a-fullstack.dev) |
 
-### Settings
+### ⚙️ Settings
 
 > All domains use the same settings.
 

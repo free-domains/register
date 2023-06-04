@@ -18,10 +18,11 @@ jobs:
     dns:
         name: DNS
         runs-on: ubuntu-latest
+
         steps:
             - uses: actions/checkout@v3
 
-            - name: Generate creds.json
+            - name: Create creds.json
               run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","apitoken":"$CLOUDFLARE_API_TOKEN"}}' > ./creds.json
 
             - name: Publish

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "totob12",
+
+    "owner": {
+        "email": "totobeliard@outlook.com"
+    },
+
+    "records": {
+        "AAAA": ["thisisatest"]
+    },
+
+    "proxied": false
+}

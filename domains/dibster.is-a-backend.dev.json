@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "dibster",
+
+    "owner": {
+        "email": "dibster@danbot.host"
+    },
+
+    "records": {
+        "A": ["192.95.42.66"]
+    },
+
+    "proxied": false
+}

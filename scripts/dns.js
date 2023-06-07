@@ -16,7 +16,7 @@ var proxy = {
  *    domain: string,
  *    subdomain: string,
  *    owner?: { email?: string },
- *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], NS?: string[], TXT?: object[] },
+ *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], TXT?: object[] },
  *    proxied: boolean
  *  }}[]}
  */

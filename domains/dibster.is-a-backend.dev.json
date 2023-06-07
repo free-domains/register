@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "dibster",
+
+    "owner": {
+        "email": "dibster@danbot.host"
+    },
+
+    "records": {
+        "NS": ["ns1.he.net", "ns2.he.net", "ns3.he.net", "ns4.he.net", "ns5.he.net"]
+    },
+
+    "proxied": false
+}

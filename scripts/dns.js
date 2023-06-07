@@ -72,11 +72,11 @@ for (var idx in domains) {
         }
     }
 
-    if (domainData.records.NS) {
-        for (var ns in domainData.records.NS) {
-            commit[domainData.domain].push(NS(domainData.subdomain, domainData.records.NS[ns] + "."));
-        }
-    }
+    // if (domainData.records.NS) {
+        // for (var ns in domainData.records.NS) {
+            // commit[domainData.domain].push(NS(domainData.subdomain, domainData.records.NS[ns] + "."));
+        // }
+    // }
 
     if (domainData.records.TXT) {
         for (var txt in domainData.records.TXT) {

@@ -6,21 +6,6 @@ var proxy = {
     on: { cloudflare_proxy: "on" }
 };
 
-/**
- * Note: glob() is only an internal undocumented helper function (maybe risky).
- *
- * @param { String } filesPath
- * @returns {{
- *  name: string,
- *  data: {
- *    domain: string,
- *    subdomain: string,
- *    owner?: { email?: string },
- *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], TXT?: object[] },
- *    proxied: boolean
- *  }}[]}
- */
-
 function getDomainsList(filesPath) {
     var result = [];
     var files = glob.apply(null, [filesPath, true, ".json"]);
@@ -36,10 +21,6 @@ function getDomainsList(filesPath) {
 }
 
 var domains = getDomainsList("../domains");
-
-/**
- * @type {{}}
- */
 
 var commit = {};
 

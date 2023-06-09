@@ -1,0 +1,28 @@
+{
+    "domain": "radiowebcamposborges.dev",
+    "subdomain": "",
+
+    "owner": {
+        "email": "cristianbairros2003@gmail.com"
+    },
+
+    "records": {
+        "A": ["1.1.1.1", "1.0.0.1"],
+        "AAAA": ["2804:1b74:11d:c300:d524:6e53:bca1:85dd", ""],
+        "CNAME": "example.com",
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx.example.com"
+            }
+        ],
+        "TXT": [
+            {
+                "name": "@",
+                "value": "example_verification=1234567890"
+            }
+        ]
+    },
+
+    "proxied": false
+}

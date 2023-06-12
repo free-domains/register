@@ -1,0 +1,28 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "saffuraahamed",
+
+    "owner": {
+        "email": "007saffuraahamed@gmail.com"
+    },
+
+    "records": {
+        "A": ["1.1.1.1", "1.0.0.1"],
+        "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
+        "CNAME": "saffuraahamed.com",
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx.saffuraahamed.com"
+            }
+        ],
+        "TXT": [
+            {
+                "name": "@",
+                "value": "saffuraahamed_verification=1234567890"
+            }
+        ]
+    },
+
+    "proxied": false
+}

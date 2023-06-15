@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "testopenbsd",
+
+    "owner": {
+        "email": "soubheeknath@gmail.com"
+    },
+
+    "records": {
+        "A": ["1"]
+    },
+
+    "proxied": false
+}

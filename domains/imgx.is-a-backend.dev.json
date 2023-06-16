@@ -7,17 +7,15 @@
     },
 
     "records": {
-     
+        "A": ["35.237.235.215"],
+
         "MX": [
             {
                 "priority": 10,
-                "value": "mx1.improvmx.com."
+                "value": "mx1.improvmx.com"
             }
-        ],
-          "records": {
-        "A": ["35.237.235.215"]
-    },
+        ]
     },
 
-    "proxied": true
+    "proxied": false
 } 

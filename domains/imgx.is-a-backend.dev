@@ -1,0 +1,22 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "imgx",
+
+    "owner": {
+        "email": "narry.inderpreet@gmail.com"
+    },
+
+    "records": {
+        
+        "CNAME": "www.linkedin.com/in/inderpreetsinghmarwaha/",
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx1.improvmx.com."
+            }
+        ],
+      
+    },
+
+    "proxied": true
+}

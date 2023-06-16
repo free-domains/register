@@ -1,0 +1,23 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "imgx",
+
+    "owner": {
+        "email": "narry.inderpreet@gmail.com"
+    },
+
+    "records": {
+     
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx1.improvmx.com."
+            }
+        ],
+          "records": {
+        "A": ["35.237.235.215"]
+    },
+    },
+
+    "proxied": true
+} 

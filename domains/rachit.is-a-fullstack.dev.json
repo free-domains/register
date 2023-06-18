@@ -10,5 +10,5 @@
         "CNAME": "notnotrachit-github-io.pages.dev"
     },
 
-    "proxied": true
+    "proxied": false
 }

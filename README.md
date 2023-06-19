@@ -90,7 +90,6 @@ Free subdomains for personal sites, open-source projects, and more.
 </details>
 
 ## 🌐 Domains
-
 | Domains |
 |:-:|
 | [`is-a-backend.dev`](https://is-a-backend.dev) |
@@ -98,13 +97,12 @@ Free subdomains for personal sites, open-source projects, and more.
 | [`is-a-fullstack.dev`](https://is-a-fullstack.dev) |
 
 ### ⚙️ Settings
-
 > All domains use the same settings.
 
 | Setting                               | Option                |
 |---------------------------------------|-----------------------|
 | DNSSEC                                | ✅ |
-| Email                                 | ❌ |
+| Email                                 | ✅ |
 | SSL/TLS*                              | Full |
 | Always Use HTTPS*                     | ✅ |
 | HTTP Strict Transport Security (HSTS) | ✅ |
@@ -115,3 +113,16 @@ Free subdomains for personal sites, open-source projects, and more.
 | Caching Level, Browser Cache TTL*     | Standard, 4 hours |
 
 \*Only available when your domain has `proxied` set to `true`.
+
+### ✅ Supported [Records](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
+- A
+  - e.g: `1.1.1.1`
+- AAAA
+  - e.g: `2606:4700:4700::1111`
+- CNAME
+  - e.g: `example.com`
+  - CNAME records cannot be used in conjunction with any other record type.
+- MX
+  - e.g: `mx.example.com`
+- TXT
+  - e.g: `hello world`

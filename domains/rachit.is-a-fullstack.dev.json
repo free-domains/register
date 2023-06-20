@@ -7,8 +7,8 @@
     },
 
     "records": {
-        "CNAME": "notnotrachit-github-io.pages.dev"
+        "CNAME": "na-west1.surge.sh"
     },
 
-    "proxied": false
+    "proxied": true
 }

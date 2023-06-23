@@ -3,11 +3,11 @@
   "subdomain": "fitrahmunir",
 
   "owner": {
-    "email": "fitrhmnr@gmail.com"
+    "email": "fitrhmnr+is-a-frontend-dev@gmail.com"
   },
 
   "records": {
-    "CNAME": "fitrahmunir.vercel.app"
+    "CNAME": "fitrahmunir.pages.app"
   },
 
   "proxied": false

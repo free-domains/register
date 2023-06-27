@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "CNAME": "a4d9dc46-ede9-4cbb-a13e-97fcce2f5df9.id.repl.co",
+        "A": ["34.149.204.188"],
         
         "TXT": [
             {

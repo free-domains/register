@@ -7,7 +7,14 @@
     },
 
     "records": {
-        "CNAME": "a4d9dc46-ede9-4cbb-a13e-97fcce2f5df9.id.repl.co"
+        "CNAME": "a4d9dc46-ede9-4cbb-a13e-97fcce2f5df9.id.repl.co",
+        
+        "TXT": [
+            {
+                "name": "@",
+                "value": "replit-verify=a4d9dc46-ede9-4cbb-a13e-97fcce2f5df9"
+            }
+        ]
     },
 
     "proxied": false

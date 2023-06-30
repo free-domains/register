@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "deepak",
+
+    "owner": {
+        "email": "gohildeepak2003@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "github.com/deepakgohil9"
+    },
+
+    "proxied": true
+}

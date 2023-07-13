@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "bee",
+
+    "owner": {
+        "email": "commandify@gmail.com"
+    },
+
+    "records": {
+        "A": ["68.183.191.223"]
+    },
+
+    "proxied": false
+}

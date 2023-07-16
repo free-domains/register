@@ -7,7 +7,12 @@
     },
 
     "records": {
-        "CNAME": "mx1.forwardemail.net"
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx1.forwardemail.net"
+            }
+        ]
     },
 
     "proxied": true

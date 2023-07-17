@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "kweeper",
+
+    "owner": {
+        "email": "kaungkhantnaing014@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "0ddb5c7b-78df-4c47-9e7b-e6627d48f362.id.repl.co"
+    },
+
+    "proxied": false
+}

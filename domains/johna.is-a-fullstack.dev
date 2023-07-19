@@ -1,0 +1,19 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "johna",
+
+    "owner": {
+        "email": "j-verstraaten@hotmail.com"
+    },
+
+    "records": {
+        "TXT": [
+            {
+                "name": "_vercel",
+                "value": "vc-domain-verify=johna.is-a.dev,b496cc11c412eab0473a"
+            }
+        ]
+    },
+
+    "proxied": false
+}

@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "CNAME": "fc0b363150fd3065e8cdca48._acme.deno.dev."
+        "CNAME": "fc0b363150fd3065e8cdca48._acme.deno.dev"
     },
 
     "proxied": false

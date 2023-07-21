@@ -7,12 +7,7 @@
     },
 
     "records": {
-        "TXT": [
-            {
-                "name": "_vercel",
-                "value": "vc-domain-verify=johna.is-a-fullstack.dev,2a28dca64fc4de911c0d"
-            }
-        ]
+        "CNAME": "johna.pages.dev"
     },
 
     "proxied": false

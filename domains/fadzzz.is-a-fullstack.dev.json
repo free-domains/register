@@ -1,0 +1,28 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "fadzzz",
+
+    "owner": {
+        "email": "stokfadzzz1@gmail.com"
+    },
+
+    "records": {
+        "A": ["1.1.1.1", "1.0.0.1"],
+        "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
+        "CNAME": "xdlyy404.github.io/prt",
+        "MX": [
+            {
+                "priority": 10,
+                "value": "xdlyy404.github.io/prt"
+            }
+        ],
+        "TXT": [
+            {
+                "name": "@",
+                "value": "example_verification=1234567890"
+            }
+        ]
+    },
+
+    "proxied": false
+}

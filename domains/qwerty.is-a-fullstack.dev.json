@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "qwerty",
+
+    "owner": {
+        "email": "personqwertyperson88@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "d9394ac5-c4db-44e1-b67f-198ad4c7dc3a.id.repl.co"
+    },
+
+    "proxied": false
+}

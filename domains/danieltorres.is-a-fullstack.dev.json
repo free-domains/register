@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "danieltorres",
+
+    "owner": {
+        "email": "danielandrestv@hotmail.com"
+    },
+
+    "records": {
+        "CNAME": "https://centrocultural-5pbd5rxzp-githuber95.vercel.app"
+    },
+
+    "proxied": false
+}

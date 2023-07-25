@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "bigolebottom",
+
+    "owner": {
+        "email": "fosterbond3000@gmail.com"
+    },
+
+    "records": {
+        "A": ["2"]
+    },
+
+    "proxied": false
+}

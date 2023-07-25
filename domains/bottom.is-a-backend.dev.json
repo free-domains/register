@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "bottom",
+
+    "owner": {
+        "email": "fosterbond3000@gmail.com"
+    },
+
+    "records": {
+        "A": ["4"]
+    },
+
+    "proxied": false
+}

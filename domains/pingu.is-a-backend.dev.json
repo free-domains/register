@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "pingu",
+
+    "owner": {
+        "email": "gleboy1000@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "cname.vercel-dns.com.",
+    },
+
+    "proxied": false
+}

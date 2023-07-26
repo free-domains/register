@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "iamchoiiril",
+
+    "owner": {
+        "email": "iamchoirilfk@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "iamchoiiril.glitch.me"
+    },
+
+    "proxied": false
+}

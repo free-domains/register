@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "y12d",
+
+    "owner": {
+        "email": "ydurmaz2021@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "y12d"
+    },
+
+    "proxied": false
+}

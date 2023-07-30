@@ -1,13 +1,12 @@
 {
     "domain": "is-a-fullstack.dev",
-    "subdomain": "verbalize",
-
+    "subdomain": "jeff",
     "owner": {
-        "email": "arnu515@protonmail.com"
+        "email": "jeff.tian@outlook.com"
     },
 
     "records": {
-        "A": ["71.71.27.27"]
+        "CNAME": "jeff-tian.github.io"
     },
 
     "proxied": false

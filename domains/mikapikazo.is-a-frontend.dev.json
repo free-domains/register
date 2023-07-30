@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "mikapikazo",
+
+    "owner": {
+        "email": "putriimuttzz.cantikk@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "rinxyzz-github-io.pages.dev"
+    },
+
+    "proxied": false
+}

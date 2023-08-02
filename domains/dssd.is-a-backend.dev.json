@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "dssd",
+
+    "owner": {
+        "email": "alyson.reis.ar@gmail.com"
+    },
+
+    "records": {
+        "A": [""]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "saurabh",
+
+    "owner": {
+        "email": "saurabhkirve@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "berzcode.github.io"
+    },
+
+    "proxied": false
+}

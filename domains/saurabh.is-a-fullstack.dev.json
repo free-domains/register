@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "CNAME": ["berzcode.github.io/Portfolio"]
+        "CNAME": "berzcode.github.io"
     },
 
     "proxied": false

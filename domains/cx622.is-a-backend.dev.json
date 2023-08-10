@@ -1,0 +1,21 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "cx622",
+
+    "owner": {
+        "email": "admin@feet-fetish.pics"
+    },
+
+    "records": {
+        "A": ["34.132.134.162"],
+
+        "TXT": [
+            {
+                "name": "@",
+                "value": "replit-verify=5009b1b0-1d1f-4d9b-8ac8-9816e8837aa0"
+            }
+        ]
+    },
+
+    "proxied": false
+}

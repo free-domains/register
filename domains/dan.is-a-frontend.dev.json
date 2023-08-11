@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "dan",
+
+    "owner": {
+        "email": "dkwygtig@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["2a00:da00:1800:827f::1"]
+    },
+
+    "proxied": false
+}

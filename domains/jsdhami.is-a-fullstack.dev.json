@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "jsdhami",
+
+    "owner": {
+        "email": "info@jsdhami.com.np"
+    },
+
+    "records": {
+        "CNAME": "jsdhami.github.io"
+    },
+
+    "proxied": false
+}

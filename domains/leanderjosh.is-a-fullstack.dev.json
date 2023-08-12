@@ -7,7 +7,13 @@
     },
 
     "records": {
-        "A": ["1.1.1.1"]
+        "TXT": [
+            {
+                "name": "_vercel",
+                "value": "vc-domain-verify=leanderjosh.is-a-fullstack.dev,01e95f8de4ec6e8dea2a"
+            }
+        ]
+
     },
 
     "proxied": false

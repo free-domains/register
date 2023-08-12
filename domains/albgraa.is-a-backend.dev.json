@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "albgraa",
+
+    "owner": {
+        "email": "utsavk681@gmail.com"
+    },
+
+    "records": {
+        "A": ["1.1.1.1"]
+    },
+
+    "proxied": false
+}

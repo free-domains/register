@@ -8,19 +8,12 @@
     },
 
     "records": {
-        "A": ["1.1.1.1", "1.0.0.1"],
-        "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
         "CNAME": "jsdhami.github.io",
-        "MX": [
-            {
-                "priority": 10,
-                "value": "mx.example.com"
-            }
-        ],
+
         "TXT": [
             {
-                "name": "@",
-                "value": "_github-pages-challenge-jsdhami.jsdhami"
+                "name": "_github-pages-challenge-jsdhami",
+                "value": ""
             }
         ]
     },

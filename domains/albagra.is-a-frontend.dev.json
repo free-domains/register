@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "CNAME": ["utsav.github.io"]
+        "CNAME": "utsavy.github.io"
     },
 
     "proxied": false

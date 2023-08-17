@@ -1,0 +1,12 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "nirjal",
+
+    "owner": {
+        "email": "nirjalpaudel54312@gmail.com"
+    },
+    "records": {
+        "CNAME": "nirjalpaudel.com.np"
+    },
+    "proxied": false
+}

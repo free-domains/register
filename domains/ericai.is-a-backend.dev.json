@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "ericai",
+
+    "owner": {
+        "email": "a609764690@163.com"
+    },
+
+    "records": {
+        "CNAME": "cname.vercel-dns.com"
+    },
+
+    "proxied": false
+}

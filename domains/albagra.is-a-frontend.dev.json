@@ -10,5 +10,5 @@
         "CNAME": "utsavy.github.io"
     },
 
-    "proxied": false
+    "proxied": true
 }

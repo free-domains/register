@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "jest",
+
+    "owner": {
+        "email": "trgino@trgino.com"
+    },
+
+    "records": {
+        "A": ["144.126.134.60"]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "valencemc",
+
+    "owner": {
+        "email": "icrayix@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "icrayix.github.io",
+    },
+
+    "proxied": false
+}

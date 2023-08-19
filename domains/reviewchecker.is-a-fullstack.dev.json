@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "reviewchecker",
+
+    "owner": {
+        "email": "bzhe0015@student.monash.edu"
+    },
+
+    "records": {
+        "CNAME": "reviewchecker.com"
+    },
+
+    "proxied": false
+}

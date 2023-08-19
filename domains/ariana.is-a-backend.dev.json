@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "ariana",
+
+    "owner": {
+        "email": "serariana.com@gmail.com"
+    },
+
+    "records": {
+        "A": ["156.255.1.42"]
+    },
+
+    "proxied": false
+}

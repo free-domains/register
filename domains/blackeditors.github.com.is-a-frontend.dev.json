@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "blackeditors.github.com",
+
+    "owner": {
+        "email": "wazirmubashir2021@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "11111111"
+    },
+
+    "proxied": false
+}

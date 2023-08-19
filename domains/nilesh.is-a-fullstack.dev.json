@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "nilesh",
+
+    "owner": {
+        "email": "nileshtejani2010@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "example.com"
+    },
+
+    "proxied": false
+}

@@ -6,17 +6,16 @@
         "email": "21amtics272@gmail.com"
     },
 
-    "records": [{
-        "CNAME": "pritam.me"
-        },
-        {
-             "TXT": 
+    "records": {
+        "CNAME": "pritam.me",
+
+        "TXT": [
             {
-                "name": "_github-pages-challenge-pritam-ravani.pritam",
+                "name": "_github-pages-challenge-pritam-ravani",
                 "value": "2e63d8e87b97d7021bb914a5313f1e"
-            },
-        }
-    ],
+            }
+        ]
+    },
 
     "proxied": false
 }

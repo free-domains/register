@@ -3,11 +3,17 @@
     "subdomain": "qwerty",
 
     "owner": {
-        "email": "personqwertyperson88@gmail.com"
+        "email": "personqwertypesron88@gmail.com"
     },
 
     "records": {
-        "CNAME": "d9394ac5-c4db-44e1-b67f-198ad4c7dc3a.id.repl.co"
+        "A": ["35.186.245.55"]
+        "TXT": [
+            {
+                "name": "@",
+                "value": "replit-verify=d9394ac5-c4db-44e1-b67f-198ad4c7dc3a"
+            }
+        ]
     },
 
     "proxied": false

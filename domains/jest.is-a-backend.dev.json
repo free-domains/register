@@ -1,13 +1,13 @@
 {
     "domain": "is-a-backend.dev",
-    "subdomain": "dibster",
+    "subdomain": "jest",
 
     "owner": {
-        "email": "dibster@danbot.host"
+        "email": "trgino@trgino.com"
     },
 
     "records": {
-        "A": ["192.95.42.66"]
+        "A": ["144.126.134.60"]
     },
 
     "proxied": false

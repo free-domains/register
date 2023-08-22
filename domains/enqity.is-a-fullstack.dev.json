@@ -1,12 +1,13 @@
 {
     "domain": "is-a-fullstack.dev",
-    "subdomain": "jeff",
+    "subdomain": "enqity",
+
     "owner": {
-        "email": "jeff.tian@outlook.com"
+        "email": "tuiteof@gmail.com"
     },
 
     "records": {
-        "CNAME": "jeff-tian.github.io"
+        "A": ["198.91.81.13"]
     },
 
     "proxied": false

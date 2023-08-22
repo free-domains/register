@@ -1,12 +1,13 @@
 {
     "domain": "is-a-fullstack.dev",
-    "subdomain": "jeff",
+    "subdomain": "iqphish",
+
     "owner": {
-        "email": "jeff.tian@outlook.com"
+        "email": "rgcoloman@gmail.com"
     },
 
     "records": {
-        "CNAME": "jeff-tian.github.io"
+        "AAAA": ["2606:4700:4700::1111"]
     },
 
     "proxied": false

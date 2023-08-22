@@ -1,13 +1,13 @@
 {
     "domain": "is-a-fullstack.dev",
-    "subdomain": "verbalize",
+    "subdomain": "saurabh",
 
     "owner": {
-        "email": "arnu515@protonmail.com"
+        "email": "saurabhkirve@gmail.com"
     },
 
     "records": {
-        "A": ["71.71.27.27"]
+        "CNAME": "berzcode.github.io"
     },
 
     "proxied": false

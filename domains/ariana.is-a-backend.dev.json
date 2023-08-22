@@ -1,13 +1,13 @@
 {
     "domain": "is-a-backend.dev",
-    "subdomain": "dan",
+    "subdomain": "ariana",
 
     "owner": {
-        "email": "dkwygtig@gmail.com"
+        "email": "serariana.com@gmail.com"
     },
 
     "records": {
-        "CNAME": "dkwygtig.github.io"
+        "A": ["156.255.1.42"]
     },
 
     "proxied": false

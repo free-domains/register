@@ -1,13 +1,13 @@
 {
     "domain": "is-a-frontend.dev",
-    "subdomain": "valorshoired",
+    "subdomain": "dan",
 
     "owner": {
-        "email": "isaacisapop@gmail.com"
+        "email": "dkwygtig@gmail.com"
     },
 
     "records": {
-        "A": ["172.16.0.4"]
+        "AAAA": ["2a00:da00:1800:827f::1"]
     },
 
     "proxied": false

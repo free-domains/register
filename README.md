@@ -3,6 +3,9 @@ Free subdomains for personal sites, open-source projects, and more.
 
 [![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
 
+# Notice:
+There are services that we cannot support due to limits. These services are: Vercel, and Netlify.
+
 # 📝 Register
 1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
 2. Select a method below to show instructions on how to register a domain.

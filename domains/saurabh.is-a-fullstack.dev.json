@@ -8,6 +8,12 @@
 
     "records": {
         "CNAME": "berzcode.github.io"
+        "TXT": [
+            {
+                "name": "_vercel",
+                "value": "vc-domain-verify=saurabh.is-a-fullstack.dev,1037a964c0650bde074a"
+            }
+        ]
     },
 
     "proxied": false

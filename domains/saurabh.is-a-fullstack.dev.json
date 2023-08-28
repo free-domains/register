@@ -7,12 +7,20 @@
     },
 
     "records": {
+
+        "MX" :{
+"mx1.forwardemail.net",
+            "mx2.forwardemail.net"}
         "CNAME": "berzcode.github.io",
 
         "TXT": [
             {
                 "name": "_github-pages-challenge-berzcode",
                 "value": "afe06cebd0ad37d51f8dc246bf40d8"
+            },
+             {
+                "name": "saurabh",
+                "value": "forward-email=saurabhkirve@gmail.com"
             }
         ]
     },

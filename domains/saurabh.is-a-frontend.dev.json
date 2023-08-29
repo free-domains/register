@@ -8,6 +8,11 @@
 
     "records": {
         "CNAME": "berzcode.github.io"
+         "TXT": [
+            {
+                "name": "_github-pages-challenge-berzcode",
+                "value": "0c8aea4c6685c080e6ca9e8233d944"
+            },
     },
 
     "proxied": false

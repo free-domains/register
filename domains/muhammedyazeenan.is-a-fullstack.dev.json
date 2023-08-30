@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "muhammedyazeenan",
+
+    "owner": {
+        "email": "muhammedyazeenan@duck.com"
+    },
+
+    "records": {
+        "A": ["142.250.77.110"]
+    },
+
+    "proxied": false
+}

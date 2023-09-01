@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "",
+
+    "owner": {
+        "email": "acatepec1719@gmail.com"
+    },
+
+    "records": {
+        "A": [""]
+    },
+
+    "proxied": false
+}

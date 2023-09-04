@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "CNAME": "9"
+        "CNAME": "redirectRoot.xyz"
     },
 
     "proxied": false

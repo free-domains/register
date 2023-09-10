@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "mail",
+
+    "owner": {
+        "email": "sinzie@pm.me"
+    },
+
+    "records": {
+        "A": ["38.87"]
+    },
+
+    "proxied": false
+}

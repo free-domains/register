@@ -1,0 +1,19 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "bkm",
+
+    "owner": {
+        "email": "zxc1007csgo@gmail.com"
+    },
+
+    "records": {
+        "TXT": [
+            {
+                "name": "_vercel",
+                "value": "vc-domain-verify=bkm.is-a-backend.dev,8794757d2d2cdd681c31"
+            }
+        ]
+    },
+
+    "proxied": false
+}

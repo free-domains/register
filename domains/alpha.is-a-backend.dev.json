@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "alpha",
+
+    "owner": {
+        "email": "sweepalf@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "edge.redirect.pizza"
+    },
+
+    "proxied": false
+}

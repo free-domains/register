@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "kaos",
+
+    "owner": {
+        "email": "sinzie@proton.me"
+    },
+
+    "records": {
+        "AAAA": ["2602:fccf:1:1097::"]
+    },
+
+    "proxied": true
+}

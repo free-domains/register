@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "sivan",
+
+    "owner": {
+        "email": "bahmanbarzani8@gmail.com"
+    },
+
+    "records": {
+        "A": ["27.27.21.21"]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "mubosher",
+
+    "owner": {
+        "email": "muydinovmubosher@yandex.ru"
+    },
+
+    "records": {
+        "CNAME": "personal-blog-9e086.web.app"
+    },
+
+    "proxied": false
+}

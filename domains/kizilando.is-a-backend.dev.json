@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "kizilando",
+
+    "owner": {
+        "email": "benayedismail2008@yahoo.com"
+    },
+
+    "records": {
+        "A": ["194.163.165.82"]
+    },
+
+    "proxied": false
+}

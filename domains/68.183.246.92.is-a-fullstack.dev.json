@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "68.183.246.92",
+
+    "owner": {
+        "email": "jonathanpkatumba@gmail.com"
+    },
+
+    "records": {
+        "A": ["68.183.246.92"]
+    },
+
+    "proxied": false
+}

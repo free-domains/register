@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "gitlawl",
+
+    "owner": {
+        "email": "adam@braap.pw"
+    },
+
+    "records": {
+        "A": ["1.1.1.1"]
+    },
+
+    "proxied": false
+}

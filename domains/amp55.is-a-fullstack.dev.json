@@ -1,0 +1,15 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "amp55",
+
+    "owner": {
+        "email": "christi9nl9rsen@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "koralis.onrender.com",
+        ]
+    },
+
+    "proxied": false
+}

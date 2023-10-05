@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "bangudah",
+
+    "owner": {
+        "email": "kusmidahjjajaj@gmail.com"
+    },
+
+    "records": {
+        "A": ["0000000"]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "mosquitto",
+
+    "owner": {
+        "email": "Kieran.marien@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "mosquitto"
+    },
+
+    "proxied": false
+}

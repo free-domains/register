@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "estiwen",
+
+    "owner": {
+        "email": "rawestoffical@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "dns"
+    },
+
+    "proxied": false
+}

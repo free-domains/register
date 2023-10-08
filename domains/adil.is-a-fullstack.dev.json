@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "adil",
+
+    "owner": {
+        "email": "adilelghazzali.dev@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "is-a-fullstack.dev"
+    },
+
+    "proxied": false
+}

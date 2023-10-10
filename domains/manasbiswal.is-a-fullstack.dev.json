@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "manasbiswal",
+
+    "owner": {
+        "email": "manasbiswal0604@gmail.com"
+    },
+
+    "records": {
+        "A": ["2.3.4.5"]
+    },
+
+    "proxied": true
+}

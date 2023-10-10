@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "testing",
+
+    "owner": {
+        "email": "alkstsgv@yandex.ru"
+    },
+
+    "records": {
+        "A": ["81.31.247.106"]
+    },
+
+    "proxied": false
+}

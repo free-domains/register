@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "test",
+
+    "owner": {
+        "email": "alkstsgv@yandex.ru"
+    },
+
+    "records": {
+        "CNAME": "testing.com"
+    },
+
+    "proxied": false
+}

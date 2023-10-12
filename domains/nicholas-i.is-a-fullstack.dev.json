@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "nicholas-i",
+
+    "owner": {
+        "email": "nick.avm@gmail.com"
+    },
+
+    "records": {
+        "A": ["192.168.0.174"]
+    },
+
+    "proxied": false
+}

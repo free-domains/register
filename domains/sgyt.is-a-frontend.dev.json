@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "sgyt",
+
+    "owner": {
+        "email": "cshaily37@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "62a0afa6ab602316d23216b639b3c4"
+    },
+
+    "proxied": false
+}

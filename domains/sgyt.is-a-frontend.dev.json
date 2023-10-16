@@ -7,8 +7,7 @@
     },
 
     "records": {
-        "CNAME": "62a0afa6ab602316d23216b639b3c4"
-    },
+        "NS": ["ns1.infinityfree.com", "ns2.infinityfree.com"]
 
     "proxied": false
 }

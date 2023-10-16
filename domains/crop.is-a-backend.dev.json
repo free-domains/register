@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "crop",
+
+    "owner": {
+        "email": "muhammadwasil23703@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "crop"
+    },
+
+    "proxied": false
+}

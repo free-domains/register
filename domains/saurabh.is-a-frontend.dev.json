@@ -7,11 +7,11 @@
     },
 
        "records": {
-        "CNAME": "berzcode.github.io",
+        "CNAME": "sxurabh.github.io",
 
          "TXT": [
             {
-                "name": "_github-pages-challenge-berzcode",
+                "name": "_github-pages-challenge-sxurabh",
                 "value": "0c8aea4c6685c080e6ca9e8233d944"
             }
          ]

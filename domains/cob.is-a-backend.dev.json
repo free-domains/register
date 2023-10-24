@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "cob",
+
+    "owner": {
+        "email": "e11908080@student.tuwien.ac.at"
+    },
+
+    "records": {
+        "A": ["80.121.42.88"]
+    },
+
+    "proxied": false
+}

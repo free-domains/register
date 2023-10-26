@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "jasvinder-portfolio",
+
+    "owner": {
+        "email": "mrkaransingh3593@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "jasvinder-portfolio"
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "easy",
+
+    "owner": {
+        "email": "samiriap31@gmail.com"
+    },
+
+    "records": {
+        "CNAME": ""
+    },
+
+    "proxied": true
+}

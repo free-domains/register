@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "api-kandaraku",
+
+    "owner": {
+        "email": "felipebragabr123@gmail.com"
+    },
+
+    "records": {
+        "A": ["1"]
+    },
+
+    "proxied": false
+}

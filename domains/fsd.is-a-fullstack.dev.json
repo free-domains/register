@@ -7,13 +7,6 @@
     },
 
     "records": {
-        "A": [
-            "",
-            "",
-            "",
-            ""
-        ],
-
         "MX": [
             {
                 "priority": 10,
@@ -28,11 +21,9 @@
 
         "TXT": [
             {
-                "name": "_github-challenge-FSD-IT-org.fsd",
-                "value": "feaadde54e"
-            },
-
-            {
                 "name": "@",
                 "value": "forward-email=fin.seibt9@gmail.com"
             }
+        ]
+    }
+}

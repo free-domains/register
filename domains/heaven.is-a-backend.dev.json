@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "heaven",
+
+    "owner": {
+        "email": "Keremlog@gmail.com"
+    },
+
+    "records": {
+        "A": ["45.83.245.57"]
+    },
+
+    "proxied": false
+}

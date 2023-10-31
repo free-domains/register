@@ -1,0 +1,20 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "marc",
+
+    "owner": {
+        "email": "redwerkz@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "rdwz.github.io",
+        "TXT": [
+            {
+                "name": "_github-pages-challenge-rdwz.marc",
+                "value": "4dd2bee8da3f633ad75a78278ec15e"
+            }
+        ]
+    },
+
+    "proxied": false
+}

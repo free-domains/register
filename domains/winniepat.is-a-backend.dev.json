@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "winniepat",
+
+    "owner": {
+        "email": "wc92226@gmail.com"
+    },
+
+    "records": {
+        "A": ["winniepat ist cool"]
+    },
+
+    "proxied": true
+}

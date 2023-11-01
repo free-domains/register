@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "armywiki",
+
+    "owner": {
+        "email": "ns@nanhanglim.com"
+    },
+
+    "records": {
+        "A": ["185.27.134.33"]
+    },
+
+    "proxied": false
+}

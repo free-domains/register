@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "loopapparels.shop",
+
+    "owner": {
+        "email": "suprathps@gmail.com"
+    },
+
+    "records": {
+        "A": ["192.168.1.1"]
+    },
+
+    "proxied": false
+}

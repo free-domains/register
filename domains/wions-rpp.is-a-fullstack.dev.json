@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "wions-rpp",
+
+    "owner": {
+        "email": "alperenitec@yandex.com"
+    },
+
+    "records": {
+        "A": ["35.242.195.157"]
+    },
+
+    "proxied": false
+}

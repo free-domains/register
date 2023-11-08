@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "subconv",
+
+    "owner": {
+        "email": "me@geniucker.top"
+    },
+
+    "records": {
+        "CNAME": "subconv.github.io"
+    },
+
+    "proxied": true
+}

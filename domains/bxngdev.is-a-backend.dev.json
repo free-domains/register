@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "bxngdev",
+
+    "owner": {
+        "email": "lolskintv@gmail.com"
+    },
+
+    "records": {
+        "A": ["www"]
+    },
+
+    "proxied": false
+}

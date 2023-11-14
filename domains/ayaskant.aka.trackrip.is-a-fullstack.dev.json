@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ayaskant.aka.trackrip",
+
+    "owner": {
+        "email": "ayaskantsahoo1@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "trackrip.com"
+    },
+
+    "proxied": false
+}

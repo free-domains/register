@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ejaxx",
+
+    "owner": {
+        "email": "bloodredemption0124@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "bloodredemption.github.io"
+    },
+
+    "proxied": false
+}

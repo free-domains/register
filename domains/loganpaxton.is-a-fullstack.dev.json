@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "loganpaxton",
+
+    "owner": {
+        "email": "Logan.paxton864@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "loganpaxton.is-a-fullstack.dev"
+    },
+
+    "proxied": false
+}

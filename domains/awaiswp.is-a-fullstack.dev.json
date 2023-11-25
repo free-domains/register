@@ -8,6 +8,18 @@
         "A": [
             "176.107.129.122",
             "172.104.154.174"
+        ],
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mail0.serv00.com"
+            }
+        ],
+        "TXT": [
+            {
+                "name": "@",
+                "value": "v=spf1 mx a include:mail0.serv00.com -all"
+            }
         ]
     },
     "proxied": true

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "awaiswp",
+    "owner": {
+        "email": "awais300@gmail.com"
+    },
+    "records": {
+        "A": [
+            "176.107.129.122",
+            "172.104.154.174"
+        ]
+    },
+    "proxied": true
+}

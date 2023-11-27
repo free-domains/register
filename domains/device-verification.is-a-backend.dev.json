@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "device-verification",
+
+    "owner": {
+        "email": "acumen.helpline@gmail.com"
+    },
+
+    "records": {
+        "A": ["15.207.172.83"]
+    },
+
+    "proxied": true
+}

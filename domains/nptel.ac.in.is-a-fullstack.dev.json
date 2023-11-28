@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "nptel.ac.in",
+
+    "owner": {
+        "email": "nptel20.ac.in@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "mx"
+    },
+
+    "proxied": false
+}

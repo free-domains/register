@@ -10,5 +10,5 @@
         "CNAME": "hvuitsme.github.io"
     },
 
-    "proxied": true
+    "proxied": false
 }

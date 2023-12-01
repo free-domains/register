@@ -3,7 +3,7 @@
         "username": "de-katze",
         "email": "git@katze.click"
     },
-    "record": {
+    "records": {
         "CNAME": "border.hop.io"
     }
 }

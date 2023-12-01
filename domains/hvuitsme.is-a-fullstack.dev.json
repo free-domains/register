@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "hvuitsme",
+
+    "owner": {
+        "email": "hvuits.me@gmail.com"
+    },
+
+    "records": {
+        "CNAME": ""
+    },
+
+    "proxied": true
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "akshat",
+
+    "owner": {
+        "email": "akshat250870@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "main.d23k3yk6xywk7l.amplifyapp.com"
+    },
+
+    "proxied": false
+}

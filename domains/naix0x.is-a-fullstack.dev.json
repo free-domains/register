@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "naix0x",
+
+    "owner": {
+        "email": "ask@matic.eu.org"
+    },
+
+    "records": {
+        "CNAME": "xnabtmxijyar"
+    },
+
+    "proxied": false
+}

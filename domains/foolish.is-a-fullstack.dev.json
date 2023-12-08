@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "foolish",
+
+    "owner": {
+        "email": "santrialanwari@gmail.com"
+    },
+
+    "records": {
+        "A": ["139.59.255.229"]
+    },
+
+    "proxied": false
+}

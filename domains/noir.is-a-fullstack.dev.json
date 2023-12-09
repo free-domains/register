@@ -7,7 +7,7 @@
     },
 
     "records": {
-        "A": ["1.1.1.1"]
+        "CNAME": "noir.next-sync.workers.dev"
     },
 
     "proxied": true

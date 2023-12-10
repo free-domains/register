@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "brise",
+
+    "owner": {
+        "email": "mohabenhayoun56@gmail.com"
+    },
+
+    "records": {
+        "A": ["1.1.1.1"]
+    },
+
+    "proxied": false
+}

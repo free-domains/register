@@ -7,10 +7,11 @@
     },
 
     "records": {
-        "CNAME": "mani-cwaf.github.io/Portfolio/",
+        "CNAME": "mani-cwaf.github.io",
+
         "TXT": [
             {
-                "name": "_github-pages-challenge-Mani-cwaf.mani.is-a-fullstack.dev",
+                "name": "_github-pages-challenge-Mani-cwaf",
                 "value": "a4e57248eb118fdac471078fff6df9"
             }
         ]

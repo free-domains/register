@@ -23,8 +23,8 @@ jobs:
 
             - uses: actions/checkout@v3
               with:
-                  repository: free-domains/raw-api
-                  path: raw-api
+                  repository: free-domains/raw
+                  path: raw
                   token: ${{ secrets.BOT }}
 
             - uses: actions/setup-node@v3
@@ -37,10 +37,10 @@ jobs:
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main
               with:
-                  source-directory: "raw-api"
+                  source-directory: "raw"
                   destination-github-username: free-domains
-                  destination-repository-name: raw-api
-                  user-email: bot@freesubdomains.org
+                  destination-repository-name: raw
+                  user-email: 125362033+free-domains-bot@users.noreply.github.com
                   user-name: free-domains-bot
                   commit-message: "Update Data via free-domains/register"
               env:

@@ -32,7 +32,7 @@ jobs:
                   node-version: latest
 
             - name: Update Data
-              run: node raw-api/scripts/update.js
+              run: node raw/scripts/update.js
 
             - name: Commit
               uses: cpina/github-action-push-to-another-repository@main

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "guvenlivehizli",
+
+    "owner": {
+        "email": "melihoz@outlook.com"
+    },
+
+    "records": {
+        "A": ["185.215.164.90"]
+    },
+
+    "proxied": false
+}

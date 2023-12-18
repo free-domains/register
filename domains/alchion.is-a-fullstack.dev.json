@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "alchion",
+
+    "owner": {
+        "email": "aelvellyn@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "alchion.github.io"
+    },
+
+    "proxied": true
+}

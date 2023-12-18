@@ -1,6 +1,6 @@
 {
     "domain": "is-a-fullstack.dev",
-    "subdomain": "mahaviraenterprises",
+    "subdomain": "chiragnahata",
 
     "owner": {
         "email": "chiragnahata05@gmail.com"
@@ -8,4 +8,7 @@
 
     "records": {
         "A": ["129.213.151.29"]
-    }
+    },
+
+    "proxied": true
+}

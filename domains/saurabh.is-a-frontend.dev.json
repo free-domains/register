@@ -1,0 +1,21 @@
+{
+    "domain": "is-a-frontend.dev",
+    "subdomain": "saurabh",
+
+    "owner": {
+        "email": "saurabhkirve@gmail.com"
+    },
+
+       "records": {
+        "CNAME": "sxurabh.github.io",
+
+         "TXT": [
+            {
+                "name": "_github-pages-challenge-sxurabh",
+                "value": "0c8aea4c6685c080e6ca9e8233d944"
+            }
+         ]
+    },
+
+    "proxied": false
+}

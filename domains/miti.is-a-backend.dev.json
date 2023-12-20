@@ -1,0 +1,14 @@
+{
+  "domain": "is-a-backend.dev",
+  "subdomain": "miti",
+
+  "owner": {
+    "email": "minhtienit99@gmail.com"
+  },
+
+  "records": {
+    "CNAME": "miti.eu.org"
+  },
+
+  "proxied": false
+}

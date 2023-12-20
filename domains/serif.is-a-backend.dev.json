@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "serif",
+
+    "owner": {
+        "email": "serifdomain@turtlespog64.33mail.com"
+    },
+
+    "records": {
+        "A": ["49.12.220.124"]
+    },
+
+    "proxied": false
+}

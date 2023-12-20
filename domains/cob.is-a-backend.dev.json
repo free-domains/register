@@ -1,13 +1,13 @@
 {
     "domain": "is-a-backend.dev",
-    "subdomain": "dibster",
+    "subdomain": "cob",
 
     "owner": {
-        "email": "dibster@danbot.host"
+        "email": "e11908080@student.tuwien.ac.at"
     },
 
     "records": {
-        "A": ["192.95.42.66"]
+        "A": ["80.121.42.88"]
     },
 
     "proxied": false

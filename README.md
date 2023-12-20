@@ -4,14 +4,21 @@ Free subdomains for personal sites, open-source projects, and more.
 [![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
 
 # 📝 Register
+## 🌐 Supported Domains
+- [is-a-fullstack.dev](https://is-a-fullstack.dev)
+
+## ❗ Notice
+We do not support the following services due to SSL limitations.
+
+- [Netlify](https://www.netlify.com)
+- [Vercel](https://vercel.com)
+
 1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
 2. Select a method below to show instructions on how to register a domain.
 
 <details>
-  <summary>⌨️ CLI (recommended)</summary>
+  <summary>⌨️ CLI (<em>recommended</em>)</summary>
   <br>
-
-  > The CLI has 3 prefixes: `domains`, `fd` and `free-domains`.
 
   1. Install the CLI
 
@@ -61,14 +68,18 @@ Free subdomains for personal sites, open-source projects, and more.
 
       "records": {
           "A": ["1.1.1.1", "1.0.0.1"],
+
           "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
+
           "CNAME": "example.com",
+
           "MX": [
               {
                   "priority": 10,
                   "value": "mx.example.com"
               }
           ],
+
           "TXT": [
               {
                   "name": "@",
@@ -89,40 +100,18 @@ Free subdomains for personal sites, open-source projects, and more.
 
 </details>
 
-## 🌐 Domains
-| Domains |
-|:-:|
-| [`is-a-backend.dev`](https://is-a-backend.dev) |
-| [`is-a-frontend.dev`](https://is-a-frontend.dev) |
-| [`is-a-fullstack.dev`](https://is-a-fullstack.dev) |
-
-### ⚙️ Settings
-> All domains use the same settings.
-
-| Setting                               | Option                |
-|---------------------------------------|-----------------------|
-| DNSSEC                                | ✅ |
-| Email                                 | ✅ |
-| SSL/TLS*                              | Full |
-| Always Use HTTPS*                     | ✅ |
+### ⚙️ Domain Settings
+| Setting | Option |
+|-|-|
+| DNSSEC | ✅ |
+| Email | ✅ |
+| SSL/TLS* | Full |
+| Always Use HTTPS* | ✅ |
 | HTTP Strict Transport Security (HSTS) | ✅ |
-| Minimum TLS Version*                  | 1.0 |
-| Opportunistic Encryption, TLS 1.3*    | ✅ |
-| WAF (Web Application Firewall)*       | Medium Security Level |
-| Browser Integrity Check*              | ✅ |
-| Caching Level, Browser Cache TTL*     | Standard, 4 hours |
+| Minimum TLS Version* | 1.0 |
+| Opportunistic Encryption, TLS 1.3* | ✅ |
+| WAF (Web Application Firewall)* | Medium Security Level |
+| Browser Integrity Check* | ✅ |
+| Caching Level, Browser Cache TTL* | Standard, 4 hours |
 
-\*Only available when your domain has `proxied` set to `true`.
-
-### ✅ Supported [Records](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
-- A
-  - e.g: `1.1.1.1`
-- AAAA
-  - e.g: `2606:4700:4700::1111`
-- CNAME
-  - e.g: `example.com`
-  - CNAME records cannot be used in conjunction with any other record type.
-- MX
-  - e.g: `mx.example.com`
-- TXT
-  - e.g: `hello world`
+###### \*Only available when your domain has `proxied` set to `true`.

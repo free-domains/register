@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "goutam",
+
+    "owner": {
+        "email": "contact@matrixcoder.is-a.dev"
+    },
+
+    "records": {
+        "CNAME": "matrixcoder0101.github.io"
+    },
+
+    "proxied": false
+}

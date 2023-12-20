@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "harshal",
+
+    "owner": {
+        "email": "harshalbabu45@gmail.com"
+    },
+
+    "records": {
+        "AAAA": [""]
+    },
+
+    "proxied": false
+}

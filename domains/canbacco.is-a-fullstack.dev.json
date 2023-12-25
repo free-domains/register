@@ -1,14 +1,14 @@
 {
     "domain": "is-a-fullstack.dev",
     "subdomain": "canbacco",
+
     "owner": {
         "email": "gulumbariscan@gmail.com"
     },
+
     "records": {
-        "A": [
-            "158.180.60.197"
-        ],
-        "CNAME": "canbacco.is-a-fullstack.dev"
+        "A": ["158.180.60.197"]
     },
+
     "proxied": false
 }

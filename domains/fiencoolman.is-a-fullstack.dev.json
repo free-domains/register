@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "fiencoolman",
+
+    "owner": {
+        "email": "felix.falk2903@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["1"]
+    },
+
+    "proxied": false
+}

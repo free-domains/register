@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "portainer",
+
+    "owner": {
+        "email": "halit.dogmen@ceng.deu.edu.tr"
+    },
+
+    "records": {
+        "A": ["95.173.236.22"]
+    },
+
+    "proxied": false
+}

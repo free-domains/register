@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "hacky",
+
+    "owner": {
+        "email": "h4ck3r0.sh@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "https://github.com/h4cky-sys"
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ecm",
+
+    "owner": {
+        "email": "thanhbcph28992@fpt.edu.vn"
+    },
+
+    "records": {
+        "CNAME": "vhoang140299@gmail.com"
+    },
+
+    "proxied": true
+}

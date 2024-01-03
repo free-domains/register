@@ -3,16 +3,14 @@ Free subdomains for personal sites, open-source projects, and more.
 
 [![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
 
+> [!WARNING]
+> We do not support [Netlify](https://www.netlify.com) or [Vercel](https://vercel.com) due to SSL limitations.
+
 # 📝 Register
-## 🌐 Supported Domains
+### 🌐 Supported Domains
 - [is-a-fullstack.dev](https://is-a-fullstack.dev)
 
-## ❗ Notice
-We do not support the following services due to SSL limitations.
-
-- [Netlify](https://www.netlify.com)
-- [Vercel](https://vercel.com)
-
+## 📜 Getting Started
 1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
 2. Select a method below to show instructions on how to register a domain.
 
@@ -100,18 +98,18 @@ We do not support the following services due to SSL limitations.
 
 </details>
 
-### ⚙️ Domain Settings
+## ⚙️ Domain Settings
 | Setting | Option |
 |-|-|
 | DNSSEC | ✅ |
 | Email | ✅ |
-| SSL/TLS* | Full |
-| Always Use HTTPS* | ✅ |
+| SSL/TLS[^1] | Full |
+| Always Use HTTPS[^1] | ✅ |
 | HTTP Strict Transport Security (HSTS) | ✅ |
-| Minimum TLS Version* | 1.0 |
-| Opportunistic Encryption, TLS 1.3* | ✅ |
-| WAF (Web Application Firewall)* | Medium Security Level |
-| Browser Integrity Check* | ✅ |
-| Caching Level, Browser Cache TTL* | Standard, 4 hours |
+| Minimum TLS Version[^1] | 1.0 |
+| Opportunistic Encryption, TLS 1.3[^1] | ✅ |
+| WAF (Web Application Firewall)[^1] | Medium Security Level |
+| Browser Integrity Check[^1] | ✅ |
+| Caching Level, Browser Cache TTL[^1] | Standard, 4 hours |
 
-###### \*Only available when your domain has `proxied` set to `true`.
+[^1]: Only available when your domain has `proxied` set to `true`.

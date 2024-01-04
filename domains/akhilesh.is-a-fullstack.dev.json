@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "akhilesh",
+
+    "owner": {
+        "email": "akhi23waghmare@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "akhilesh"
+    },
+
+    "proxied": false
+}

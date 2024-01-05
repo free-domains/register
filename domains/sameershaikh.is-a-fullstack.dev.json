@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "sameershaikh",
+
+    "owner": {
+        "email": "210860131053@laxmi.edu.in"
+    },
+
+    "records": {
+        "AAAA": ["ipv6"]
+    },
+
+    "proxied": false
+}

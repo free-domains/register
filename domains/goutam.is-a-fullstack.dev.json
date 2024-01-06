@@ -24,19 +24,19 @@
         "MX": [
             {
                 "priority": 10,
-                "value": "mx1.improvmx.com"
-            },
-
-            {
-                "priority": 20,
-                "value": "mx2.improvmx.com"
+                "value": "feedback-smtp.us-east-1.amazonses.com"
             }
         ],
 
         "TXT": [
             {
                 "name": "@",
-                "value": "v=spf1 include:spf.improvmx.com ~all"
+                "value": "v=spf1 include:amazonses.com ~all"
+            },
+
+            {
+               "name": "resend._domainkey.matrixcoder",
+               "value": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSxxfcDUyxpuZEikdKTTNCrGTTziJkcWdOObZo/TlTImbjt7l8cATQHDFowMAgmn97UgyNtEs1Y70eYx6CISv7KEmsOoAiOOMGeaMON5P5TZLn5DNFhfyootB8qy5q1gDCBgmAwlbyFxrV12xN2sEM/Z3LJxZuqs0O7tVPOhh+lwIDAQAB"
             }
         ]
     },

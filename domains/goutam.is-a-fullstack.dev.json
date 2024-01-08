@@ -23,6 +23,7 @@
 
         "MX": [
             {
+                "name": "send.goutam",
                 "priority": 10,
                 "value": "feedback-smtp.us-east-1.amazonses.com"
             }
@@ -30,13 +31,13 @@
 
         "TXT": [
             {
-                "name": "@",
+                "name": "send.goutam",
                 "value": "v=spf1 include:amazonses.com ~all"
             },
 
             {
-               "name": "resend._domainkey.matrixcoder",
-               "value": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSxxfcDUyxpuZEikdKTTNCrGTTziJkcWdOObZo/TlTImbjt7l8cATQHDFowMAgmn97UgyNtEs1Y70eYx6CISv7KEmsOoAiOOMGeaMON5P5TZLn5DNFhfyootB8qy5q1gDCBgmAwlbyFxrV12xN2sEM/Z3LJxZuqs0O7tVPOhh+lwIDAQAB"
+               "name": "resend._domainkey.goutam
+               "value": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJiZ617+c0iOMkYhDVfCCr0Of0OlXNslqQTdto0ob8RuMti+YXprFcuFLqfWSSdkGplW4Knx/H3KJYXwaCTP9JXFfbVO0kqWH51jo/963kkuE6I4XNgwvkg0O18Voh4MZGfFXt4IiaQUZzi/31+09snd64wWo+PI/TCJEZADXPJwIDAQAB"
             }
         ]
     },

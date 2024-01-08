@@ -8,14 +8,8 @@
 
     "records": {
 
-        "CNAME": "superuser-l.github.io",
+        "CNAME": "superuser-l.github.io"
 
-        "TXT": [
-            {
-                "name": "_github-pages-challenge-superuser-l.this",
-                "value": "12f939477aae7d9a5f5212b4cee0d3"
-            }
-        ]
     },
 
     "proxied": false

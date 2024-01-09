@@ -1,0 +1,17 @@
+{
+
+  "description": "wanna make bio and project sites throught github for me and my friends",
+  "domain": ".is-a-fullstack.dev ",
+  "subdomain": "_github-pages-challenge-superuser-l.this",
+
+  "owner": {
+    "repo": "https://github.com/tr1xem",
+    "email": "trix@lawliet.tk"
+  },
+
+  "record": {
+    "TXT": ["12f939477aae7d9a5f5212b4cee0d3"]
+  },
+
+  "proxied": false
+}

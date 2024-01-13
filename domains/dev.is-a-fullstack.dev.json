@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "dev",
+
+    "owner": {
+        "email": "pippitednes87@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "blckswan.dev"
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ungtblod",
+
+    "owner": {
+        "email": "pippitednes87@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "ungtblod.is-a-fullstack.dev"
+    },
+
+    "proxied": false
+}

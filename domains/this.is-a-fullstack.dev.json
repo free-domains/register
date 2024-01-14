@@ -7,12 +7,12 @@
     },
 
     "records": {
-        "CNAME": "lawliet.tk",
+        "CNAME": "superuser-l.github.io",
 
         "TXT": [
             {
                 "name": "_github-pages-challenge-superuser-l",
-                "value": "12f939477aae7d9a5f5212b4cee0d3"
+                "value": "532f86a23d39b5368cc45718b48b5d"
             }
         ]
     },

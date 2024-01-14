@@ -1,0 +1,16 @@
+{
+    "domain": "is-a-backend.dev",
+    "subdomain": "spicydevs",
+
+    "owner": {
+        "email": "aayushmagrawal@gmail.com"
+    },
+
+    "records": {
+
+        "CNAME": "spicydevs.pages.dev",
+      
+    },
+
+    "proxied": true
+}

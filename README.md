@@ -11,7 +11,7 @@ Free subdomains for personal sites, open-source projects, and more.
 - [is-a-fullstack.dev](https://is-a-fullstack.dev)
 
 ## 📜 Getting Started
-1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
+1. Check if your desired domain is available using our [domain checker](https://free-domains.github.io/check).
 2. Select a method below to show instructions on how to register a domain.
 
 <details>
@@ -48,9 +48,9 @@ Free subdomains for personal sites, open-source projects, and more.
   <summary>📝 Manual</summary>
   <br>
 
-  1. **Star** and **[fork](https://github.com/free-domains/register/fork)** this repository.
+  1. **[Fork](https://github.com/free-domains/register/fork)** this repository.
   2. Add a new file called `example.domain.dev.json` in the `/domains` folder to register the `example` subdomain on the `domain.dev`.
-    - An list of available domains can be found [here](#domains).
+    - A list of supported domains can be found [here](#-supported-domains).
   3. Edit it to meet your needs.
     - The file listed below is just an **example**, provide a **valid** JSON file with your needs.
     - Make sure to remove any records that aren't needed.

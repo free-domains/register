@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "tankkari",
+
+    "owner": {
+        "email": "lucas.stephan.12@outlook.fr"
+    },
+
+    "records": {
+        "A": ["84.247.140.238"]
+    },
+
+    "proxied": false
+}

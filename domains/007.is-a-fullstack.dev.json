@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "007",
+
+    "owner": {
+        "email": "xenpei11@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "iamxani.github.io"
+    },
+
+    "proxied": false
+}

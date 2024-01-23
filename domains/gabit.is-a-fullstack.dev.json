@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "gabit",
+
+    "owner": {
+        "email": "gonjubazz@gmail.com"
+    },
+
+    "records": {
+        "A": [""]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "theena",
+
+    "owner": {
+        "email": "theeta1861@gmail.com"
+    },
+
+    "records": {
+        "A": ["10"]
+    },
+
+    "proxied": true
+}

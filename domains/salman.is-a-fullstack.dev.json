@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "salman",
+
+    "owner": {
+        "email": "contact@isalman.dev"
+    },
+
+    "records": {
+        "CNAME": "hotheadhacker.github.io"
+    },
+
+    "proxied": false
+}

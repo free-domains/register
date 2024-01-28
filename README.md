@@ -3,15 +3,20 @@ Free subdomains for personal sites, open-source projects, and more.
 
 [![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
 
-# 🖋️ Register
-1. Check if your desired domain is available using our [domain checker](https://freesubdomains.org/check).
+> [!WARNING]
+> We do not support [Netlify](https://www.netlify.com) or [Vercel](https://vercel.com) due to SSL limitations.
+
+# 📝 Register
+### 🌐 Supported Domains
+- [is-a-fullstack.dev](https://is-a-fullstack.dev)
+
+## 📜 Getting Started
+1. Check if your desired domain is available using our [domain checker](https://free-domains.github.io/check).
 2. Select a method below to show instructions on how to register a domain.
 
 <details>
-  <summary>⌨️ CLI (recommended)</summary>
+  <summary>⌨️ CLI (<em>recommended</em>)</summary>
   <br>
-
-  > The CLI has 3 prefixes: `domains`, `fd` and `free-domains`.
 
   1. Install the CLI
 
@@ -43,9 +48,9 @@ Free subdomains for personal sites, open-source projects, and more.
   <summary>📝 Manual</summary>
   <br>
 
-  1. **Star** and **[fork](https://github.com/free-domains/register/fork)** this repository.
+  1. **[Fork](https://github.com/free-domains/register/fork)** this repository.
   2. Add a new file called `example.domain.dev.json` in the `/domains` folder to register the `example` subdomain on the `domain.dev`.
-    - An list of available domains can be found [here](#domains).
+    - A list of supported domains can be found [here](#-supported-domains).
   3. Edit it to meet your needs.
     - The file listed below is just an **example**, provide a **valid** JSON file with your needs.
     - Make sure to remove any records that aren't needed.
@@ -61,14 +66,18 @@ Free subdomains for personal sites, open-source projects, and more.
 
       "records": {
           "A": ["1.1.1.1", "1.0.0.1"],
+
           "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
+
           "CNAME": "example.com",
+
           "MX": [
               {
                   "priority": 10,
                   "value": "mx.example.com"
               }
           ],
+
           "TXT": [
               {
                   "name": "@",
@@ -89,29 +98,18 @@ Free subdomains for personal sites, open-source projects, and more.
 
 </details>
 
-## 🌐 Domains
-
-| Domains |
-|:-:|
-| [`is-a-backend.dev`](https://is-a-backend.dev) |
-| [`is-a-frontend.dev`](https://is-a-frontend.dev) |
-| [`is-a-fullstack.dev`](https://is-a-fullstack.dev) |
-
-### ⚙️ Settings
-
-> All domains use the same settings.
-
-| Setting                               | Option                |
-|---------------------------------------|-----------------------|
-| DNSSEC                                | ✅ |
-| Email                                 | ❌ |
-| SSL/TLS*                              | Full |
-| Always Use HTTPS*                     | ✅ |
+## ⚙️ Domain Settings
+| Setting | Option |
+|-|-|
+| DNSSEC | ✅ |
+| Email | ✅ |
+| SSL/TLS[^1] | Full |
+| Always Use HTTPS[^1] | ✅ |
 | HTTP Strict Transport Security (HSTS) | ✅ |
-| Minimum TLS Version*                  | 1.0 |
-| Opportunistic Encryption, TLS 1.3*    | ✅ |
-| WAF (Web Application Firewall)*       | Medium Security Level |
-| Browser Integrity Check*              | ✅ |
-| Caching Level, Browser Cache TTL*     | Standard, 4 hours |
+| Minimum TLS Version[^1] | 1.0 |
+| Opportunistic Encryption, TLS 1.3[^1] | ✅ |
+| WAF (Web Application Firewall)[^1] | Medium Security Level |
+| Browser Integrity Check[^1] | ✅ |
+| Caching Level, Browser Cache TTL[^1] | Standard, 4 hours |
 
-\*Only available when your domain has `proxied` set to `true`.
+[^1]: Only available when your domain has `proxied` set to `true`.

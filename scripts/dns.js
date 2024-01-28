@@ -6,21 +6,6 @@ var proxy = {
     on: { cloudflare_proxy: "on" }
 };
 
-/**
- * Note: glob() is only an internal undocumented helper function (maybe risky).
- *
- * @param { String } filesPath
- * @returns {{
- *  name: string,
- *  data: {
- *    domain: string,
- *    subdomain: string,
- *    owner?: { email?: string },
- *    records: { A?: string[], AAAA?: string[], CNAME?: string, MX?: object[], NS?: string[], TXT?: object[] },
- *    proxied: boolean
- *  }}[]}
- */
-
 function getDomainsList(filesPath) {
     var result = [];
     var files = glob.apply(null, [filesPath, true, ".json"]);
@@ -37,18 +22,13 @@ function getDomainsList(filesPath) {
 
 var domains = getDomainsList("../domains");
 
-/**
- * @type {{}}
- */
-
 var commit = {};
 
 for (var idx in domains) {
     var domainData = domains[idx].data;
-    var proxyState = proxy.off;
+    var proxyState = domainData.proxied ? proxy.on : proxy.off;
 
     if (!commit[domainData.domain]) commit[domainData.domain] = [];
-    if (domainData.proxied === true) proxyState = proxy.on;
 
     if (domainData.records.A) {
         for (var a in domainData.records.A) {
@@ -72,11 +52,11 @@ for (var idx in domains) {
         }
     }
 
-    if (domainData.records.NS) {
-        for (var ns in domainData.records.NS) {
-            commit[domainData.domain].push(NS(domainData.subdomain, domainData.records.NS[ns] + "."));
-        }
-    }
+    // if (domainData.records.NS) {
+        // for (var ns in domainData.records.NS) {
+            // commit[domainData.domain].push(NS(domainData.subdomain, domainData.records.NS[ns] + "."));
+        // }
+    // }
 
     if (domainData.records.TXT) {
         for (var txt in domainData.records.TXT) {

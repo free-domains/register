@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "sulabhshrestha",
+
+    "owner": {
+        "email": "shresthasulabh777@gmail.com"
+    },
+
+    "records": {
+        "A": ["103.303.707.777"]
+    },
+
+    "proxied": false
+}

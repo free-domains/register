@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "skyriesky2",
+
+    "owner": {
+        "email": "dantednrs@gmail.com"
+    },
+
+    "records": {
+        "A": ["198.51.45.4"]
+    },
+
+    "proxied": false
+}

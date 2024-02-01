@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "hackerteam",
+
+    "owner": {
+        "email": "davidtech755@gmail.com"
+    },
+
+    "records": {
+        "AAAA": [""]
+    },
+
+    "proxied": false
+}

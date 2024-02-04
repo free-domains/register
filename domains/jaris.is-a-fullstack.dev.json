@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "jaris",
+
+    "owner": {
+        "email": "rishavdas494@gmail.com"
+    },
+
+    "records": {
+        "A": ["13.201.11.67"]
+    },
+
+    "proxied": false
+}

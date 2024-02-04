@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ipv6",
+
+    "owner": {
+        "email": "info@jet.dedyn.io"
+    },
+
+    "records": {
+        "AAAA": ["2a0b:8bc0:2:7535:36::487d"]
+    },
+
+    "proxied": true
+}

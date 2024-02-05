@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "alpha-network",
+
+    "owner": {
+        "email": "mr.alphauser93@gmail.com"
+    },
+
+    "records": {
+        "A": ["3"]
+    },
+
+    "proxied": true
+}

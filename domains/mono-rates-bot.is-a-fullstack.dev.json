@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "mono-rates-bot",
+
+    "owner": {
+        "email": "koretskiyav@gmail.com"
+    },
+
+    "records": {
+        "A": ["64.226.100.103"]
+    },
+
+    "proxied": false
+}

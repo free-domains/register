@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "lnminh",
+
+    "owner": {
+        "email": "minecraftgamemcgame2@gmail.com"
+    },
+
+    "records": {
+        "A": ["lnminh1411"]
+    },
+
+    "proxied": false
+}

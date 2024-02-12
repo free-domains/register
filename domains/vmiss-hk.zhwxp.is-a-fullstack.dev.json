@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "vmiss-hk.zhwxp",
+
+    "owner": {
+        "email": "zhwxp@live.com"
+    },
+
+    "records": {
+        "A": ["38.207.164.25"]
+    },
+
+    "proxied": false
+}

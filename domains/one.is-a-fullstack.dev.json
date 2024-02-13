@@ -1,0 +1,17 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "one",
+
+    "owner": {
+        "email": "tess78@null.net"
+    },
+
+    "records": {
+
+        "CNAME": "one.is-a-fullstack.dev",
+
+
+    },
+
+    "proxied": false
+}

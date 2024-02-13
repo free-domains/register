@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "aquaconpoderes",
+
+    "owner": {
+        "email": "elrobotdelpueblo@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["https://26a9eb-7.myshopify.com/"]
+    },
+
+    "proxied": false
+}

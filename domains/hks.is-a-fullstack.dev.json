@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "hks",
+
+    "owner": {
+        "email": "alekbill@gmail.com"
+    },
+
+    "records": {
+        "A": ["147.45.75.208"]
+    },
+
+    "proxied": false
+}

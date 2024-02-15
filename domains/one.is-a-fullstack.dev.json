@@ -13,12 +13,10 @@
 
         "MX": [
             {
-                "name": "one",
                 "priority": 10,
                 "value": "mx.bump.email"
             },
             {
-                "name": "one",
                 "priority": 20,
                 "value": "mx2.bump.email"
             }
@@ -26,12 +24,8 @@
 
         "TXT": [
             {
-                "name": "one",
+                "name": "@",
                 "value": "v=spf1 include:_spf.bump.email ~all"
-            },
-            {
-                "name": "bump._domainkey.one",
-                "value": "v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCs4WaAFcBUxGdjafO9PS9KdBDpJx0E2TL0AYBstSKYPKFvUdIRGtkG/MLM7KddPvWxxdd291SYuysbDj7B9FFsKZzBSon6PQ+3pHHvojrRtp+B0EBMOibVQHvSUiKchsrohxfFKZZsZYqD44pFtnybnAk4Nnae6HlDgnf/8S7XwwIDAQAB"
             }
         ]
     },

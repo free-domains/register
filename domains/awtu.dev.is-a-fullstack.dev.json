@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "awtu.dev",
+
+    "owner": {
+        "email": "isnper100@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "awtu.dev"
+    },
+
+    "proxied": false
+}

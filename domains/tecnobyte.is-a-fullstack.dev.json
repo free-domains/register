@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "tecnobyte",
+
+    "owner": {
+        "email": "wcervini@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "https://wcervini.github.io/mysite/"
+    },
+
+    "proxied": false
+}

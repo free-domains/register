@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "sanooj",
+
+    "owner": {
+        "email": "sanoojes6371@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "sachu-settan.github.io"
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "imrbk123abc",
+
+    "owner": {
+        "email": "imrbk123abc@gmail.com"
+    },
+
+    "records": {
+        "NS": "galileo.aternos.org", "colombus.aternos.org"
+    },
+
+    "proxied": true
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "kun-kun",
+
+    "owner": {
+        "email": "xsh2202@outlook.com"
+    },
+
+    "records": {
+        "A": ["ns1.topdn.net"]
+    },
+
+    "proxied": false
+}

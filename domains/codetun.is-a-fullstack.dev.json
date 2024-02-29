@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "codetun",
+
+    "owner": {
+        "email": "m.blaiech22422@pi.tn"
+    },
+
+    "records": {
+        "A": ["116.203.239.117"]
+    },
+
+    "proxied": true
+}

@@ -7,21 +7,7 @@
     },
 
     "records": {
-        "CNAME": "wdhdns.com",
-         "MX": [
-            {
-                "priority": 10,
-                "value": "mx.zoho.com"
-            },
-            {
-                "priority": 20,
-                "value": "mx2.zoho.com"
-            },
-            {
-                "priority": 50,
-                "value": "mx3.zoho.com"
-            }
-        ]
+        "CNAME": "wdhdns.com"
     },
 
     "proxied": false

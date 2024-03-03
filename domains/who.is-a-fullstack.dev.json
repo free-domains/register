@@ -7,7 +7,8 @@
     },
 
     "records": {
-        "CNAME": "wdhdns.com"
+        "CNAME": "wdhdns.com",
+        "TXT": "zoho-verification=zb61272488.zmverify.zoho.com"
     },
 
     "proxied": false

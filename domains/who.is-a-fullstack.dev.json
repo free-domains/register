@@ -8,12 +8,20 @@
 
     "records": {
         "CNAME": "wdhdns.com",
-        "TXT": [
-              {
-                  "name": "@",
-                  "value": "zoho-verification=zb61272488.zmverify.zoho.com"
-              }
-          ]
+         "MX": [
+            {
+                "priority": 10,
+                "value": "mx.zoho.com"
+            },
+            {
+                "priority": 20,
+                "value": "mx2.zoho.com"
+            },
+            {
+                "priority": 50,
+                "value": "mx3.zoho.com"
+            }
+        ]
     },
 
     "proxied": false

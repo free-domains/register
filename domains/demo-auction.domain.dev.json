@@ -1,0 +1,17 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "demo-auction",
+
+    "owner": {
+        "email": "sdsd93015@gmail.com"
+    },
+
+    "records": {
+        "A": ["188.68.221.42"],
+
+        "CNAME": "demo-auction.is-a-fullstack.dev",
+        "CNAME": "api.demo-auction.is-a-fullstack.dev",
+    },
+
+    "proxied": false
+}

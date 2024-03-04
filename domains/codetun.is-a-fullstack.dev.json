@@ -7,7 +7,22 @@
     },
 
     "records": {
-        "A": ["116.203.239.117"]
+        "A": ["116.203.239.117"],
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx.zoho.com"
+            },
+
+            {
+                "priority": 20,
+                "value": "mx2.zoho.com"
+            },
+            {
+                "priority": 50,
+                "value": "mx3.zoho.com"
+            }
+        ]
     },
 
     "proxied": true

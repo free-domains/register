@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "test-one",
+
+    "owner": {
+        "email": "alexei@bk.ru"
+    },
+
+    "records": {
+        "A": ["84.38.180.229"]
+    },
+
+    "proxied": false
+}

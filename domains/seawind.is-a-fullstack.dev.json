@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "seawind",
+
+    "owner": {
+        "email": "vodanhlax@gmail.com"
+    },
+
+    "records": {
+        "A": ["14400"]
+    },
+
+    "proxied": false
+}

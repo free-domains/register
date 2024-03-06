@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "editorial",
+
+    "owner": {
+        "email": "rhoconlinux@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "rhoconlinux.github.io/editorial"
+    },
+
+    "proxied": false
+}

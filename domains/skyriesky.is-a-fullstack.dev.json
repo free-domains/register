@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "skyriesky",
+
+    "owner": {
+        "email": "dantednrs@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "dns1.p06.nsone.net"
+    },
+
+    "proxied": false
+}

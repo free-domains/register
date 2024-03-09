@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "isthis",
+
+    "owner": {
+        "email": "binkudubaag@gmail.com"
+    },
+
+    "records": {
+        "CNAME": ""
+    },
+
+    "proxied": false
+}

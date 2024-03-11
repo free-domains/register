@@ -1,5 +1,4 @@
 {
-
   "domain": "is-cool.dev",
   "subdomain": "ehab",
 
@@ -7,7 +6,7 @@
     "email": "hi1234hi9009@gmail.com"
   },
 
-  "record": {
+  "records": {
     "A": ["146.190.131.60"]
   },
 

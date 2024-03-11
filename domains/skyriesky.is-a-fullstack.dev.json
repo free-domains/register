@@ -7,8 +7,7 @@
     },
 
     "records": {
-        "A": ["198.51.44.6"],
-        "CNAME": "dns1.p06.nsone.net"
+        "CNAME": "dns1.p06.nsone.net",
     },
 
     "proxied": false

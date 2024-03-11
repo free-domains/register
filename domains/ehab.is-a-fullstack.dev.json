@@ -1,0 +1,14 @@
+{
+  "domain": "is-cool.dev",
+  "subdomain": "ehab",
+
+  "owner": {
+    "email": "hi1234hi9009@gmail.com"
+  },
+
+  "records": {
+    "A": ["146.190.131.60"]
+  },
+
+  "proxied": false
+}

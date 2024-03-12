@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "lyk",
+
+    "owner": {
+        "email": "911t.empm.ail@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "lyk.is-a-fullstack.dev"
+    },
+
+    "proxied": false
+}

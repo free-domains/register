@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ixu",
+
+    "owner": {
+        "email": "aryaferdyansahxiii@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "example.com"
+    },
+
+    "proxied": false
+}

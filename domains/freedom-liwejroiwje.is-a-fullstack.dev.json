@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "freedom-liwejroiwje",
+
+    "owner": {
+        "email": "mahdikarami1000@gmail.com"
+    },
+
+    "records": {
+        "A": ["82.115.19.194"]
+    },
+
+    "proxied": false
+}

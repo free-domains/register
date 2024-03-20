@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "wekuz",
+
+    "owner": {
+        "email": "wekuz@duck.com"
+    },
+
+    "records": {
+        "CNAME": "wekuz.github.io"
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "mossfoundry",
+
+    "owner": {
+        "email": "glabusjakub@gmail.com"
+    },
+
+    "records": {
+        "A": ["130.162.168.178"]
+    },
+
+    "proxied": false
+}

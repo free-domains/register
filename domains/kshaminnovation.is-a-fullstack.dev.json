@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "kshaminnovation",
+
+    "owner": {
+        "email": "freeidlll6@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["json"]
+    },
+
+    "proxied": false
+}

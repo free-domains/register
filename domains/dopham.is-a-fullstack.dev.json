@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "dopham",
+
+    "owner": {
+        "email": "dopham.bkit@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["fe80::215:5dff:fec9:ecce"]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "avengers-sonarqube",
+
+    "owner": {
+        "email": "hugh.hoang@gmail.com"
+    },
+
+    "records": {
+        "A": ["20.53.134.188"]
+    },
+
+    "proxied": false
+}

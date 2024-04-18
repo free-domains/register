@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "riku",
+
+    "owner": {
+        "email": "egermino.riku@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "rikudev.cloud"
+    },
+
+    "proxied": false
+}

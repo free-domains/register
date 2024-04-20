@@ -7,12 +7,7 @@
     },
 
     "records": {
-        "CNAME": [{
-            "name": "upwork-job-1-domain",
-            "value": "example.com",
-            "ttl": 3600
-        }]
-    },
+    "CNAME": "fajarhikmal214.github.io"
 
     "proxied": false
 }

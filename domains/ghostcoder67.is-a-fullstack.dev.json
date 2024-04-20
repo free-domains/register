@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "ghostcoder67",
+
+    "owner": {
+        "email": "ayannaseer70065988@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "https://ghost67.netlify.app"
+    },
+
+    "proxied": false
+}

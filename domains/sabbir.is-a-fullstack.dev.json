@@ -1,0 +1,16 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "sabbir",
+
+    "owner": {
+        "email": "hello@example.com"
+    },
+
+    "records": {
+
+        "CNAME": "game-b1y.pages.dev",
+
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "hamroai",
+
+    "owner": {
+        "email": "aitool@post.com"
+    },
+
+    "records": {
+        "A": ["49.187.171.139"]
+    },
+
+    "proxied": false
+}

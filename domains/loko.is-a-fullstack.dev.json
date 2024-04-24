@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "loko",
+
+    "owner": {
+        "email": "ranjanshettigaredu@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "student408.github.io"
+    },
+
+    "proxied": false
+}

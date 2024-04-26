@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "@tickettmarche.com",
+
+    "owner": {
+        "email": "chatbot.24677keine@gmail.com"
+    },
+
+    "records": {
+        "A": ["ca"]
+    },
+
+    "proxied": false
+}

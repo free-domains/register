@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "srm",
+
+    "owner": {
+        "email": "8zaqibue@duck.com"
+    },
+
+    "records": {
+        "A": ["16.171.175.148"]
+    },
+
+    "proxied": false
+}

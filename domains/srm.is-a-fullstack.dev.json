@@ -9,6 +9,24 @@
     "records": {
         "A": ["16.171.175.148"]
     },
+        "MX": [
+            {
+                "priority": 10,
+                "value": "mx1.forwardemail.net"
+            },
+            {
+                "priority": 10,
+                "value": "mx2.forwardemail.net"
+            }
+            
+        ],
+
+        "TXT": [
+            {
+                "name": "@",
+                "value": "forward-email=lyen8rxu@duck.com,8zaqibue@duck.com"
+            }
+        ],
 
     "proxied": false
 }

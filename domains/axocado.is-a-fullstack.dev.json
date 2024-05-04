@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "axocado",
+
+    "owner": {
+        "email": "undefined"
+    },
+
+    "records": {
+        "CNAME": "www"
+    },
+
+    "proxied": false
+}

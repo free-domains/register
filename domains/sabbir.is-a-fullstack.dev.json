@@ -7,9 +7,7 @@
     },
 
     "records": {
-
-        "CNAME": game-b1y.pages.dev,
-
+        "CNAME": "game-b1y.pages.dev"
     },
 
     "proxied": false

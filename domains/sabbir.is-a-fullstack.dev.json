@@ -3,12 +3,12 @@
     "subdomain": "sabbir",
 
     "owner": {
-        "email": "hello@example.com"
+        "email": "sabbir@44hz.co"
     },
 
     "records": {
 
-        "CNAME": "game-b1y.pages.dev",
+        "CNAME": game-b1y.pages.dev,
 
     },
 

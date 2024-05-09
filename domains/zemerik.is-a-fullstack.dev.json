@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "zemerik",
+
+    "owner": {
+        "email": "zemeriky@gmail.com"
+    },
+
+    "records": {
+        "URL": "https://zemerik.is-a.dev"
+    },
+
+    "proxied": false
+}

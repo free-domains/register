@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "syruponwaffles",
+
+    "owner": {
+        "email": "nicholaskor@hotmail.com"
+    },
+
+    "records": {
+        "CNAME": "https://github.com/syruponwaffles/raycaster"
+    },
+
+    "proxied": false
+}

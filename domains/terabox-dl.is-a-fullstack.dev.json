@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "terabox-dl",
+
+    "owner": {
+        "email": "lipanghadai@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "jinix6.github.io/terabox-downloader"
+    },
+
+    "proxied": false
+}

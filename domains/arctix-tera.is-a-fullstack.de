@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "arctix-tera",
+
+    "owner": {
+        "email": "inc.arctix@gmail.cpm"
+    },
+
+    "records": {
+        "CNAME": "https://arctixinc.github.io/terabot"
+    },
+
+    "proxied": false
+}

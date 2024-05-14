@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "double",
+
+    "owner": {
+        "email": "www.doubles.io@gmail.com"
+    },
+
+    "records": {
+        "A": ["127.0.0.1"]
+    },
+
+    "proxied": false
+}

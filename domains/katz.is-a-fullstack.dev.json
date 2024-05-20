@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "katz",
+
+    "owner": {
+        "email": "imethlol1234@gmail.com"
+    },
+
+    "records": {
+        "A": ["api-bananalolok-5313a609.koyeb.app"]
+    },
+
+    "proxied": false
+}

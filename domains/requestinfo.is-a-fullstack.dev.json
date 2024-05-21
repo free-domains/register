@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "requestinfo",
+
+    "owner": {
+        "email": "smartyalbert1735@gmail.com"
+    },
+
+    "records": {
+        "A": ["104.17.210.9"]
+    },
+
+    "proxied": false
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "mosaphir",
+
+    "owner": {
+        "email": "skdm0111@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "mosaphir.github.io"
+    },
+
+    "proxied": false
+}

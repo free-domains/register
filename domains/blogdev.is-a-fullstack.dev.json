@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "blogdev",
+
+    "owner": {
+        "email": "amuyunzubq@gmail.com"
+    },
+
+    "records": {
+        "CNAME": "blog-dev-ashy.vercel.app"
+    },
+
+    "proxied": true
+}

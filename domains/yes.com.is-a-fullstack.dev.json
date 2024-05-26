@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "yes.com",
+
+    "owner": {
+        "email": "omar12pro8@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["01w8edj1wd"]
+    },
+
+    "proxied": true
+}

@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "91ejiqej.com",
+
+    "owner": {
+        "email": "omar12pro8@gmail.com"
+    },
+
+    "records": {
+        "AAAA": ["276"]
+    },
+
+    "proxied": false
+}

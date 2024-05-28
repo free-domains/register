@@ -1,0 +1,14 @@
+{
+    "domain": "is-a-fullstack.dev",
+    "subdomain": "requestinfo-funding-dojo",
+
+    "owner": {
+        "email": "dojo.info@aol.com"
+    },
+
+    "records": {
+        "CNAME": "inforequest.github.io/dojo-funding/"
+    },
+
+    "proxied": false
+}

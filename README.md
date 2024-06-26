@@ -1,115 +1,25 @@
-# 🌐 Free Domains
-Free subdomains for personal sites, open-source projects, and more.
+# 📦 Moved
+Hey everyone, we are excited to announce that we have **merged** with [Open Domains](https://open-domains.net)!
 
-[![Domains](https://img.shields.io/github/directory-file-count/free-domains/register/domains?label=domains&style=for-the-badge&type=file)](https://github.com/free-domains/register/tree/main/domains)
+> is-a-fullstack.dev subdomains have been **relocated** to the [`open-domains/register`](https://github.com/open-domains/register) repository.
 
-> [!WARNING]
-> We do not support [Netlify](https://www.netlify.com) or [Vercel](https://vercel.com) due to SSL limitations.
+## ❓ FAQ
 
-# 📝 Register
-### 🌐 Supported Domains
-- [is-a-fullstack.dev](https://is-a-fullstack.dev)
+### What does this mean for users?
+Open Domains has taken over our project, which means they will be the ones managing the domain(s) we previously offered. Nothing has *actually* changed for the users, just the backend stuff.
+The only noticable difference is that your subdomain file may look a little different as Open Domains has a slightly different format to ours.
 
-## 📜 Getting Started
-1. Check if your desired domain is available using our [domain checker](https://free-domains.github.io/check).
-2. Select a method below to show instructions on how to register a domain.
+### Will this affect my subdomain?
+It is unlikely. Your subdomain may go down for a few minutes to an hour or two during the migration period, however after that it should be back up.
 
-<details>
-  <summary>⌨️ CLI (<em>recommended</em>)</summary>
-  <br>
+### How does this benefit the users?
+Open Domains is a bigger project, therefore we can get more people to use our subdomains! It means bigger growth for us and there will be some extra perks for you too.
 
-  1. Install the CLI
+Some new perks include:
+- NS records
+- PSL Support
+  - `is-a-fullstack.dev` is ***not*** on the [Public Suffix List](https://publicsuffix.org) yet, however we will be applying for PSL status under Open Domains' existing section.
+  - This will mean browsers and services will treat your subdomain almost as an *actual root domain*.
 
-  You can install the CLI by running the following command:
-
-  ```bash
-  npm install @free-domains/cli -g
-  ```
-
-  2. Login to the CLI
-
-  Run the following command to login to the CLI and follow the steps.
-
-  ```bash
-  domains login
-  ```
-
-  3. Register a domain
-
-  Run the following command and follow the steps to register a subdomain.
-
-  ```bash
-  domains register
-  ```
-
-</details>
-
-<details>
-  <summary>📝 Manual</summary>
-  <br>
-
-  1. **[Fork](https://github.com/free-domains/register/fork)** this repository.
-  2. Add a new file called `example.domain.dev.json` in the `/domains` folder to register the `example` subdomain on the `domain.dev`.
-    - A list of supported domains can be found [here](#-supported-domains).
-  3. Edit it to meet your needs.
-    - The file listed below is just an **example**, provide a **valid** JSON file with your needs.
-    - Make sure to remove any records that aren't needed.
-
-  ```json
-  {
-      "domain": "is-a-fullstack.dev",
-      "subdomain": "example",
-
-      "owner": {
-          "email": "hello@example.com"
-      },
-
-      "records": {
-          "A": ["1.1.1.1", "1.0.0.1"],
-
-          "AAAA": ["2606:4700:4700::1111", "2606:4700:4700::1001"],
-
-          "CNAME": "example.com",
-
-          "MX": [
-              {
-                  "priority": 10,
-                  "value": "mx.example.com"
-              }
-          ],
-
-          "TXT": [
-              {
-                  "name": "@",
-                  "value": "example_verification=1234567890"
-              }
-          ]
-      },
-
-      "proxied": false
-  }
-  ```
-
-  4. Your pull request will be reviewed and merged.
-    - **Do not** ignore the pull request checklist, this is _required_.
-    - Make sure to keep an eye on your pull request in case we need you to make any changes!
-  5. After the pull request is merged, please allow up to 24 hours for the changes to propagate _(in most cases it takes up to 5 minutes)_
-  6. Enjoy your new domain!
-
-</details>
-
-## ⚙️ Domain Settings
-| Setting | Option |
-|-|-|
-| DNSSEC | ✅ |
-| Email | ✅ |
-| SSL/TLS[^1] | Full |
-| Always Use HTTPS[^1] | ✅ |
-| HTTP Strict Transport Security (HSTS) | ✅ |
-| Minimum TLS Version[^1] | 1.0 |
-| Opportunistic Encryption, TLS 1.3[^1] | ✅ |
-| WAF (Web Application Firewall)[^1] | Medium Security Level |
-| Browser Integrity Check[^1] | ✅ |
-| Caching Level, Browser Cache TTL[^1] | Standard, 4 hours |
-
-[^1]: Only available when your domain has `proxied` set to `true`.
+### How can I edit my domain file?
+You will now need to go to the [`open-domains/register`](https://github.com/open-domains/register) repository to register and manage subdomains on is-a-fullstack.dev. (You can check out some of the subdomains they offer as well, if you like :wink:)

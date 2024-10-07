@@ -18,7 +18,6 @@ Open Domains is a bigger project, therefore we can get more people to use our su
 Some new perks include:
 - NS records
 - PSL Support
-  - `is-a-fullstack.dev` is ***not*** on the [Public Suffix List](https://publicsuffix.org) yet, however we will be applying for PSL status under Open Domains' existing section.
   - This will mean browsers and services will treat your subdomain almost as an *actual root domain*.
 
 ### How can I edit my domain file?
